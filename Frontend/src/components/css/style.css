@@ -1,0 +1,459 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: calc(8px + 1vw);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+ a{
+    text-decoration: none;
+    color: aliceblue;
+    
+ }
+ a:hover{
+  text-decoration: none;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+ h2{
+  overflow-x: hidden;
+ }
+ p{
+  overflow-x: hidden;
+ }
+ button{
+  overflow-x: hidden;
+ }
+ nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;     
+    background-color: rgba(188, 107, 242, 0.3);
+    height: 6%;
+    width: 100%;
+    position: fixed;
+    z-index: 30;
+    
+ }
+ .nav-left {
+    display: flex;
+    align-self: center;
+    z-index: 2;
+ }
+ .nav-left ul{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-right: 40px;
+ }
+ 
+ .nav-left ul li{
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+    z-index: 2;
+    position: relative;
+ }
+ .nav-left ul li:hover{
+  display: flex;
+  flex-direction: row;
+  margin-right: 10px;
+  z-index: 2;
+  position: relative;
+  cursor: pointer;
+}
+ .nav-left ul li::after{
+    background-color: #5D3D73;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 20px;
+    height: 1px;
+    content: "";
+    transition: 0.5s;
+    opacity: 0.5;
+  
+ }
+ .nav-left ul li:hover::after{
+    background-color: #5D3D73;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 20px;
+    height: 80%;
+    content: "";
+    transition: 0.5s;
+    opacity: 0.5;
+  
+ }
+ .nav-right ul{
+    display: flex;
+    margin-top: 20px;
+    margin-right: 40px;
+    z-index: 2;
+ }
+ .nav-right ul li{
+    margin-right: 20px;
+  
+ }
+ nav button{
+    width: 120px;
+    height: 60px;
+    border-radius: 20px;
+    border: white solid 1px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+     transition: 1s;
+    z-index: 2;
+ }
+ nav button:hover{
+    transition: 1s;
+    color: black;
+    border: rgb(255, 255, 255) solid 1px;
+    background-color: white;
+ }
+ .logo{
+    display: flex;
+    margin-right: 60px;
+    height: 100px;
+    width: 120px;
+ }
+ img.fundo{
+   width: 100%;
+   height: 100%;
+   display: block;
+   position: relative;
+   z-index: 1;
+  
+ }
+ nav ul li p{
+  padding: 10vw;
+ }
+ /*
+  sec 1
+ */
+ .secpag1conteudo{
+   clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
+   padding-top: 15vw;
+   padding-bottom: 8vw;
+   display: flex;
+   justify-content: space-between;
+   background-color: #5D3D73;
+   position: relative;
+   z-index: 2;
+   bottom: 20vw;
+  overflow: hidden;
+ }
+ .secpag1conteudo img{
+   z-index: 1;
+   position: relative;
+   height: 25vw;
+   width: 14vw;
+   padding-left: 3vw;
+   
+   
+ }
+ .secpag1conteudo{
+   text-align: center;
+ }
+ .secpag1conteudo h1{
+   font-size: 5vw;
+   color: white;
+   background-image: linear-gradient(to bottom, #F27C38, white);
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+ }
+ .secpag1conteudo p{
+   font-size: 1.7vw;
+   margin: 4vw 0vw 4vw 0vw;
+   color: white;
+ }
+
+ .secpag1conteudo b {
+  font-size: 1.7vw;
+ }
+ .cont2{
+   margin-right: 4vw;
+ }
+
+ .cont2 p{
+  padding: 0 6vw 0 6vw;
+ }
+ .secpag1conteudo button{
+   width: 40%;
+   height: 4vw;
+   border-radius: 2vw;
+   border: solid 3px white ;
+   background-image: linear-gradient(to right,#F27C38,#BC6BF2);
+   color:white ;
+   transition: .1s ease-in-out;
+   box-shadow: 2px 2px 10px black;
+ }
+ .secpag1conteudo button:hover{
+   transform: scale(107%);
+   transition: .1s;
+   cursor: pointer;
+ }
+ .secpag1conteudo .ref{
+   opacity: 0.5;
+   font-size: 0.7vw;
+
+ }
+section.centro img.banner{
+   position: relative;
+
+   z-index: 3;
+   width: 100%;
+}
+
+ section.centro{
+   background-color: #5D3D73;
+   
+ }
+ section.centro div {
+   display: flex;
+   flex-direction:column ;
+ }
+ section.centro div div{
+   display: flex;
+   flex-direction: column;
+
+ }
+ section.centro div ul{
+   display: flex;
+   justify-content: space-evenly;
+ }
+ section.centro div ul li img{
+   width: 25vw;
+   height: 18vw;
+   border-radius:3vw;
+   filter: saturate(200%);
+   margin: 0 0 4vw 0;
+   
+ }
+ 
+ section.centro{
+   position: relative;
+   top: -20vw;
+   padding: 0 0 10vw 0;
+ }
+ section.centro div{
+   margin-top: 3vw;
+ }
+ section.centro h2{
+   color: white;
+   font-size: 2.5vw;
+   text-align: center;
+   background-image: linear-gradient(to bottom, #F27C38, white);
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+ }
+ section.centro p{
+   font-size: 1.8vw;
+   color: white;
+   margin: 4vw 4vw 5vw 6vw;
+   text-align: center;
+
+ }
+ section.last{
+  padding: 40vw 0 0vw 0;
+  position: relative;
+  margin-top: -20vw;
+  background-color: #281138;
+  flex-wrap: wrap;
+  height: 30vw;
+  overflow: hidden;
+
+ }
+ section.last div {
+  display: flex;
+  justify-content: center;
+  bottom: 33vw;
+  position: relative;
+ }
+ section.last h2.a{
+  font-size: 6vw;
+  background-image: linear-gradient(to bottom, #F27C38, white);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ section.last ul{
+   display: flex;
+    margin: 0vw 0 0vw 0;
+   position: relative;
+   flex-wrap: wrap; 
+ }
+ section.last ul li{
+  display: flex;
+  bottom: 27vw;
+  position: relative;
+
+}
+ section.last ul li.exer{
+  position: relative;
+  left: 5vw;
+  z-index: 3;
+ }
+ li.exer h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+ }
+ section.last ul li.ali{
+  position: relative;
+  z-index: 4;
+  bottom: 65vw;
+  left: 25vw;
+  
+ }
+ li.ali h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+ }
+ section.last ul li.exer h2{
+  font-size: 5vw;
+  opacity: 1;
+  position: relative;
+  z-index: 3;
+  top: 3vw;
+  right: 60vw;
+  color: black;
+}
+  section.last ul li.ali h2{
+  font-size: 5vw;
+  position: relative;
+  z-index: 4;
+  top: 32vw;
+  right:45vw;
+  color:white;
+  opacity: 1;
+ }
+ section.last img{
+  height: 40vw; 
+  width: 70vw;
+  
+ }
+ section.last{
+  overflow-x: hidden;
+
+ }
+
+footer{
+  background-color: #272727;
+  box-shadow: #F28F38;
+ 
+}
+footer ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer li img{
+  width: 3vw;
+  height: 3vw;
+}
+footer li img.logo{
+  width: 8vw;
+  height: 8vw;
+}
+footer p{
+  color: white;
+}
+::-webkit-scrollbar{
+   width: 8px;
+   background-color:darkgray;
+
+}
+::-webkit-scrollbar-thumb{
+   border-radius: 15px;
+   background-color: #281138;
+   padding: 1px;
+   margin: 1px;
+}
+
+ [data-anime="right"]{
+    opacity: 0;
+    transform: translateX(4vw);
+    transition: 1s;
+ }
+ [data-anime="right"].animation{
+    transition: 1s;
+    opacity: 1;
+    transform: translateX(0px);
+ }
+ [data-anime="down"] {
+   opacity: 0;
+   transform: translateY(3.3vw);
+   transition: 1.s, transform 1.5s;
+}
+
+[data-anime="down"].animation2 {
+   opacity: 1;
+   transform: translateY(0);
+   transition: 1s;
+}
+ 
+.no-scroll {
+    overflow: hidden;
+    height: 100%; 
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.589); 
+  z-index: 999; 
+}
+
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  background-color: white; 
+  border: 1px solid black;
+  padding: 20px; 
+  z-index: 1000; 
+  border-radius: 20px;
+}
+
+.ok{
+  border: solid 2px rgb(0, 0, 0);
+  padding: 5px 10px 5px 10px;
+  margin-top: 1vw;
+  border-radius: 10px;
+}
+
+
+/* Color Theme Swatches in Hex */
+.paleta-roxa-e-laranja-1-hex { color: #D95970; }
+.paleta-roxa-e-laranja-2-hex { color: #BC6BF2; }
+.paleta-roxa-e-laranja-3-hex { color: #5D3D73; }
+.paleta-roxa-e-laranja-4-hex { color: #F28F38; }
+.paleta-roxa-e-laranja-5-hex { color: #F27C38; }
+
+/* Color Theme Swatches in RGBA */
+.paleta-roxa-e-laranja-1-rgba { color: rgba(216, 89, 112, 1); }
+.paleta-roxa-e-laranja-2-rgba { color: rgba(188, 107, 242, 1); }
+.paleta-roxa-e-laranja-3-rgba { color: rgba(93, 61, 114, 1); }
+.paleta-roxa-e-laranja-4-rgba { color: rgba(242, 142, 56, 1); }
+.paleta-roxa-e-laranja-5-rgba { color: rgba(242, 124, 56, 1); }
+
+/* Color Theme Swatches in HSLA */
+.paleta-roxa-e-laranja-1-hsla { color: hsla(349, 62, 60, 1); }
+.paleta-roxa-e-laranja-2-hsla { color: hsla(275, 83, 68, 1); }
+.paleta-roxa-e-laranja-3-hsla { color: hsla(275, 30, 34, 1); }
+.paleta-roxa-e-laranja-4-hsla { color: hsla(28, 87, 58, 1); }
+.paleta-roxa-e-laranja-5-hsla { color: hsla(21, 87, 58, 1); }
