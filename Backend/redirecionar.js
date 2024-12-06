@@ -1,6 +1,3 @@
-function inicio() {
-    window.location.href = "index.html";
-}
 
 function Exercicios() {
     if (!localStorage.getItem("esporteSelecionado")) {
@@ -42,10 +39,10 @@ function Exercicios() {
             window.removeEventListener('wheel', Impedir)
             window.removeEventListener('touchmove', Impedir)
 
-            window.location.href = "indexPerguntas.html";
+            window.location.href = "../html/Perguntas.html";
         });
     } else {
-        window.location.href = "indexExercicios.html";
+        window.location.href = "../html/Exercicios.html";
     }
 }
 
