@@ -1,62 +1,22 @@
-html{
-    list-style: none;
-}
-aside{
-    display:  flex;
-    background-color:  rgb(3, 119, 119);
-    flex-direction: column;
-    height: 100vh;
-    align-items: center;
-    width: 10vw;
-    position: fixed;
-    z-index: 2;
- 
-    transform: translateX(-9vw);
-    ul{
-        margin-top: 0vw;
-        li{
-            margin: 2vw;
+section.s1 {
+    padding: 4vw 8vw 4vw 8vw;
+      div{
+
+        h2{
+            color: rgba(65, 90, 172, 1);
+            font-size: 3rem;
         }
-    }
-    transition: 0.5s ease-in;
+        p{
+            color: rgba(0, 14, 57, 1);
+            font-size: 1.5vw;
+        }
+        button{
+            background-color: rgba(65, 90, 172, 1) ;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            padding: 1vw 2vw 1vw 2vw;
+            font-size: 1.5vw;
+        }
+      }
 }
-aside:hover{
-    transform: translateX(0vw);
-    background-color: rgb(245, 245, 245) ;
-    transition: 0.5s ease-in;
-
-}
-nav{
-    display: flex;
-   
-    justify-content: space-between;
-    position: fixed;
-    background-color: rgb(255, 255, 255);
-
-}
-.principal{
-    background-color: #90A5df;
-    top: 5vw;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    position: relative;
-    min-height: 20vw;
-    h1 {
-        text-align: end;
-        font-size: 2rem;
-        color: white;
-    }
-    h2{
-        color: white;
-    }
-    p{
-        color: white;
-    }
-
-}
-
-/*palhetas
-    #90A5df 
-*/
