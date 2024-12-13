@@ -14,23 +14,23 @@
 <body>
     <header>
         <nav class="barranav">
-            <details>
-                <summary><span class="fa-solid fa-bars"></span></summary>
+            <aside id="details" class="fechado">
+                <h2 id="summary"><span class="fa-solid fa-bars"></span></h2>
                 <ul>
-                    <li>
+                    <li class="items">
                         <a>Início</a>
                     </li>
-                    <li>
+                    <li class="items">
                         <a>Alimentação</a>
                     </li>
-                    <li>
+                    <li class="items">
                         <a>Exercícios</a>
                     </li>
-                    <li>
+                    <li class="items">
                         <a>Equipe</a>
                     </li>
                 </ul>
-            </details>
+            </aside>
 
             <li class="expPerso">
                 <p>Experiencia Personalizada</p>
@@ -73,3 +73,30 @@ Um site focado em promover saúde e bem-estar por meio de dicas práticas de ali
 </body>
 
 </html>
+<script>
+    const items = document.querySelectorAll(".items")
+    const summary = document.querySelector("#summary")
+    const details = document.querySelector("#details")
+    const fechado = document.querySelector(".fechado")
+    const aberto = document.querySelector(".aberto")
+    const show = document.querySelector(".show")
+    let verificador = false
+    const abrirDetails = () => {
+        verificador = !verificador
+        if(verificador == false){
+            details.classList.remove("aberto")
+            details.classList.add("fechado")
+            items.forEach((item) => {
+                item.classList.remove("show")
+            }) 
+        }
+        else{
+            details.classList.remove("fechado")
+            details.classList.add("aberto")
+            items.forEach((item) => {
+                item.classList.add("show")
+            }) 
+        }
+    }
+    summary.addEventListener("click", abrirDetails)
+</script>

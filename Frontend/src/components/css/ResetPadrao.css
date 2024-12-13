@@ -175,7 +175,7 @@ header {
          padding: 2vw 2vw 0 60vw;
       }
 
-      details {
+      aside {
          flex-direction: column;
          position: fixed;
          background-color: white;
@@ -199,14 +199,13 @@ header {
                padding: 1.5vw 1vw 0 0;
                align-items: center;
                cursor: pointer;
+               opacity: 0;
                a {
                   cursor: pointer;
                }
             }
 
-            li:last-child {
-               height: 100vh;
-            }
+            
          }
       }
    }
@@ -262,3 +261,61 @@ section.principal {
       }
    }
 }
+/* classes */
+
+.fechado {
+   height: 1.4vw;
+   width: 2vw;
+   transition: height 0.5s ease-in-out, width 0.5s ease-in-out; 
+}
+
+.aberto {
+   height: 20vw;
+   width: 7vw;
+   transition: height 0.5s ease-in-out, width 0.5s ease-in-out;
+}
+
+.items {
+   opacity: 0;
+   visibility: hidden;
+   margin: -2vw 0 0 0;
+
+   pointer-events: none; /* Impede interações enquanto invisível */
+   transition: opacity 0.5s ease-in-out, margin 0.5s ease-in-out, transform 0.5s ease-in-out; 
+}
+
+.items.show {
+   opacity: 1;
+   visibility: visible;
+   margin: 1.5vw 0 0 0;
+   
+   pointer-events: auto; /* Permite interações quando visível */
+   transition: opacity 0.5s ease-in-out, margin 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.items::after {
+   content: '';
+   position: absolute;
+   background-color: black;
+   width: 10px;
+   height: 10px;
+   top: 0; 
+   left: 0;
+   z-index: 1;
+}
+.items::after {
+   content: '';
+   position: absolute;
+   bottom: 0; /* Posiciona a barra na parte inferior do item */
+   left: 0;
+   width: 0; /* Começa sem largura */
+   height: 2px; /* Altura da barra */
+   background-color: black; /* Cor da barra */
+   transition: width 0.3s ease-in-out; /* Animação de transição da largura */
+}
+
+/* Efeito de hover nos itens */
+.items:hover::after {
+   width: 100%; /* Barra se expande para a largura total do item */
+}
+
