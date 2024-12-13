@@ -8,33 +8,52 @@
     <link rel="stylesheet" href="style4.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HealthUp - Exercícios</title>
+
     <link rel="stylesheet" href="../css/ResetPadrao.css">
+    <link rel="stylesheet" href="../css/Exercicios.css">
     <script src="https://kit.fontawesome.com/7c6760d07c.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+
+<body class="back">
+
     <header>
-        <nav>
-            <div class="nav-left">
-                <img class="logo" src="src/Logo-Roxa.png" alt="Logo HealthUp" id="logo"
-                    onclick="redirecionar('index.html')">
-                <ul class="pags">
-                    <li onclick="redirecionar('index.html')"><a>Início</a></li>
-                    <li onclick="Exercicios()"><a>Exercícios</a></li>
-                    <li onclick="redirecionar('indexAlimentacao.html')"><a>Alimentação</a></li>
-                    <li onclick="redirecionar('indexEquipe.html')"><a>Nossa Equipe</a></li>
+        <nav class="barranav">
+            <details>
+                <summary><span class="fa-solid fa-bars"></span></summary>
+                <ul>
+                    <li>
+                        <a href="../../../index.html">Início</a>
+                    </li>
+                    <li>
+                        <a>Alimentação</a>
+                    </li>
+                    <li>
+                        <a>Exercícios</a>
+                    </li>
+                    <li>
+                        <a>Equipe</a>
+                    </li>
                 </ul>
-            </div>
+            </details>
+
+            <li class="expPerso">
+                <p>Experiencia Personalizada</p>
+            </li>
+            <li>
+                <p>Inteligencia Artificial</p>
+            </li>
+
         </nav>
     </header>
     <main>
-        <section>
+        <section class="principal">
             <div>
-                <h1>EXERCÍCIOS!</h1>
-                <p>A seguir algumas dicas e recomendações de exercícios!</p>
+                <h1> <span>EXERCÍCIOS!</span></h1>
+                <h2>A seguir algumas dicas e recomendações de exercícios!</h2>
             </div>
         </section>
-        <section>
+        <section class="s1">
             <div>
                 <h2>Seja gentil consigo mesmo!</h2>
                 <p>
@@ -48,25 +67,26 @@
                 </p>
             </div>
         </section>
-        <section>
-            <div>
+        <section class="s2">
+            <div class="divP">
                 <h2>Pré-Treino!</h2>
-                <p>É importante se preparar antes de começar o treino então algumas dicas!</p>
+                <h3>É importante se preparar antes de começar o treino então algumas dicas!</h3>
             </div>
-            <div>
+            <div class="divS">
                 <ul>
                     <li>
-                        <p> Consuma uma refeição pré-treino 1 a 3 horas antes do exercício, combinando carboidratos
-                            complexos e proteínas para energia e reparação muscular. Opções incluem sanduíche de peru,
-                            banana com manteiga de amendoim ou vitamina com whey protein. Para algo rápido, escolha uma
-                            barra de cereais ou uma maçã.</p>
+                        <p>Consuma uma refeição pré-treino 1 a 3 horas antes, combinando carboidratos complexos e
+                            proteínas. Opções rápidas incluem banana com manteiga de amendoim, sanduíche de peru ou
+                            barra de cereais.</p>
                         <a target="_blank" href="https://www.onepeloton.com/blog/what-to-eat-before-a-workout/">Leia
                             mais em...</a>
                     </li>
                     <li>
                         <p>
-                            Faça exercícios de alongamento antes e depois da atividade física. Eles protegem seu músculo
-                            de possíveis lesões.
+
+                            Realize alongamentos antes do treino para melhorar a flexibilidade, estimular a
+                            circulação e prevenir lesões. Utilize alongamentos dinâmicos no aquecimento para
+                            preparar os músculos.
                         </p>
                         <a target="_blank"
                             href="https://www.gov.br/saude/pt-br/assuntos/saude-brasil/eu-quero-me-exercitar/noticias/2018/alongamento-e-bom-antes-e-depois-da-atividade-fisica#:~:text=Antes%20e%20depois%20de%20atividades,em%20todas%20as%20faixas%20et%C3%A1rias.">Leia
@@ -87,7 +107,7 @@
             </div>
             <div>
                 <ul>
-                    <li>
+                    <li id="sele">
                         <h4>Faça os exercícios corretamente:</h4>
                         <p>
                             A execução é a parte mais importante do exercício, não adianta colocar muito peso e não
@@ -108,25 +128,32 @@
 
                         </ul>
                     </li>
-                    <li><div>
-                        <i class="fa-solid fa-exclamation"></i>
-                        <h4> Se estiver com dor, pare o exercício:</h4></div>
+                    <li id="sele">
+                        <div>
+                            <i class="fa-solid fa-exclamation"></i>
+                            <h4> Se estiver com dor, pare o exercício:</h4>
+                        </div>
                         <p>
 
                             Se você está com dor, é sinal de que o músculo já está cansado. Não force mais. Prefira
                             parar o exercício e continuar depois do descanso do que sofrer uma lesão.
                         </p>
                     </li>
-                    <li><div><i class="fa-solid fa-dumbbell"></i>
-                        <h4> Use equipamentos de segurança:</h4></div>
+                    <li>
+                        <div><i class="fa-solid fa-dumbbell"></i>
+                            <h4> Use equipamentos de segurança:</h4>
+                        </div>
                         <p>
-                            Se a atividade que você pratica exige equipamentos de segurança (como joelheiras, caneleiras
+                            Se a atividade que você pratica exige equipamentos de segurança (como joelheiras,
+                            caneleiras
                             e
                             outros acessórios), não abra mão de usá-los.
                         </p>
                     </li>
-                    <li> <div><i class="fa-brands fa-hotjar"></i>
-                        <h4> Evite fazer exercícios no calor extremo:</h4></div>
+                    <li>
+                        <div><i class="fa-brands fa-hotjar"></i>
+                            <h4> Evite fazer exercícios no calor extremo:</h4>
+                        </div>
                         <p>
                             O calor exige mais do corpo e pode sobrecarregar os músculos. Prefira se exercitar em
                             horários
@@ -134,8 +161,9 @@
                         </p>
                     </li>
                     <li>
-                       <div> <i class="fa-solid fa-glass-water"></i>
-                        <h4> Hidrate-se:</h4></div>
+                        <div> <i class="fa-solid fa-glass-water"></i>
+                            <h4> Hidrate-se:</h4>
+                        </div>
                         <p>
 
                             Ao começar um exercício, beba bastante água. Tenha uma garrafinha ao seu lado.
@@ -155,26 +183,33 @@
                     <li>
                         <h4>Exercicios de alongamento</h4>
                         <p>
-                            Realizar alongamentos após o treino ajuda a relaxar os músculos, melhorar a flexibilidade e
-                            reduzir a rigidez no dia seguinte. O alongamento estático, com posições mantidas por 15 a 30
+                            Realizar alongamentos após o treino ajuda a relaxar os músculos, melhorar a
+                            flexibilidade e
+                            reduzir a rigidez no dia seguinte. O alongamento estático, com posições mantidas por 15
+                            a 30
                             segundos, é especialmente eficaz.
                         </p>
                     </li>
                     <li>
-                       <div> <i class="fa-solid fa-bed"></i>
-                        <h4>Uma boa noite de sono:</h4></div>
-                        <p> Uma boa noite de sono é essencial para a recuperação muscular e para maximizar os resultados
+                        <div> <i class="fa-solid fa-bed"></i>
+                            <h4>Uma boa noite de sono:</h4>
+                        </div>
+                        <p> Uma boa noite de sono é essencial para a recuperação muscular e para maximizar os
+                            resultados
                             do treino. É durante o sono que o corpo se recupera e se prepara para novos desafios.
                         </p>
                     </li>
                     <li>
                         <h4>
                         </h4>
-                        <p> Após o exercício, o corpo entra em recuperação e necessita de proteínas e carboidratos para
-                            reparação e crescimento muscular. Consuma alimentos como frango com arroz integral, ovos com
+                        <p> Após o exercício, o corpo entra em recuperação e necessita de proteínas e carboidratos
+                            para
+                            reparação e crescimento muscular. Consuma alimentos como frango com arroz integral, ovos
+                            com
                             torrada ou um shake de proteína com frutas entre 30 minutos e 2 horas após o treino.
                         </p>
                     </li>
+                    
                     <li><iframe width="560" height="315"
                             src="https://www.youtube.com/embed/P_r-3CNu0rw?si=733x68oqBvmSB8Uh"
                             title="YouTube video player" frameborder="0"
@@ -195,13 +230,15 @@
                     <ul>
                         <li>
                             <p>
-                                Ectomorfo: Corpo magro, com ombros mais rentes à cintura dificuldade para ganhar peso e
+                                Ectomorfo: Corpo magro, com ombros mais rentes à cintura dificuldade para ganhar
+                                peso e
                                 músculos, com membros longos e pouca gordura corporal.
                             </p>
                         </li>
                         <li>
                             <p>
-                                Mesomorfo: Corpo musculoso e atlético,ombros mais largos que a cintura e facilidade para
+                                Mesomorfo: Corpo musculoso e atlético,ombros mais largos que a cintura e facilidade
+                                para
                                 ganhar massa muscular e manter baixos níveis de gordura.
                             </p>
                         </li>
@@ -214,7 +251,8 @@
                         </li>
                     </ul>
                     <p>
-                        Os somatotipos, embora úteis como introdução teórica às diferenças dos corpos, são simplistas e
+                        Os somatotipos, embora úteis como introdução teórica às diferenças dos corpos, são
+                        simplistas e
                         inadequados para abordar a complexidade do corpo humano e não tem fundamentos científicos.
                     </p>
                     <p>
@@ -222,7 +260,8 @@
                         classificação inadequada para análises detalhadas ou planejamento de saúde e treino.
                     </p>
                     <p>
-                        Não recomendamos ficar vidrado em "Treinos pra cada somatipo!" e "Dietas para cada somatipo!".
+                        Não recomendamos ficar vidrado em "Treinos pra cada somatipo!" e "Dietas para cada
+                        somatipo!".
                         Os somatipos descrevem alguns padrões de corpos, os corpos são muito mais complexos.
                     </p>
                 </div>
@@ -230,6 +269,7 @@
         </section>
 
     </main>
+    <script src="../../../../Backend/Exercicios.js"></script>
 </body>
 
 </html>

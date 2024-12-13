@@ -144,11 +144,11 @@ html {
    color: rgba(15, 35, 96, 1);
    font-size: 1.5vw;
    font-family: Arial, Helvetica, sans-serif;
-   line-height: 4vw;
+
 }
-
-
-
+p {
+   line-height: 1.8vw;
+}
 
 /*
 
@@ -199,6 +199,7 @@ header {
                padding: 1.5vw 1vw 0 0;
                align-items: center;
                cursor: pointer;
+
                a {
                   cursor: pointer;
                }
@@ -217,18 +218,15 @@ header {
         Seção de Início
 
 */
-main {
-   z-index: 1000;
-}
+
 
 section.principal {
 
    background: linear-gradient(to top, rgba(0, 14, 57, 1), rgba(144, 165, 223, 1));
    display: flex;
    flex-direction: column;
-
    justify-content: center;
-   min-height: 39vw;
+   min-height: 50vw;
 
    div {
       text-align: end;
@@ -238,9 +236,10 @@ section.principal {
          font-size: 4rem;
          text-align: end;
          color: white;
-         span{
+
+         span {
             color: rgba(0, 14, 57, 1);
-      }
+         }
       }
 
       h2 {
