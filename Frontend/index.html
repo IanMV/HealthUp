@@ -18,25 +18,25 @@
                 <h2 id="summary"><span class="fa-solid fa-bars"></span></h2>
                 <ul>
                     <li class="items">
-                        <a>Início</a>
+                        <a class="hoverAnimationBarra">Início</a>
                     </li>
                     <li class="items">
-                        <a>Alimentação</a>
+                        <a class="hoverAnimationBarra">Alimentação</a>
                     </li>
                     <li class="items">
-                        <a>Exercícios</a>
+                        <a class="hoverAnimationBarra">Exercícios</a>
                     </li>
                     <li class="items">
-                        <a>Equipe</a>
+                        <a class="hoverAnimationBarra">Equipe</a>
                     </li>
                 </ul>
             </aside>
 
             <li class="expPerso">
-                <p>Experiencia Personalizada</p>
+                <a class="hoverAnimationBarra">Experiencia Personalizada</a>
             </li>
             <li>
-                <p>Inteligencia Artificial</p>
+                <a class="hoverAnimationBarra">Inteligencia Artificial</a>
             </li>
 
         </nav>
@@ -44,11 +44,11 @@
     <main>
         <section class="principal">
             <div>
-            <h1>Bem-Vindo à  <span>HealthUp!</span></h1>
-            <h2>Seu <span>bem-estar</span>, sua fórmula: evolua no ritmo da sua vida!
+                <h1>Bem-Vindo à <span>HealthUp!</span></h1>
 
-            </h2>
-            <p>Não substituimos o trabalho de um profissionar</p></div>
+                <h2>Seu <span>bem-estar</span>, sua fórmula: <br> evolua no ritmo da sua vida!</h2>
+                <p>Não substituimos o trabalho de um profissional</p>
+            </div>
         </section>
         <section class="s1">
             <div>
@@ -56,10 +56,13 @@
                     Seja sua melhor versão!
                 </h2>
                 <p>
-                    
-Um site focado em promover saúde e bem-estar por meio de dicas práticas de alimentação saudável e exercícios físicos. Ele incentiva a adoção de hábitos equilibrados para melhorar a qualidade de vida, sem substituir a orientação de profissionais. Mas não substituimos o trabalho de um profissional.
+
+                    Um site focado em promover saúde e bem-estar por meio de dicas práticas de alimentação saudável e
+                    exercícios físicos. Ele incentiva a adoção de hábitos equilibrados para melhorar a qualidade de
+                    vida, sem substituir a orientação de profissionais. Mas não substituimos o trabalho de um
+                    profissional.
                 </p>
-                <button>
+                <button class="ripple">
                     Personalize sua experiência
                 </button>
             </div>
@@ -83,19 +86,19 @@ Um site focado em promover saúde e bem-estar por meio de dicas práticas de ali
     let verificador = false
     const abrirDetails = () => {
         verificador = !verificador
-        if(verificador == false){
+        if (verificador == false) {
             details.classList.remove("aberto")
             details.classList.add("fechado")
             items.forEach((item) => {
                 item.classList.remove("show")
-            }) 
+            })
         }
-        else{
+        else {
             details.classList.remove("fechado")
             details.classList.add("aberto")
-            items.forEach((item) => {
+            items.forEach((item) => {      
                 item.classList.add("show")
-            }) 
+            })
         }
     }
     summary.addEventListener("click", abrirDetails)
