@@ -1,5 +1,5 @@
 section.s1 {
-    padding: 4vw 8vw 4vw 8vw;
+    padding: 10vw 8vw 10vw 8vw;
       div{
 
         h2{
@@ -9,6 +9,7 @@ section.s1 {
         p{
             color: rgba(0, 14, 57, 1);
             font-size: 1.5vw;
+            margin: 3vw 0 3vw 0;
         }
         button{
             background-color: rgba(65, 90, 172, 1) ;
@@ -19,4 +20,6 @@ section.s1 {
             font-size: 1.5vw;
         }
       }
-}
+
+}   
+
