@@ -23,3 +23,46 @@ section.s1 {
 
 }   
 
+section.s2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vw 0 10vw 0;
+    
+    div{
+        background-color: #415AAC;
+        padding: 10vw;
+        width: 60vw;
+        height: 16vw;
+        padding: 10vw 5vw 10vw 5vw;
+        border-radius: 15px;  
+        box-shadow: 10px 2px 20px rgb(26, 24, 24);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s ease-in-out;
+        color: white;
+        h2{
+            text-align: center;
+        }
+        p{
+            margin: 4vw 0 4vw 0;
+        }
+        img{
+            height: 12vw;
+            width: 18vw;
+           filter: saturate(1.5);
+        }
+        ul{
+            display: flex;
+            li{
+                margin: 0 1vw 0 1vw;
+            }
+        }
+    }
+    div:hover{
+        transform: scale(103%);
+        transition: 0.5s ease-in-out;
+    }
+}
