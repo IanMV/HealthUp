@@ -43,6 +43,9 @@ section.s2{
         align-items: center;
         transition: 0.5s ease-in-out;
         color: white;
+        h1{
+            font-size: 2rem;
+        }
         h2{
             text-align: center;
         }

@@ -119,6 +119,48 @@ section.principal {
    }
 }
 
+/*--------------------------      Footer -------------------------------------------
+------------------------------------------------------------------------------------*/
+
+footer{
+   background-color:  rgba(144, 165, 223, 1);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 1vw 0 2vw 0;
+   .DivFooter1{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 80vw;
+      border-bottom: 1px rgb(0, 0, 0) solid;
+      padding: 0vw 0 1vw 0;
+      p{
+         color: white;
+         font-size: 1.1rem;
+      }
+      ul{
+         display: flex;
+         margin: 0 2vw 0 0;
+         li a{
+            color: white;
+            margin: 0 0.5vw 0 0.5vw;
+         }
+      }
+   }
+   .DivFooter2{
+      margin: 1.5vw 0 0 0;
+      display: flex;
+      align-items: center;
+      padding: 0 2vw 0 0;
+      h3{
+         color: white;
+         font-size: 1.1rem;
+         margin: 0 1vw 0 ;
+      }
+   }
+}
 
 
 
