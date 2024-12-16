@@ -8,7 +8,7 @@
   <title>Plano Personalizado</title>
   <link rel="stylesheet" href="resetPadrao.css">
   <link rel="stylesheet" href="style2.css">
-  <script src="redirecionar.js" defer></script>
+  <script src="/Backend/redirecionar.js" defer></script>
   <link rel="icon" type="imagem/png" href="src/Logo-Favicon.png"/>
 </head>
 
@@ -16,15 +16,16 @@
   <header>
     <nav>
       <div class="nav-left">
-        <img class="logo" src="src/Logo-Roxa.png" alt="Logo HealthUp" id="logo" onclick="redirecionar('index.html')">
-        <ul class="pags">
-          <li onclick="redirecionar('index.html')"><a>Início</a></li>
-          <li onclick="Exercicios()"><a>Exercícios</a></li>
-          <li onclick="redirecionar('indexAlimentacao.html')"><a>Alimentação</a></li>
-          <li onclick="redirecionar('indexEquipe.html')"><a>Nossa Equipe</a></li>
-        </ul>
+          <img class="logo" src="src/Logo-Roxa.png" alt="Logo HealthUp" id="logo"
+              onclick="redirecionar('index.html')">
+          <ul class="pags">
+              <li onclick="redirecionar('../../../index.html')"><a>Início</a></li>
+              <li onclick="Exercicios()"><a>Exercícios</a></li>
+              <li onclick="redirecionar('Alimentacao.html')"><a>Alimentação</a></li>
+              <li onclick="redirecionar('Equipe.html')"><a>Nossa Equipe</a></li>
+          </ul>
       </div>
-    </nav>
+  </nav>
 
     <div>
       <img class="fundo" src="src/fundo pag 2.png" alt="Fundo levemente roxo com pessoas andando na rua">
