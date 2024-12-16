@@ -5,45 +5,129 @@
     <!-- PÁGINA INICIAL -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Início</title>
+    <title>Healthup - Início</title>
     <link rel="stylesheet" href="src/components/css/ResetPadrao.css">
-    <script src="../Backend/PagPrincipal.js"></script>
+    <link rel="stylesheet" href="src/components/css/PaginaPrincipal.css">
+    <script src="https://kit.fontawesome.com/f9eee77ae5.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <nav class="barranav">
-            <img src="" alt="Logo HealthUp">
-            <ul>
-                <li>
-                    inicio
-                </li>
-                <li>
-                    Alimentação
-                </li>
-                <li>
-                    Exercícios
-                </li>
-                <li>
-                   Dúvidas
-                </li>
-                <li>
-                    Nossa Equipe
-                </li>
-            </ul>
-            <button><img src="" alt="Configurações"></button>
+            <aside id="details" class="fechado">
+                <h2 id="summary"><span class="fa-solid fa-bars"></span></h2>
+                <ul>
+                    <li class="items">
+                        <a class="hoverAnimationBarra">Início</a>
+                    </li>
+                    <li class="items">
+                        <a class="hoverAnimationBarra">Alimentação</a>
+                    </li>
+                    <li class="items">
+                        <a class="hoverAnimationBarra">Exercícios</a>
+                    </li>
+                    <li class="items">
+                        <a class="hoverAnimationBarra">Equipe</a>
+                    </li>
+                </ul>
+            </aside>
+
+            <li class="expPerso">
+                <a class="hoverAnimationBarra">Experiencia Personalizada</a>
+            </li>
+            <li>
+                <a class="hoverAnimationBarra">Inteligencia Artificial</a>
+            </li>
+
         </nav>
     </header>
-   <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
     <main>
-<section>
-    <h1>Seja Bem-Vindo à HealthUp!</h1>
-</section>
+        <section class="principal">
+            <div>
+                <h1>Bem-Vindo à <span>HealthUp!</span></h1>
+
+                <h2>Seu <span>bem-estar</span>, sua fórmula: <br> evolua no ritmo da sua vida!</h2>
+                <p>Não substituimos o trabalho de um profissional</p>
+            </div>
+        </section>
+        <section class="s1">
+            <div>
+                <h2>
+                    Seja sua melhor versão!
+                </h2>
+                <p>
+
+                    Um site focado em promover saúde e bem-estar por meio de dicas práticas de alimentação saudável e
+                    exercícios físicos. Ele incentiva a adoção de hábitos equilibrados para melhorar a qualidade de
+                    vida, sem substituir a orientação de profissionais. Mas não substituimos o trabalho de um
+                    profissional.
+                </p>
+                <button class="ripple">
+                    Personalize sua experiência
+                </button>
+            </div>
+        </section>
+        <section class="s2">
+            <div>
+                <h1>Treinos pensados para você</h1>
+                <p>O combo perfeito para você alcançar todo o seu potencial: além de rotinas de exercício variada de acordo com suas preferências, a HealthUp oferece
+                    um guia completo para uma vida saudável e boa alimentação, venha conferir!</p>
+                <ul>
+                    <li><img src="src/images/FazendoAbdominal.png" alt="#"></li>
+                    <li><img src="src/images/cobra-pose-yoga-back-bend-1296x728-header.png" alt=""></li>
+                    <li><img src="src/images/IMG_1394.png" alt=""></li>
+                </ul>            
+            </div>
+        </section>
+    </main>
 
     </main>
     <footer>
-
+        <div class="DivFooter1">
+            <img src="src/images/Logo1.png" alt="">
+            <p>© 2024 HealthUp</p>
+            <ul>
+                <li><a href=""><span class="fa-brands fa-instagram"></span></a></li>
+                <li><a href=""><span class="fa-brands fa-facebook-f"></span></a></li>
+                <li><a href=""><span class="fa-brands fa-twitter"></class=></span></a></li>
+            </ul>
+        </div>
+        <div class="DivFooter2">
+                <h3>
+                    Conheça Mais Sobre nossa Equipe
+                </h3>
+                <button class="ripple">
+                    Nossa Equipe
+                </button>
+        </div>
     </footer>
 </body>
-<script src="/Backend/redirecionar.js"></script>
+
 </html>
+<script>
+    const items = document.querySelectorAll(".items")
+    const summary = document.querySelector("#summary")
+    const details = document.querySelector("#details")
+    const fechado = document.querySelector(".fechado")
+    const aberto = document.querySelector(".aberto")
+    const show = document.querySelector(".show")
+    let verificador = false
+    const abrirDetails = () => {
+        verificador = !verificador
+        if (verificador == false) {
+            details.classList.remove("aberto")
+            details.classList.add("fechado")
+            items.forEach((item) => {
+                item.classList.remove("show")
+            })
+        }
+        else {
+            details.classList.remove("fechado")
+            details.classList.add("aberto")
+            items.forEach((item) => {      
+                item.classList.add("show")
+            })
+        }
+    }
+    summary.addEventListener("click", abrirDetails)
+</script>
