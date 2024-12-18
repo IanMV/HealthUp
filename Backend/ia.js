@@ -2,6 +2,18 @@ const messagesDiv = document.getElementById("messages");
 const userInput = document.getElementById("userInput");
 const sendButton = document.getElementById("sendButton");
 
+function generateUserId() {
+    return 'user-' + Date.now(); }
+
+
+let userId = localStorage.getItem("userId");
+
+if (!userId) {
+    userId = generateUserId();
+    localStorage.setItem("userId", userId);
+}
+
+console.log("User ID: ", userId); 
 
 function Admensagem(quem, texto) {
     const mensagem = document.createElement('div');
@@ -14,40 +26,38 @@ function Admensagem(quem, texto) {
 }
 
 Admensagem("ia","Oi! Eu sou o Ernestro, seu mascote virtual. Estou aqui para te ajudar com dicas de exercícios personalizados. 😊");
-
 Admensagem("ia","Para começar, qual é o seu exercício favorito ou o tipo de atividade física que você mais gosta?");
 
-async function SendMensagem(){
-    const mensagemUser = userInput.value.trim()
-    if(!mensagemUser){
-        return
+async function SendMensagem() {
+    const mensagemUser = userInput.value.trim();
+    if (!mensagemUser) {
+        return;
     }
-    Admensagem('user',mensagemUser)
-    userInput.value = ""
-    try{
-        const response = await fetch("http://localhost:5050/chat",{
+    Admensagem('user', mensagemUser);
+    userInput.value = "";
+
+    try {
+        const response = await fetch("http://localhost:5050/chat", {
             method: "POST",
-            headers:{
+            headers: {
                 "Content-Type": "application/json",
             },
-            body: JSON.stringify({message: mensagemUser}) ,
-            mode:'cors'
-        })
+            body: JSON.stringify({ message: mensagemUser, userId }) ,
+            mode: 'cors',
+        });
 
-        const data = await response.json()
-
-        Admensagem("ia",data.response)
-    }
-    catch(error){
-        Admensagem("ia","Desculpe, algo deu errado. Tente novamente mais tarde");
-        console.log(error)
+        const data = await response.json();
+        Admensagem("ia", data.response);
+    } catch (error) {
+        Admensagem("ia", "Desculpe, algo deu errado. Tente novamente mais tarde");
+        console.log(error);
     }
 }
 
-sendButton.addEventListener('click', SendMensagem)
+sendButton.addEventListener('click', SendMensagem);
 
 userInput.addEventListener("keypress", (event) => {
     if (event.key === "Enter") {
-      SendMensagem();
+        SendMensagem();
     }
-  });
+});
