@@ -167,12 +167,13 @@ section.s3 {
 section.s4 {
 
     background-color: rgba(0, 14, 57, 1);
-    padding: 4vw;
+    padding: 4vw 2.5vw;
 
     .divP {
         h2 {
             text-align: end;
             color: white;
+            padding: 1vw 2vw 3vw 1vw;
         }
 
 
@@ -186,14 +187,47 @@ section.s4 {
             div {
                 display: flex;
                 justify-content: space-between;
-                width: 100%;align-items: center;
+                width: 100%;
+
 
                 li {
                     background-color: white;
                     width: 90%;
                     border-radius: 30px;
-                    padding: 2vw 1.5vw 2vw 1.5vw ;
-                    
+                    padding: 3vw 1vw 3vw 1vw;
+                    margin: 1vw 1vw 1vw 1vw;
+
+                    div {
+                        justify-content: center;
+                        padding: 0 0 1vw 0;
+
+                        span {
+                            font-size: 1.5rem;
+
+                        }
+                    }
+
+
+                    p {
+                        text-align: center;
+                    }
+
+                    h4 {
+                        font-size: 1.1rem;
+                        font-weight: bold;
+                        text-align: center;
+                    }
+
+                }
+
+                li.li1 {
+                    padding-top: 6vw;
+
+                }
+
+                li.li2 {
+                    padding-top: 5vw;
+
                 }
             }
 
