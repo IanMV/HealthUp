@@ -1,19 +1,4 @@
-section div.divP {
-    text-align: left;
-
-    h2 {
-        font-size: 3rem;
-        color: rgba(65, 90, 172, 1);
-    }
-
-    h3 {
-        font-size: 1.5rem;
-    }
-
-
-}
-
-
+/* Adaptação da seção pprincipal para ficar mais arrumado seu subtitulo*/
 section.principal {
     div {
         h2 {
@@ -24,14 +9,14 @@ section.principal {
 
 
 section.s1 {
-    padding: 4vw 10vw 4vw 10vw;
+    padding: 4vw 7vw 4vw 7vw;
 
     div {
 
         h2 {
             color: rgba(65, 90, 172, 1);
             font-size: 3rem;
-            padding-bottom: 1.5vw;
+            padding-bottom: 2vw;
             text-align: left;
         }
 
@@ -56,31 +41,47 @@ section.s2 {
     .divP {
         h2 {
             text-align: left;
+            padding: 2vw 0 0 7vw;
+            font-size: 3rem;
+            color: rgba(65, 90, 172, 1);
         }
 
-        h3 {
-            text-align: left;
-        }
     }
 
     .divS {
         ul {
-            padding: 8vw 8vw 8vw 8vw;
+            padding: 3vw 7vw 5vw 7vw;
             align-items: center;
             display: flex;
 
             li {
-                background-color: rgba(65, 90, 172, 1);
-                padding: 3vw 3vw 3vw 3vw;
+                width: 50%;
+                background-color: #90A5DF;
+                padding: 2.5vw;
                 border-radius: 20px;
+
+                p {
+                    padding: 0 0 2vw 0;
+                    color: #415AAC;
+                }
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+
             }
 
             li:last-child {
-                margin-left: 3vw;
+                margin-left: 1.5vw;
 
                 iframe {
                     display: none;
                 }
+            }
+
+            li:first-child {
+                margin-right: 1.5vw;
             }
         }
     }
@@ -91,14 +92,17 @@ section.s3 {
     .divP {
         h2 {
             text-align: center;
+            padding: 4vw 0 0 0;
+            font-size: 3rem;
+            color: rgba(0, 14, 57, 1);
+
         }
 
-        h3 {
-            text-align: center;
-        }
     }
 
     .divS {
+        padding: 0 3vw 0 3vw;
+
         .ulP {
             div {
                 display: flex;
@@ -111,7 +115,8 @@ section.s3 {
                 li {
                     div {
                         i {
-                            font-size: 1.5rem;
+                            font-size: 1.7rem;
+                            padding: 0 0 1vw 0;
                         }
                     }
                 }
@@ -121,16 +126,10 @@ section.s3 {
             color: white;
 
             div:last-child li {
-                width: 30%;
+                width: 27%;
 
             }
 
-            div:last-child li:first-child {
-                h4 {
-                    padding: 0 6vw 0 6vw;
-                }
-
-            }
 
             div li:first-child {
                 margin-left: 0;
@@ -140,22 +139,35 @@ section.s3 {
             div li:last-child {
                 margin-right: 0;
 
+
             }
 
-            div li {
-                background-color: rgba(0, 14, 57, 1);
-                margin-right: 1vw;
-                margin-left: 1vw;
-                margin-bottom: 2vw;
-                height: 35vh;
-                width: 90%;
-                border-radius: 25px;
-                padding: 2vw;
-
+            div:last-child li:last-child {
                 h4 {
-                    font-size: 1.1rem;
-                    text-align: center;
+                    padding: 1.5vw 0 1.5vw 0;
+                }
+            }
 
+
+            div {
+                li {
+                    background-color: rgba(0, 14, 57, 1);
+                    margin-right: 1vw;
+                    margin-left: 1vw;
+                    margin-bottom: 2vw;
+                    height: 35vh;
+                    width: 90%;
+                    border-radius: 25px;
+                    padding: 2vw 2vw 4.5vw 2vw;
+
+
+                    h4 {
+                        font-size: 1.2rem;
+                        text-align: center;
+                        font-weight: bold;
+                        padding: 0 0 1vw 0;
+
+                    }
                 }
             }
         }
@@ -167,20 +179,22 @@ section.s3 {
 section.s4 {
 
     background-color: rgba(0, 14, 57, 1);
-    padding: 4vw 2.5vw;
+
 
     .divP {
         h2 {
             text-align: end;
+            padding: 4vw 5vw 2vw 0;
+            font-size: 3rem;
             color: white;
-            padding: 1vw 2vw 3vw 1vw;
+
         }
 
 
     }
 
     .divS {
-
+        padding: 0 5vw 0 5vw;
 
 
         ul {
@@ -190,11 +204,12 @@ section.s4 {
                 width: 100%;
 
 
+
                 li {
                     background-color: white;
                     width: 90%;
                     border-radius: 30px;
-                    padding: 3vw 1vw 3vw 1vw;
+                    padding: 1vw 2vw 1vw 2vw;
                     margin: 1vw 1vw 1vw 1vw;
 
                     div {
@@ -208,8 +223,11 @@ section.s4 {
                     }
 
 
+
+
                     p {
-                        text-align: center;
+                        text-align: left;
+                        padding: 1vw 0 2vw;
                     }
 
                     h4 {
@@ -218,6 +236,12 @@ section.s4 {
                         text-align: center;
                     }
 
+                }
+
+                li:last-child {
+                    padding-top: 2vw;
+                    padding-bottom: 0.5vw;
+                    margin-right: 0;
                 }
 
                 li.li1 {
@@ -232,20 +256,25 @@ section.s4 {
             }
 
             div:last-child {
-
                 justify-content: center;
 
-                li {
-                    padding: 1.5vw 0 1vw 0;
-                    width: 50%;
-                    text-align: center;
 
-                    iframe {
-                        width: 70%;
-                    }
+                li {
+                    padding: 1vw 1vw 1vw 1vw;
+                    height: 50vh;
+          width: 45%;
+                    display: flex;
+                    justify-content: center;
+
+                   iframe{
+                    width: 400px;
+                    border-radius: 20px;
+                   }
                 }
 
             }
+
+
         }
 
 
