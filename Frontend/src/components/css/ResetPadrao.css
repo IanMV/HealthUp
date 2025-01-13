@@ -3,8 +3,51 @@
         CSS Reset
 
 */
-*{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;list-style:none}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,
-q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:''}
+* {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+   list-style: none
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+   display: block
+}
+
+body {
+   line-height: 1
+}
+
+ol,
+ul {
+   list-style: none
+}
+
+blockquote,
+q {
+   quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+   content: ''
+}
+
 /*
 
         HTML
@@ -14,10 +57,23 @@ html {
    color: rgba(15, 35, 96, 1);
    font-size: 1.5vw;
    font-family: Arial, Helvetica, sans-serif;
-   line-height: 4vw;
 }
 
 
+
+/*
+Parágrafos
+*/
+p {
+   line-height: 1.8vw;
+}
+
+/*
+Divisões
+*/
+hr {
+   margin: 1vw 3.8vw 1vw 3.8vw;
+}
 
 
 /*
@@ -26,15 +82,11 @@ html {
 
 */
 header {
-
-   width: 100%;
-   padding: 0 0 2vw 0;
+   padding: 0 5vw 2vw 0;
 
    .barranav {
       justify-content: space-between;
       display: flex;
-      text-align: left;
-      width: 95%;
 
       li {
          cursor: pointer;
@@ -42,62 +94,78 @@ header {
       }
 
       .expPerso {
-         padding: 2vw 2vw 0 60vw;
+         padding: 2vw 2vw 0 58vw;
+      }
+      .scrolled{
+         border: 10px solid #2980b9;
       }
 
       aside {
+
+
          flex-direction: column;
          position: fixed;
          background-color: white;
-         padding: 2vw 2vw 2vw 2vw;
+         padding: 2vw 2vw 1.8vw 2vw;
          border-radius: 0 0 20px 0;
+
+
 
 
          ul {
 
-
             li {
                padding: 1.5vw 1vw 0 0;
-               align-items: center;
                cursor: pointer;
+
                opacity: 0;
+
                a {
                   cursor: pointer;
                }
             }
 
-            
+
+
+
          }
       }
    }
 }
+
 
 /*
 
         Seção de Início
 
 */
+
 main {
    z-index: 1;
 }
+
 
 section.principal {
 
    /* background: linear-gradient(to top, rgba(0, 14, 57, 1), rgba(144, 165, 223, 1));*/
    background-color: rgba(144, 165, 223, 1);
    display: flex;
+
    justify-content: end;
    padding: 10vw 0 10vw 0;
+
+
    div {
       margin: 0 3vw 0 0;
       text-align: end;
+
+
       h1 {
          font-size: 4rem;
          text-align: end;
          color: white;
-         span{
-            color: rgba(0, 14, 57, 1);
-      }
+         color: rgba(0, 14, 57, 1);
+
       }
 
       h2 {
@@ -122,42 +190,48 @@ section.principal {
 /*--------------------------      Footer -------------------------------------------
 ------------------------------------------------------------------------------------*/
 
-footer{
-   background-color:  rgba(144, 165, 223, 1);
+footer {
+   background-color: rgba(144, 165, 223, 1);
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
    padding: 1vw 0 2vw 0;
-   .DivFooter1{
+
+   .DivFooter1 {
       display: flex;
       justify-content: space-between;
       align-items: center;
       width: 80vw;
       border-bottom: 1px rgb(0, 0, 0) solid;
       padding: 0vw 0 1vw 0;
-      p{
+
+      p {
          color: white;
          font-size: 1.1rem;
       }
-      ul{
+
+      ul {
          display: flex;
          margin: 0 2vw 0 0;
-         li a{
+
+         li a {
             color: white;
             margin: 0 0.5vw 0 0.5vw;
          }
       }
    }
-   .DivFooter2{
+
+   .DivFooter2 {
       margin: 1.5vw 0 0 0;
       display: flex;
       align-items: center;
       padding: 0 2vw 0 0;
-      h3{
+
+      h3 {
          color: white;
          font-size: 1.1rem;
-         margin: 0 1vw 0 ;
+         margin: 0 1vw 0;
       }
    }
 }
@@ -171,7 +245,7 @@ footer{
 .fechado {
    height: 1.4vw;
    width: 2vw;
-   transition: height 0.5s ease-in-out, width 0.5s ease-in-out; 
+   transition: height 0.5s ease-in-out, width 0.5s ease-in-out;
 }
 
 /* Barra lateral aberto */
@@ -186,16 +260,19 @@ footer{
 .items {
    opacity: 0;
    visibility: hidden;
-   transform: translateY(-30px); /* Itens começam um pouco mais acima */
-   transition: opacity 0.5s ease-in-out, margin 0.5s ease-in-out, transform 0.5s,  visibility 0.5s ease-in-out; 
+   transform: translateY(-30px);
+   /* Itens começam um pouco mais acima */
+   transition: opacity 0.5s ease-in-out, margin 0.5s ease-in-out, transform 0.5s, visibility 0.5s ease-in-out;
 }
 
 /* Quando os itens ficam visíveis */
 .items.show {
    opacity: 1;
    visibility: visible;
-   margin-top: 1.5vw;  /* Ajuste para empurrar os itens para baixo */
-   transform: translateY(0); /* Faz os itens voltarem para a posição original */
+   margin-top: 1.5vw;
+   /* Ajuste para empurrar os itens para baixo */
+   transform: translateY(0);
+   /* Faz os itens voltarem para a posição original */
    pointer-events: auto;
    transition: opacity 0.5s ease-in-out, margin 0.5s ease-in-out, transform 0.5s ease-in-out, visibility 0.5s ease-in-ou;
 
@@ -203,7 +280,8 @@ footer{
 
 /* Efeito do item com barra ao passar o mouse */
 .hoverAnimationBarra:hover::after {
-   width: 100%; /* A barra se expande ao passar o mouse */
+   width: 100%;
+   /* A barra se expande ao passar o mouse */
 }
 
 /* Barra em cada item */
@@ -212,23 +290,27 @@ footer{
    position: absolute;
    bottom: -0.3vw;
    left: 0;
-   width: 0;  /* Começa sem largura */
-   height: 2px;  /* Altura da barra */
-   background-color: black;  /* Cor da barra */
-   transition: width 0.3s ease-in-out;  /* Transição suave */
+   width: 0;
+   /* Começa sem largura */
+   height: 2px;
+   /* Altura da barra */
+   background-color: black;
+   /* Cor da barra */
+   transition: width 0.3s ease-in-out;
+   /* Transição suave */
 }
 
 /* Controle de animação de opacidade ao abrir e fechar */
 aside.aberto .items {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
+   opacity: 1;
+   visibility: visible;
+   pointer-events: auto;
 }
 
 aside.fechado .items {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+   opacity: 0;
+   visibility: hidden;
+   pointer-events: none;
 }
 
 .ripple {
@@ -246,6 +328,7 @@ aside.fechado .items {
    transition: 0.6s;
    justify-content: center;
 }
+
 .ripple.Navitem {
    position: relative;
    overflow: hidden;
@@ -263,6 +346,7 @@ aside.fechado .items {
    justify-content: center;
    align-items: center;
 }
+
 .ripple::after {
    content: "";
    position: absolute;
@@ -283,11 +367,12 @@ aside.fechado .items {
 }
 
 .ripple:hover {
-   background-color: #2980b9; /* Opcional: muda a cor de fundo no hover */
+   background-color: #2980b9;
+   /* Opcional: muda a cor de fundo no hover */
    transform: scale(105%);
    transform: scaleY(15px);
    transition: 0.7s;
-   
+
 }
 
 .ripple:not(:hover)::after {

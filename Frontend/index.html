@@ -81,7 +81,6 @@
         </section>
     </main>
 
-    </main>
     <footer>
         <div class="DivFooter1">
             <img src="src/images/Logo1.png" alt="">
@@ -101,33 +100,9 @@
                 </button>
         </div>
     </footer>
+    <script src="../Backend/barranav.js"></script>
 </body>
 
 </html>
-<script>
-    const items = document.querySelectorAll(".items")
-    const summary = document.querySelector("#summary")
-    const details = document.querySelector("#details")
-    const fechado = document.querySelector(".fechado")
-    const aberto = document.querySelector(".aberto")
-    const show = document.querySelector(".show")
-    let verificador = false
-    const abrirDetails = () => {
-        verificador = !verificador
-        if (verificador == false) {
-            details.classList.remove("aberto")
-            details.classList.add("fechado")
-            items.forEach((item) => {
-                item.classList.remove("show")
-            })
-        }
-        else {
-            details.classList.remove("fechado")
-            details.classList.add("aberto")
-            items.forEach((item) => {      
-                item.classList.add("show")
-            })
-        }
-    }
-    summary.addEventListener("click", abrirDetails)
-</script>
+
+
