@@ -6,3 +6,9 @@ section.principal {
         }
     }
 }
+
+
+  rect-hover:hover{
+    transform: scale(110%);
+    fill:aqua ;
+  }
