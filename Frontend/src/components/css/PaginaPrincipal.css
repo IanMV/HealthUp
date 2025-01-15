@@ -1,71 +1,87 @@
 section.s1 {
-    padding: 10vw 8vw 10vw 8vw;
-      div{
+    padding: 5vw 8vw 5vw 8vw;
 
-        h2{
-            color: rgba(65, 90, 172, 1);
+    div {
+
+        h2 {
+            color: var(--azul-claro);
             font-size: 3rem;
         }
-        p{
-            color: rgba(0, 14, 57, 1);
+
+        p {
+            color: var(--azul-escuro);
             font-size: 1.5vw;
             margin: 3vw 0 3vw 0;
         }
-        button{
-            background-color: rgba(65, 90, 172, 1) ;
+
+        button {
+            background-color: var(--azul-claro);
             border: none;
             border-radius: 10px;
-            color: white;
+            color: var(--branco);
             padding: 1vw 2vw 1vw 2vw;
             font-size: 1.5vw;
         }
-      }
+    }
+}
 
-}   
-
-section.s2{
+section.s2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5vw 0 10vw 0;
-    
-    div{
-        background-color: #415AAC;
+    padding: 3vw 0 8vw 0;
+
+    div {
+        background-color: var(--azul-claro);
         padding: 10vw;
         width: 60vw;
         height: 16vw;
         padding: 10vw 5vw 10vw 5vw;
-        border-radius: 15px;  
-        box-shadow: 10px 2px 20px rgb(26, 24, 24);
+        border-radius: 15px;
+        box-shadow: 10px 2px 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         transition: 0.5s ease-in-out;
-        color: white;
-        h1{
+        color: var(--branco);
+
+        h1 {
             font-size: 2rem;
         }
-        h2{
+
+        h2 {
             text-align: center;
         }
-        p{
+
+        p {
             margin: 4vw 0 4vw 0;
         }
-        img{
+
+        img {
             height: 12vw;
             width: 18vw;
-           filter: saturate(1.5);
+            filter: saturate(1.5);
+            transition: transform 0.5s;
         }
-        ul{
+
+        img:hover {
+            transform: scale(110%);
+            transition: transform 0.5s;
+            filter: saturate(1);
+        }
+
+        ul {
             display: flex;
-            li{
+
+            li {
                 margin: 0 1vw 0 1vw;
             }
         }
     }
-    div:hover{
+
+    div:hover {
         transform: scale(103%);
-        transition: 0.5s ease-in-out;
+        transition: 0.2s ease-in-out;
     }
 }

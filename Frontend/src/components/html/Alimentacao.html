@@ -2,301 +2,117 @@
 <html lang="pt-br">
 
 <head>
-    <!-- PÁGINA DE ALIMENTAÇÃO -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alimentação</title>
-    <link rel="stylesheet" href="resetPadrao.css">
-    <link rel="stylesheet" href="style3.css">
-    <script src="../../../../Backend/Alimentação.js" defer></script>
-    <script src="/Backend/redirecionar.js" defer></script>
-    <link rel="icon" type="imagem/png" href="src/Logo-Favicon.png"/>
+    <title>HealthUp - Alimentação</title>
+    <link rel="stylesheet" href="../css/Alimentação.css">
+    <link rel="stylesheet" href="../css/ResetPadrao.css">
+    <link rel="stylesheet" href="../css/modoclaro.css">
+    <script src="https://kit.fontawesome.com/7c6760d07c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <nav>
-            <div class="nav-left">
-                <img class="logo" src="src/Logo-Roxa.png" alt="Logo HealthUp" id="logo"
-                    onclick="redirecionar('index.html')">
-                <ul class="pags">
-                    <li onclick="redirecionar('../../../index.html')"><a>Início</a></li>
-                    <li onclick="Exercicios()"><a>Exercícios</a></li>
-                    <li onclick="redirecionar('Alimentacao.html')"><a>Alimentação</a></li>
-                    <li onclick="redirecionar('Equipe.html')"><a>Nossa Equipe</a></li>
+        <nav class="barranav">
+            <aside id="details" class="fechado">
+                <h2><span id="summary" class="fa-solid fa-bars"></span></h2>
+                <ul>
+                    <li class="items">
+                        <a href="../../../index.html">Início</a>
+                    </li>
+                    <li class=" items">
+                        <a href="Alimentacao.html">Alimentação</a>
+                    </li>
+                    <li class="items">
+                        <a href="Exercicios.html">Exercícios</a>
+                    </li>
+                    <li class="items">
+                        <a href="Equipe.html">Equipe</a>
+                    </li>
                 </ul>
+            </aside>
+            <div class="expPerso">
+                <a href="Perguntas.html">Experiencia Personalizada</a>
+            </div>
+            <div>
+                <a href="chat.html">Inteligencia Artificial</a>
             </div>
         </nav>
-
-        <div>
-            <img class="fundo" src="src/Fundo-Inicio.png" alt="">
-        </div>
     </header>
     <main>
-        <section class="secpag1conteudo">
+        <section class="principal">
             <div>
-                <img src="src/Celular.png" alt="NADA" data-anime="right">
+                <h1> <span>ALIMENTAÇÃO!</span></h1>
+                <h2>Para manter a forma, alimentação é essencial!</h2>
             </div>
-            <div class="cont2">
-                <h1 class="titulo" data-anime="right">Alimentação</h1>
-                <br>
-                <h2 class="dia" data-anime="right">MELHORE A SUA DIETA!</h2>
-                <p class="escrita" data-anime="right">
-                    A nossa alimentação é uma base da nossa vida e não dar a atenção que ela precisa pode complicar
-                    sua saúde mental e física.
-                    Vamos explicar alguns conceitos para você poder organizar sua alimentação por conta própria caso
-                    não consiga contratar um especialista.
-                    <b> Mas alertamos que a primeira opção deve ser procurar um especialista. Ele vai analisar seu
-                        caso e fazer o melhor plano pra você. Este site contém informações gerais para quem quer se
-                        informar sobre uma alimentação saudável.</b>
+        </section>
+        <section>
+            <div>
+                <h2>Intolerâncias <span>X</span> alergias</h2>
+                <p>
+                    É importante realizar testes para identificar possíveis alergias e intolerâncias alimentares, pois
+                    algumas pessoas podem ter reações graves a certos tipos de alimentos.
                 </p>
             </div>
-
+            <div>
+                <h3>Intolerâncias:</h3>
+                <p>
+                    A intolerância alimentar é uma reação do corpo causada pela falta de enzimas necessárias para a
+                    digestão, o que dificulta esse processo.
+                </p>
+            </div>
+            <ul class="intolerancias">
+                <li></li>
+            </ul>
+            <div>
+                <h3>Alergias:</h3>
+            </div>
+            <ul class="alergias">
+                <li></li>
+            </ul>
         </section>
-
-        <section class="new">
-            <h3 style="font-size: 2.5rem;">
-                Restrições <span style="font-size: 2.5rem; color: #ff963a;">alimentares:</span>
+        <section>
+            <div>
+                <h2>Prato Saudável</h2>
+                <p>Para uma alimentação equilibrada, é essencial consumir os nutrientes necessários para o bom funcionamento do organismo. A divisão do prato saudável serve como um recurso visual que orienta a composição de uma refeição balanceada, contendo tudo o que o corpo precisa.
+                </p>
+            </div class="prato">
+            <map name="">
+                <area shape="" coords="" href="" alt="">
+                <area shape="" coords="" href="" alt="">
+                <area shape="" coords="" href="" alt="">
+            </map>
+        </section>
+        <section>
+            <div>
+                <h2>Dicas para uma melhor alimentação</h2>
+                <p></p>
+            </div>
+            <ul>
+                <li></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="DivFooter1">
+            <img src="../../images/Logo1.png" alt="">
+            <p>© 2024 HealthUp</p>
+            <ul>
+                <li><a href="#"><span class="fa-brands fa-instagram"></span></a></li>
+                <li><a href="#"><span class="fa-brands fa-facebook-f"></span></a></li>
+                <li><a href="#"><span class="fa-brands fa-twitter"></class=></span></a></li>
+            </ul>
+        </div>
+        <div class="DivFooter2">
+            <h3>
+                Conheça mais sobre nossa equipe:
             </h3>
-            <h4 style="font-size: 2rem;">
-                Intolerâncias <span style="color:#ff963a; font-size: 2rem;">X</span> Alergias
-            </h4>
-            <p class="padding">
-                As alergias alimentares são caracterizadas por reações do sistema imunológico que podem ocorrer devido ao consumo apenas de traços do ingrediente ou alimento, dependendo da severidade do caso. Seus sintomas mais comuns envolvem coceira na boca e garganta, erupção cutânea vermelha e inchaço da face. Diferentemente da alergia, a intolerância alimentar é uma reação, na maioria das vezes, resultante do sistema digestivo. Ela possui sintomas menos severos, que podem demorar para aparecer. Geralmente é resultante da dificuldade da digestão de certos tipos de alimentos a partir da falta de uma enzima específica que o sistema digestivo requer para quebrar com sucesso certos alimentos. Antes de montar uma dieta, você precisa fazer testes sobre suas alergias e intolerâncias alimentares com um especialista na área.
-            </p>
-            <h4 style="font-size: 1.5rem;">Algumas intolerâncias:</h4>
-
-            <ul>
-                <li>
-                    <ul>
-                        <li>
-                            <h3 class="dif">Intolerância à Lactose:</h3>
-                        </li>
-                        <li>
-                            <p><strong>Descrição:</strong> Dificuldade em digerir a lactose, um açúcar
-                                encontrado no leite e produtos lácteos.</p>
-                        </li>
-                        <li>
-                            <p><strong>Sintomas:</strong> Inchaço, dor abdominal, diarreia, gases, náuseas.</p>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li>
-                            <h3 class="dif">Intolerância ao Glúten:</h3>
-                        </li>
-                        <li>
-                            <p><strong>Descrição:</strong> Reação adversa ao glúten, uma proteína encontrada em
-                                trigo, cevada e centeio.</p>
-                        </li>
-                        <li>
-                            <p><strong>Sintomas:</strong> Dor abdominal, diarreia, fadiga, perda de peso, dores
-                                de cabeça, distensão abdominal.</p>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li>
-                            <h3 class="dif">Intolerância à Frutose:</h3>
-                        </li>
-                        <li>
-                            <p><strong>Descrição:</strong> Dificuldade em absorver a frutose, um açúcar
-                                encontrado em frutas, mel e algumas verduras.</p>
-                        </li>
-                        <li>
-                            <p><strong>Sintomas:</strong> Inchaço, dor abdominal, diarreia, náuseas, fadiga.</p>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li>
-                            <h3 class="dif">Intolerância ao Sorbitol:</h3>
-                        </li>
-                        <li>
-                            <p><strong>Descrição:</strong> Dificuldade em digerir o sorbitol, um tipo de açúcar
-                                encontrado em frutas e adoçantes artificiais.</p>
-                        </li>
-                        <li>
-                            <p><strong>Sintomas:</strong> Gases, inchaço, dor abdominal, diarreia.</p>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li>
-                            <h3 class="dif">Intolerância à Histamina:</h3>
-                        </li>
-                        <li>
-                            <p><strong>Descrição:</strong> Reação a alimentos ricos em histamina, como queijos
-                                curados, vinho tinto e alguns peixes.</p>
-                        </li>
-                        <li>
-                            <p><strong>Sintomas:</strong> Dor de cabeça, urticária, problemas gastrointestinais,
-                                congestão nasal, fadiga.</p>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li>
-                            <h3 class="dif">Intolerância ao Glutamato Monossódico (MSG):</h3>
-                        </li>
-                        <li>
-                            <p><strong>Descrição:</strong> Reação a alimentos que contêm MSG, um realçador de
-                                sabor.</p>
-                        </li>
-                        <li>
-                            <p><strong>Sintomas:</strong> Dor de cabeça, náusea, sudorese, sensação de pressão
-                                facial.</p>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li>
-                            <h3 class="dif">Intolerância ao Café:</h3>
-                        </li>
-                        <li>
-                            <p><strong>Descrição:</strong> Sensibilidade a compostos do café, levando a sintomas
-                                como dor de cabeça e insônia.</p>
-                        </li>
-                        <li>
-                            <p><strong>Sintomas:</strong> Ansiedade, insônia, dores de cabeça, palpitações,
-                                irritabilidade.</p>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li>
-                            <h3 class="dif">Intolerância ao Álcool:</h3>
-                        </li>
-                        <li>
-                            <p><strong>Descrição:</strong> Reação adversa ao consumo de álcool, que pode causar
-                                sintomas variados.</p>
-                        </li>
-                        <li>
-                            <p><strong>Sintomas:</strong> Vermelhidão facial, dor de cabeça, náusea, vômito,
-                                tontura.</p>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li>
-                            <h3 class="dif">Intolerância à Cafeína:</h3>
-                        </li>
-                        <li>
-                            <p><strong>Descrição:</strong> Reação a bebidas e alimentos que contêm cafeína, como
-                                café, chá e chocolate.</p>
-                        </li>
-                        <li>
-                            <p><strong>Sintomas:</strong> Ansiedade, insônia, batimentos cardíacos acelerados,
-                                dor de cabeça, irritabilidade.</p>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li>
-                            <h3 class="dif">Intolerância ao Açúcar:</h3>
-                        </li>
-                        <li>
-                            <p><strong>Descrição:</strong> Dificuldade em metabolizar açúcares, como sacarose
-                                (açúcar de mesa) e outros.</p>
-                        </li>
-                        <li>
-                            <p><strong>Sintomas:</strong> Inchaço, dor abdominal, diarreia, fadiga.</p>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li>
-                            <h3 class="dif">Intolerância ao Milho:</h3>
-                        </li>
-                        <li>
-                            <p><strong>Descrição:</strong> Reação a produtos que contêm milho ou seus derivados.
-                            </p>
-                        </li>
-                        <li>
-                            <p><strong>Sintomas:</strong>Problemas gastrointestinais, erupções cutâneas, fadiga,
-                                dores de
-                                cabeça.</p>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li>
-                            <h3 class="dif">Intolerância a Aditivos Alimentares:</h3>
-                        </li>
-                        <li>
-                            <p><strong>Descrição:</strong> Reação a conservantes, corantes ou aromatizantes
-                                presentes em alimentos processados.</p>
-                        </li>
-                        <li>
-                            <p><strong>Sintomas:</strong> Reações alérgicas, dores de cabeça, problemas
-                                gastrointestinais, fadiga.</p>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-        <section class="conteudo">
-            </ul>
-            <ul class="bene">
-                <li>
-                    <h3 data-anime="right2">Hidratação</h3>
-                </li>
-                <li data-anime="right2" ;"><img src="src/hidratacao-para-o-corpo-humano-e-sua-importancia.jpg" alt="">
-                    <p>Hidratação deve ser sua primeira prioridade, especialmente se seus treinos durarem duas ou
-                        mais horas ou forem muito intensos. Regular a temperatura corporal é fundamental para poder
-                        manter a energia durante uma longa sessão e é algo que os atletas de resistência, em
-                        particular, devem ter em mente.</p>
-                </li>
-                <li>
-                    <h3 data-anime="left">Carboidratos</h3>
-                </li>
-                <li class="esp" data-anime="left">
-                    <p>Carboidratos são os próximos da lista durante uma sessão de treino longa ou cansativa. Nesses
-                        casos, é recomendável uma fonte imediata de energia, e não algo que seu corpo tenha que
-                        se esforçar demais para metabolizar.</p><img src="src/o-que-sao-carboidratos.jpg" alt="">
-                </li>
-                <li>
-                    <h3 data-anime="right2">Proteínas</h3>
-                </li>
-                <li data-anime="right2"><img src="src/Tipos-de-proteinas-origem-animal-600x338.jpg" alt="">
-                    <p>Proteína é uma consideração final a ser feita, e a ingestão deve ser baseada em suas metas.
-                        Para o atleta de resistência que faz longas sessões, a proteína durante o exercício pode
-                        ajudar a preservar a massa muscular. Para o atleta avançado que procura ganhar massa
-                        muscular, pode ser uma ótima maneira de aumentar a síntese proteica. </p>
-                </li>
-            </ul>
-        </section>
-        <section class="video">
-            <h2 class="video">Confira o vídeo abaixo com dicas para uma alimentação mais saudável:</h2>
-            <video controls width="500" height="500" poster="src/capavideo.png">
-                <source src="src/Dicas de Alimentação Saudável.mp4">
-            </video>
-        </section>
-        <footer>
-            <ul>
-                <li>
-                    <img src="src/Logo-Cinza.png" alt="logo" class="logo" onclick="redirecionar('index.html')">
-                </li>
-                <li>
-                    <p>&copy; 2024 HealthUp</p>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/"><img src="src/instagram.png" alt="instagram"></a>
-                    <a href="https://x.com/"><img src="src/twitter(x).png" alt="Twitter(x)"></a>
-                    <a href="https://pt-br.facebook.com/"><img src="src/facebook.png" alt="facebook"></a>
-                </li>
-            </ul>
-
-        </footer>
+            <button>
+                Nossa Equipe
+            </button>
+        </div>
+    </footer>
+    <script src="../../../../Backend/barranav.js"></script>
 </body>
+
+</html>

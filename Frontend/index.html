@@ -2,12 +2,12 @@
 <html lang="pt-br">
 
 <head>
-    <!-- PÁGINA INICIAL -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Healthup - Início</title>
     <link rel="stylesheet" href="src/components/css/ResetPadrao.css">
     <link rel="stylesheet" href="src/components/css/PaginaPrincipal.css">
+    <link rel="stylesheet" href="src/components/css/modoclaro.css">
     <script src="https://kit.fontawesome.com/f9eee77ae5.js" crossorigin="anonymous"></script>
 </head>
 
@@ -15,30 +15,30 @@
     <header>
         <nav class="barranav">
             <aside id="details" class="fechado">
-                <h2 id="summary"><span class="fa-solid fa-bars"></span></h2>
+                <h2><span id="summary" class="fa-solid fa-bars"></span></h2>
                 <ul>
                     <li class="items">
-                        <a href="index.html" class="hoverAnimationBarra">Início</a>
+                        <a href="index.html">Início</a>
                     </li>
                     <li class="items">
-                        <a href="../Frontend/src/components/html/Alimentacao.html" class="hoverAnimationBarra">Alimentação</a>
+                        <a href="src/components/html/Alimentacao.html">Alimentação</a>
                     </li>
                     <li class="items">
-                        <a href="../Frontend/src/components/html/Exercicios.html" class="hoverAnimationBarra">Exercícios</a>
+                        <a href="src/components/html/Exercicios.html">Exercícios</a>
                     </li>
                     <li class="items">
-                        <a href="../Frontend/src/components/html/Equipe.html" class="hoverAnimationBarra">Equipe</a>
+                        <a href="src/components/html/Equipe.html">Equipe</a>
                     </li>
                 </ul>
             </aside>
-
-            <li class="expPerso">
-                <a href="../Frontend/src/components/html/Perguntas.html" class="hoverAnimationBarra">Experiencia Personalizada</a>
-            </li>
-            <li>
-                <a href="../Frontend/src/components/html/chat.html" class="hoverAnimationBarra">Inteligencia Artificial</a>
-            </li>
-
+            <div class="expPerso">
+                <a href="src/components/html/Perguntas.html">Experiencia
+                    Personalizada</a>
+            </div>
+            <div>
+                <a href="src/components/html/chat.html">Inteligencia
+                    Artificial</a>
+            </div>
         </nav>
     </header>
     <main>
@@ -56,13 +56,12 @@
                     Seja sua melhor versão!
                 </h2>
                 <p>
-
                     Um site focado em promover saúde e bem-estar por meio de dicas práticas de alimentação saudável e
                     exercícios físicos. Ele incentiva a adoção de hábitos equilibrados para melhorar a qualidade de
                     vida, sem substituir a orientação de profissionais. Mas não substituimos o trabalho de um
                     profissional.
                 </p>
-                <button class="ripple">
+                <button>
                     Personalize sua experiência
                 </button>
             </div>
@@ -70,39 +69,37 @@
         <section class="s2">
             <div>
                 <h1>Treinos pensados para você</h1>
-                <p>O combo perfeito para você alcançar todo o seu potencial: além de rotinas de exercício variada de acordo com suas preferências, a HealthUp oferece
+                <p>O combo perfeito para você alcançar todo o seu potencial: além de rotinas de exercício variada de
+                    acordo com suas preferências, a HealthUp oferece
                     um guia completo para uma vida saudável e boa alimentação, venha conferir!</p>
                 <ul>
                     <li><img src="src/images/FazendoAbdominal.png" alt="#"></li>
                     <li><img src="src/images/cobra-pose-yoga-back-bend-1296x728-header.png" alt=""></li>
                     <li><img src="src/images/IMG_1394.png" alt=""></li>
-                </ul>            
+                </ul>
             </div>
         </section>
     </main>
-
     <footer>
         <div class="DivFooter1">
             <img src="src/images/Logo1.png" alt="">
-            <p>© 2024 HealthUp</p>
+            <p>&copy; 2024 HealthUp</p>
             <ul>
-                <li><a href=""><span class="fa-brands fa-instagram"></span></a></li>
-                <li><a href=""><span class="fa-brands fa-facebook-f"></span></a></li>
-                <li><a href=""><span class="fa-brands fa-twitter"></class=></span></a></li>
+                <li><a href="#"><span class="fa-brands fa-instagram"></span></a></li>
+                <li><a href="#"><span class="fa-brands fa-facebook-f"></span></a></li>
+                <li><a href="#"><span class="fa-brands fa-twitter"></class=></span></a></li>
             </ul>
         </div>
         <div class="DivFooter2">
-                <h3>
-                    Conheça Mais Sobre nossa Equipe
-                </h3>
-                <button class="ripple">
-                    Nossa Equipe
-                </button>
+            <h3>
+                Conheça mais sobre nossa equipe:
+            </h3>
+            <button>
+                Nossa Equipe
+            </button>
         </div>
     </footer>
     <script src="../Backend/barranav.js"></script>
 </body>
 
 </html>
-
-

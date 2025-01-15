@@ -1,0 +1,8 @@
+/* Adaptação da seção principal para ficar mais arrumado seu subtitulo*/
+section.principal {
+    div {
+        h2 {
+            margin-left: 50vw;
+        }
+    }
+}
