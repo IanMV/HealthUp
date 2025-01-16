@@ -1,8 +1,8 @@
 :root {
     --azul: rgba(15, 35, 96, 1);
-    --branco: rgba(240, 240, 240, 1);
-    --azul-clarinho: rgba(144, 165, 223, 1);
+    --branco: rgb(255, 255, 255);
+    --azul-clarinho: rgb(91, 134, 253);
     --azul-escuro: rgba(0, 14, 57, 1);
-    --azul-claro:  rgba(65, 90, 172, 1);
+    --azul-claro:  rgb(51, 74, 150);
     --preto: rgba(0, 0, 0, 1);
 }

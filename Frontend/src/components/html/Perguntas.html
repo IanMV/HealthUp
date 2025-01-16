@@ -5,93 +5,100 @@
   <!-- PÁGINA DE PERGUNTAS -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Plano Personalizado</title>
-  <link rel="stylesheet" href="resetPadrao.css">
-  <link rel="stylesheet" href="style2.css">
-  <script src="/Backend/redirecionar.js" defer></script>
-  <link rel="icon" type="imagem/png" href="src/Logo-Favicon.png"/>
+  <title>HealthUp - Plano Personalizado</title>
+  <script src="https://kit.fontawesome.com/7c6760d07c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/modoclaro.css">
+  <link rel="stylesheet" href="../css/Perguntas.css">
+  <link rel="stylesheet" href="../css/ResetPadrao.css">
+
 </head>
 
 <body>
-  <header>
-    <nav>
-      <div class="nav-left">
-          <img class="logo" src="src/Logo-Roxa.png" alt="Logo HealthUp" id="logo"
-              onclick="redirecionar('index.html')">
-          <ul class="pags">
-              <li onclick="redirecionar('../../../index.html')"><a>Início</a></li>
-              <li onclick="Exercicios()"><a>Exercícios</a></li>
-              <li onclick="redirecionar('Alimentacao.html')"><a>Alimentação</a></li>
-              <li onclick="redirecionar('Equipe.html')"><a>Nossa Equipe</a></li>
-          </ul>
-      </div>
-  </nav>
-
-    <div>
-      <img class="fundo" src="src/fundo pag 2.png" alt="Fundo levemente roxo com pessoas andando na rua">
-    </div>
-  </header>
   <main>
-    <div>
-      <img class="ernestro" src="src/ernestro2.png" alt="Mascote da HealthUp">
-    </div>
-    <div class="Container">
-      <p><img src="src/ernestro questions.png" alt=""></p>
-      <div class="perguntas">
-        <label for="nome" class="label">Nome</label>
-        <input type="text" placeholder="..." id="nome" name="nome">
-        <label for="peso" class="label" id="">Peso</label>
-        <input type="number" id="peso" name="peso" placeholder="Kg">
-        <p>
-          <label for="altura" class="label">Altura</label>
+    <section>
+      <div>
+        <h1>Formulario:</h1>
+        <h2>Complete o formulário para ajudarmos.</h2>
+      </div>
+      <ul>
+        <li>
+          <label for="nome">Nome:</label>
+          <input class="inputNome" type="text" id="nome" name="nome" placeholder="...">
+        </li>
+        <li>
+          <label for="segundoNome">Segundo Nome:</label>
+          <input class="inputSegundoNome" type="text" id="segundoNome" name="segundoNome" placeholder="...">
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <label for="peso">Peso:</label>
+          <input type="number" id="peso" name="peso" placeholder="Kg">
+        </li>
+        <li>
+          <label for="altura">Altura:</label>
           <input type="number" id="altura" name="altura" placeholder="Cm">
-        </p>
-        <p>
-          <label class="label" for="sexo">Sexo</label>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <label class="labelData" for="nascimento">Data de nascimento:</label>
+          <input class="inputData" type="date" id="nascimento" name="nascimento">
+        </li>
+        <li>
+          <label class="labelSexo" for="sexo">Sexo:</label>
           <select name="sexo" id="sexo">
             <option value="1">Masculino</option>
             <option value="2">Feminino</option>
           </select>
-        </p>
-        <p>
-        <p>
-          <legend>Tem alguma lesão?</legend>
-          <label><input type="radio" name="lesao" value="nao">Não</label>
-          <label><input type="radio" name="lesao" value="perna">Membros inferiores</label>
-          <label><input type="radio" name="lesao" value="bracos">Membros superiores </label>
-        </p>
-        <p>
-          <legend>Qual exercício gostaria de adicionar à sua rotina?</legend>
-          <label><input type="radio" name="exercicio" value="ciclismo">Ciclismo</label>
-          <label><input type="radio" name="exercicio" value="natação">Natação</label>
-          <label><input type="radio" name="exercicio" value="caminhada">Caminhada</label>
-          <label><input type="radio" name="exercicio" value="volei">Vôlei</label>
-          <label><input type="radio" name="exercicio" value="futebol">Futebol</label>
-          <label><input type="radio" name="exercicio" value="basquete">Basquete</label>
-        </p>
-      </div>
-      <p>
-        <button class="Button" id="button">Enviar</button>
-      </p>
-    </div>
-  </main>
-  <footer>
-    <ul>
-      <li>
-        <img src="src/Logo-Cinza.png" alt="logo" class="logo" onclick="redirecionar('index.html')">
-      </li>
-      <li>
-        <p>&copy; 2024 HealthUp</p>
-      </li>
-      <li>
-        <a href="https://www.instagram.com/"><img src="src/instagram.png" alt="instagram"></a>
-        <a href="https://x.com/"><img src="src/twitter(x).png" alt="Twitter(x)"></a>
-        <a href="https://pt-br.facebook.com/"><img src="src/facebook.png" alt="facebook"></a>
-      </li>
-    </ul>
+        </li>
+      </ul>
 
-  </footer>
+      <fieldset>
+        <legend>Tem alguma lesão?</legend>
+        <div>
+          <input type="radio" id="nao" name="lesao" value="nao">
+          <label for="nao">Não</label>
+          <input type="radio" id="inferiores" name="lesao" value="perna">
+          <label for="inferiores">Membros inferiores</label>
+          <input type="radio" id="superiores" name="lesao" value="bracos">
+          <label for="superiores">Membros superiores </label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Qual exercício gostaria de adicionar à sua rotina?</legend>
+        <div>
+          <div>
+            <input type="radio" id="ciclismo" name="exercicio" value="ciclismo">
+            <label for="ciclismo">Ciclismo</label>
+            <input type="radio" id="natacao" name="exercicio" value="natação">
+            <label for="natacao">Natação</label>
+            <input type="radio" id="caminhada" name="exercicio" value="caminhada">
+            <label for="caminhada">Caminhada</label>
+          </div>
+          <div>
+            <input type="radio" id="volei" name="exercicio" value="volei">
+            <label for="volei">Vôlei</label>
+            <input type="radio" id="fut" name="exercicio" value="futebol">
+            <label for="fut">Futebol</label>
+            <input type="radio" id="basquete" name="exercicio" value="basquete">
+            <label for="basquete">Basquete</label>
+          </div>
+        </div>
+      </fieldset>
+      <div class="botoes">
+        <button class="botaoCancelar" onclick="aviso()"><a href="../../../index.html">Cancelar</a></button>
+        <button class="botaoEnviar" id="button"> Enviar</button>
+      </div>
+
+    </section>
+  </main>
+  <script src="../../../../Backend/barranav.js"></script>
+  <script>
+    function aviso() {
+      alert('Deseja mesmo sair?');
+    }
+  </script>
 </body>
 
 </html>
-<script src="script2.js"></script>
