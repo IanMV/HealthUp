@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html id="html" lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -7,12 +7,13 @@
     <title>HealthUp - Exercícios</title>
     <link rel="stylesheet" href="../css/ResetPadrao.css">
     <link rel="stylesheet" href="../css/Exercicios.css">
-    <link rel="stylesheet" href="../css/modoclaro.css">
+    <link rel="stylesheet" href="../css/Modoclaro.css">
     <script src="https://kit.fontawesome.com/7c6760d07c.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <header>
+<body id="body">
+    <div id="confirmacao"></div>
+    <header id="semCliques">
         <nav class="barranav">
             <aside id="details" class="fechado">
                 <h2><span id="summary" class="fa-solid fa-bars"></span></h2>
@@ -21,7 +22,7 @@
                         <a href="../../../index.html">Início</a>
                     </li>
                     <li class=" items">
-                            <a href="Alimentacao.html">Alimentação</a>
+                        <a href="Alimentacao.html">Alimentação</a>
                     </li>
                     <li class="items">
                         <a href="Exercicios.html">Exercícios</a>
@@ -31,15 +32,15 @@
                     </li>
                 </ul>
             </aside>
-            <div class="expPerso">
-                <a href="Perguntas.html">Experiencia Personalizada</a>
+            <div onclick="formRespondido()" class="expPerso">
+                Experiencia Personalizada
             </div>
             <div>
-                <a href="chat.html" >Inteligencia Artificial</a>
+                <a href="Chat.html">Inteligência Artificial</a>
             </div>
         </nav>
     </header>
-    <main>
+    <main id="semCliques2">
         <section class="principal">
             <div>
                 <h1> <span>EXERCÍCIOS!</span></h1>
@@ -270,8 +271,9 @@
                 </div>
             </div>
         </section>
+        <section id="paragrafo"></section>
     </main>
-    <footer>
+    <footer id="semCliques3">
         <div class="DivFooter1">
             <img src="../../images/Logo1.png" alt="">
             <p>© 2024 HealthUp</p>
@@ -290,7 +292,8 @@
             </button>
         </div>
     </footer>
-    <script src="../../../../Backend/barranav.js"></script>
+    <script src="../../../../Backend/Exercicios.js"></script>
+    <script src="../../../../Backend/BarraDeNavegacao.js"></script>
 </body>
 
 </html>

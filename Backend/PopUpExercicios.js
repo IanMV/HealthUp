@@ -1,4 +1,4 @@
-
+/*
 function Exercicios() {
     if (!localStorage.getItem("esporteSelecionado")) {
        
@@ -45,10 +45,6 @@ function Exercicios() {
         window.location.href = "../html/Exercicios.html";
     }
 }
-
-
-function redirecionar(url){
-    window.location.href = url;
-}
+*/
 
 

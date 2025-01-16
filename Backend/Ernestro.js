@@ -25,7 +25,7 @@ function Admensagem(quem, texto) {
     messagesDiv.scrollTop = messagesDiv.scrollHeight;
 }
 
-Admensagem("ia","Oi! Eu sou o Ernestro, seu mascote virtual. Estou aqui para te ajudar com dicas de exercícios personalizados. 😊");
+Admensagem("ia","Oi! Eu sou o Ernestro, seu mascote virtual. <br> Estou aqui para te ajudar com dicas de exercícios personalizados. 😊🐶");
 Admensagem("ia","Para começar, qual é o seu exercício favorito ou o tipo de atividade física que você mais gosta?");
 
 async function SendMensagem() {

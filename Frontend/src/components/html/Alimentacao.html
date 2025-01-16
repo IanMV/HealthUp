@@ -11,8 +11,9 @@
     <script src="https://kit.fontawesome.com/7c6760d07c.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body id="body">
     <header>
+        <div id="confirmacao"></div>
         <nav class="barranav">
             <aside id="details" class="fechado">
                 <h2><span id="summary" class="fa-solid fa-bars"></span></h2>
@@ -31,11 +32,11 @@
                     </li>
                 </ul>
             </aside>
-            <div class="expPerso">
-                <a href="Perguntas.html">Experiencia Personalizada</a>
+            <div onclick="formRespondido()" class="expPerso">
+                Experiencia Personalizada
             </div>
             <div>
-                <a href="chat.html">Inteligencia Artificial</a>
+                <a href="Chat.html">Inteligência Artificial</a>
             </div>
         </nav>
     </header>
@@ -115,7 +116,7 @@
             </button>
         </div>
     </footer>
-    <script src="../../../../Backend/barranav.js"></script>
+    <script src="../../../../Backend/BarraDeNavegacao.js"></script>
 </body>
 
 </html>

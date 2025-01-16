@@ -18,9 +18,115 @@ main {
     place-items: center;
 }
 
+.alertaOk {
 
+    user-select: none;
+    background-color: var(--branco);
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    pointer-events: all;
+    padding: 1.3vw;
+    color: var(--preto);
+    border-radius: 10px;
+    -webkit-box-shadow: 36px 41px 30px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 36px 41px 30px 0px rgba(0, 0, 0, 1);
+    box-shadow: 36px 41px 30px 0px rgba(0, 0, 0, 1);
+    border: inset 0.5vw var(--preto);
+    font-size: 1.3vw;
+    filter: none;
+    z-index: 2;
+
+    .botaoOk {
+        background-color: green;
+        padding: 1vw 3vw 1vw 3vw;
+        border-radius: 5px;
+        text-decoration: none;
+        color: white;
+        transition: 0.3s;
+        margin-top: 1vw;
+        padding: 1vw 2vw 1vw 2vw;
+        border-radius: 5px;
+        background-color: green;
+        color: white;
+        border: 2px solid black;
+        margin-left: 9vw;
+    }
+
+    .botaoOk:hover {
+        transform: scale(107%);
+    }
+}
+
+.divAlerta {
+    user-select: none;
+    background-color: var(--branco);
+    position: fixed;
+    top: 40%;
+    left: 30.5%;
+    pointer-events: all;
+    padding: 1.3vw;
+    color: var(--preto);
+    border-radius: 10px;
+    -webkit-box-shadow: 36px 41px 30px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 36px 41px 30px 0px rgba(0, 0, 0, 1);
+    box-shadow: 36px 41px 30px 0px rgba(0, 0, 0, 1);
+    border: inset 0.5vw var(--preto);
+    font-size: 1.3vw;
+    filter: none;
+    z-index: 2;
+
+    p {
+        font-weight: bold;
+    }
+
+    span {
+        color: red;
+    }
+
+    .voltar {
+        background-color: green;
+        padding: 1vw 3vw 1vw 3vw;
+        border-radius: 5px;
+        text-decoration: none;
+        color: white;
+        transition: 0.3s;
+        margin-top: 1vw;
+        padding: 1vw 2vw 1vw 2vw;
+        border-radius: 5px;
+        background-color: green;
+        color: white;
+        border: 2px solid black;
+        margin-left: 18vw;
+    }
+
+    .voltar:hover {
+        transform: scale(107%);
+    }
+
+    .sair {
+        transition: 0.3s;
+        margin-left: 2vw;
+
+        .linkSair {
+            color: white;
+            text-decoration: none;
+            cursor: default;
+            padding: 1vw 2.5vw 1vw 2.5vw;
+            background-color: red;
+            border-radius: 5px;
+            transition: 0.3s;
+            border: 2px solid black;
+        }
+    }
+
+    .sair:hover {
+        transform: scale(107%);
+    }
+}
 
 section {
+    user-select: none;
     -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
     -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
@@ -29,6 +135,7 @@ section {
     border-radius: 10px;
     width: 75%;
     padding: 2vw;
+    z-index: 1;
 
 
 
@@ -156,12 +263,8 @@ section {
             background-color: red;
             border-radius: 5px;
             transition: 0.3s;
-
-            a {
-                color: white;
-                text-decoration: none;
-                cursor: default;
-            }
+            border: 2px solid black;
+            color: white;
         }
 
         .botaoEnviar {
@@ -170,6 +273,7 @@ section {
             border-radius: 5px;
             text-decoration: none;
             color: white;
+            border: 2px solid black;
             transition: 0.3s;
         }
 

@@ -2,22 +2,21 @@
 <html lang="pt-br">
 
 <head>
-  <!-- PÁGINA DE PERGUNTAS -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HealthUp - Plano Personalizado</title>
   <script src="https://kit.fontawesome.com/7c6760d07c.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="../css/modoclaro.css">
+  <link rel="stylesheet" href="../css/Modoclaro.css">
   <link rel="stylesheet" href="../css/Perguntas.css">
   <link rel="stylesheet" href="../css/ResetPadrao.css">
-
 </head>
 
 <body>
   <main>
-    <section>
+    <div id="alerta"></div>
+    <section id="semCliques">
       <div>
-        <h1>Formulario:</h1>
+        <h1>Formulário:</h1>
         <h2>Complete o formulário para ajudarmos.</h2>
       </div>
       <ul>
@@ -87,18 +86,12 @@
         </div>
       </fieldset>
       <div class="botoes">
-        <button class="botaoCancelar" onclick="aviso()"><a href="../../../index.html">Cancelar</a></button>
-        <button class="botaoEnviar" id="button"> Enviar</button>
+        <button class="botaoCancelar" onclick="confirmarSaida()">Cancelar</button>
+        <button class="botaoEnviar" id="button">Enviar</button>
       </div>
-
     </section>
   </main>
-  <script src="../../../../Backend/barranav.js"></script>
-  <script>
-    function aviso() {
-      alert('Deseja mesmo sair?');
-    }
-  </script>
+  <script src="../../../../Backend/Perguntas.js"></script>
 </body>
 
 </html>
