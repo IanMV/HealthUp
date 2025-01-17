@@ -1,8 +1,23 @@
 :root {
-    --azul: rgba(15, 35, 96, 1);
-    --branco: rgb(255, 255, 255);
-    --azul-clarinho: rgb(91, 134, 253);
-    --azul-escuro: rgba(0, 14, 57, 1);
-    --azul-claro:  rgb(51, 74, 150);
-    --preto: rgba(0, 0, 0, 1);
+    --header: rgba(255, 255, 255, 1);
+    --linkHeader: rgba(0, 0, 0, 1);
+    --linkContornoHoverHeader: rgba(0, 0, 0, 1);
+    --headerChat:rgba(0, 0, 0, 1);
+    --linkHeaderChat:rgba(255, 255, 255, 1);
+    --linkContornoHoverHeaderChat:rgba(255, 255, 255, 1);
+    --backgroundAlerta:rgba(255, 255, 255, 1);
+    --corBotaoVerde:rgba(6, 172, 0);
+    --corBotaoVermelho:rgba(238, 20, 20);
+    --h1:rgba(255, 255, 255, 1);
+    --h2:rgba(255, 255, 255, 1);
+    --spanH1:rgba(140, 0, 255, 1);
+    --footer:rgba(0, 0, 0, 1);
+    --textoFooter:rgba(255, 255, 255, 1);
+    --botaoForm:rgba(140, 0, 255, 1);
+    --textoBotaoForm:rgba(255, 255, 255, 1);
+    --textoPadrao:rgba(0, 0, 0, 1);
+    --textoBranco:rgba(255, 255, 255, 1);
+    --backgroundPrincipal:rgba(0, 0, 0, 1);
+    --destaques:rgb(219, 39, 243);
+    
 }

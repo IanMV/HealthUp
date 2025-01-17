@@ -9,8 +9,6 @@ document.addEventListener('scroll', function () {
   }
 });
 
-
-
 const items = document.querySelectorAll(".items");
 const summary = document.querySelector("#summary");
 const details = document.querySelector("#details");
@@ -39,7 +37,6 @@ summary.addEventListener("click", function () {
 
 const toggleButton = document.getElementById('summary');
 
-
 toggleButton.addEventListener('click', function () {
   if (details.classList.contains('aberto')) {
     details.classList.remove('aberto');
@@ -63,8 +60,7 @@ document.addEventListener('click', function () {
     details.classList.add('fechado');
   }
 });
-let semCliques3 = document.getElementById('semCliques3');
-let semCliques2 = document.getElementById('semCliques2');
+
 let semCliques = document.getElementById('semCliques');
 let confirmacao = document.getElementById('confirmacao');
 let resposta = localStorage.getItem('formRespondido');
@@ -73,13 +69,10 @@ let principal = document.getElementById('principal');
 
 console.log(principal);
 
-
 function formRespondido() {
   if (resposta) {
-    confirmacao.innerHTML = '<div class="confirmacao"><p>Você ja preencheu o formulário.<br> Deseja preencher novamente?</p><button onclick="confirmacaoRespondido()" class="">Voltar</button><button onclick="irProForm()">Ir</button></div>';
+    confirmacao.innerHTML = '<div class="confirmacao">Você ja preencheu o formulário.<p> Deseja preencher novamente?</p><button onclick="confirmacaoRespondido()" class="desistir">Voltar</button><button onclick="irProForm()" class="ir">Ir</button></div>';
     semCliques.classList.add('semCliques');
-    semCliques2.classList.add('semCliques');
-    semCliques3.classList.add('semCliques');
     semScroll.classList.add('noScroll');
   } else {
     if (principal) {
@@ -93,8 +86,6 @@ function formRespondido() {
 function confirmacaoRespondido() {
   confirmacao.innerHTML = '';
   semCliques.classList.remove('semCliques');
-  semCliques2.classList.remove('semCliques');
-  semCliques3.classList.remove('semCliques');
   body.classList.remove('noScroll');
 };
 

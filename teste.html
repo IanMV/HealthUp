@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG com Coordenadas Dinâmicas</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: lightgray;
+    }
+
+    svg {
+      width: 100vw;
+      height: 100vh;
+      --x1: 10vw;
+      --y1: 10vh;
+      --x2: 90vw;
+      --y2: 10vh;
+      --x3: 50vw;
+      --y3: 90vh;
+    }
+
+    polygon {
+      fill: orange;
+      transition: all 0.3s ease;
+    }
+
+    polygon:hover {
+      fill: blue;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <svg id="svgCanvas">
+    <polygon id="dynamicPolygon" 
+      points="var(--x1),var(--y1) var(--x2),var(--y2) var(--x3),var(--y3)" />
+  </svg>
+
+  <script>
+    const polygon = document.getElementById('dynamicPolygon');
+
+    // Função para atualizar o polígono com coordenadas dinâmicas
+    function updatePolygon() {
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+
+      // Define novas coordenadas em pixels
+      const newPoints = `
+        ${0.1 * width},${0.1 * height}
+        ${0.9 * width},${0.1 * height}
+        ${0.5 * width},${0.9 * height}
+      `;
+
+      polygon.setAttribute('points', newPoints);
+    }
+
+    // Atualiza as coordenadas ao redimensionar a tela
+    window.addEventListener('resize', updatePolygon);
+
+    // Chamada inicial para definir as coordenadas
+    updatePolygon();
+  </script>
+</body>
+</html>

@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="src/components/css/PaginaPrincipal.css">
     <link rel="stylesheet" href="src/components/css/Modoclaro.css">
     <script src="https://kit.fontawesome.com/f9eee77ae5.js" crossorigin="anonymous"></script>
+    <script src="../Backend/anime-master/lib/anime.min.js"></script>
+    <script type="module" src="../Backend/Animações.js"></script>
 </head>
 
 <body id="body">
@@ -41,8 +43,8 @@
             </div>
         </nav>
     </header>
-    <main id="semCliques2">
-        <section class="principal" >
+    <main >
+        <section class="principal">
             <div>
                 <h1>Bem-Vindo à <span>HealthUp!</span></h1>
 
@@ -61,7 +63,7 @@
                     vida, sem substituir a orientação de profissionais. Mas não substituimos o trabalho de um
                     profissional.
                 </p>
-                <button>
+                <button onclick="formRespondido()">
                     Personalize sua experiência
                 </button>
             </div>
@@ -80,23 +82,15 @@
             </div>
         </section>
     </main>
-    <footer id="semCliques3">
+    <footer >
         <div class="DivFooter1">
             <img src="src/images/Logo1.png" alt="">
             <p>&copy; 2024 HealthUp</p>
             <ul>
                 <li><a href="#"><span class="fa-brands fa-instagram"></span></a></li>
                 <li><a href="#"><span class="fa-brands fa-facebook-f"></span></a></li>
-                <li><a href="#"><span class="fa-brands fa-twitter"></class=></span></a></li>
+                <li><a href="#"><span class="fa-brands fa-twitter"></span></a></li>
             </ul>
-        </div>
-        <div class="DivFooter2">
-            <h3>
-                Conheça mais sobre nossa equipe:
-            </h3>
-            <button>
-                Nossa Equipe
-            </button>
         </div>
     </footer>
     <script src="../Backend/BarraDeNavegacao.js"></script>

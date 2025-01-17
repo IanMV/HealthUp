@@ -1,10 +1,8 @@
-body,html {
-    font-family: Arial, sans-serif;
-    font-size: 1.2vw;
+body,
+html {
     margin: 0 4vw 0 0;
     padding: 0;
     display: flex;
-    line-height: 1.9vw;
     overflow: hidden;
     place-items: center;
     width: 100%;
@@ -18,23 +16,21 @@ body,html {
     width: 50%;
     margin: 2vw auto;
     padding: 2vw;
-    background: #fff;
     border-radius: 10px;
     box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.4);
 }
 
 .messages {
-    height: 29.5vw;
-    overflow-y: auto;
+    height: 32vw;
+overflow-y: auto;
     margin-bottom: 20px;
-    border: 1px solid #ddd;
+    border: 2px solid rgba(0, 0, 0, 0.2);
     padding: 0.9vw;
     border-radius: 10px;
+    background-color: var(--destaques);    color: var(--textoBotaoForm);
 }
 
-.message {
-    margin-bottom: 1vw;
-}
+
 
 .input-container {
     display: flex;
@@ -42,39 +38,48 @@ body,html {
 }
 
 .input-container input {
+    margin-right: 3vw;
     flex: 1;
     padding: 0.9vw;
-    border: 1px solid #ddd;
+    border: 2px solid rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    padding-right: 3vw;
 }
 
 .input-container button {
-    padding: 0.9vw;
-    background-color: var(--azul-clarinho);
-    color: #fff;
+    padding: 1vw 2vw 1vw 2vw;
+    
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    transition: 0.5s;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.enviar{
+background-color: var(--destaques);
+color: var(--textoBotaoForm);
+transition: 0.5s;
 }
 
 .mensagemIa {
-    color: var(--azul-clarinho);
     padding: 0.7vw;
+    background-color: var(--destaques);    color: var(--textoBotaoForm);
+
 
 }
 
 .mensagemUser {
-    padding: 0.7vw;
-    text-align: end;
+    hyphens: auto;
+    text-align: left;
+    display: flex;
+    justify-content: end;
+    margin-left: 4vw;
+    background-color: var(--destaques);    color: var(--);
 }
 
 aside {
-    font-size: 1.5vw;
-
-    background-color: var(--azul-escuro);
-    color: var(--branco);
+    color: var(--linkHeaderChat);
     top: 0;
     left: 0;
-
-
 }

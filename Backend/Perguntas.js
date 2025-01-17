@@ -52,7 +52,7 @@ let alerta = document.getElementById('alerta');
 let semCliques = document.getElementById('semCliques')
 
 function confirmarSaida() {
-    alerta.innerHTML = '<div class="divAlerta"><p>Tem certeza que deseja sair?<span> O formulário será resetado.</span></p><button class="voltar" onclick="voltar()">Voltar</button><button class="sair"><a class="linkSair" href="../../../index.html">Sair</a></button></div>';
+    alerta.innerHTML = '<div class="divAlerta"><p>Tem certeza que deseja sair?<span> O formulário será resetado.</span></p><button class="voltar" onclick="voltar()">Voltar</button><button onclick="paginaPrincipal()" class="sair"><a  href="../../../index.html">Sair</a></button></div>';
     semCliques.classList.add('semCliques');
 }
 
@@ -65,3 +65,7 @@ function redirecionar() {
     url = 'Exercicios.html';
     window.location.href = url;
 };
+
+function paginaPrincipal() {
+    window.location.href = '../../../index.html'
+}
