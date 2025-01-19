@@ -1,7 +1,22 @@
+const chat = document.getElementById('chat');
+
+if (!chat) {
+  const nomeUsuario = localStorage.getItem('nomeUsuario');
+  const segundoNomeUsuario = localStorage.getItem('segundoNomeUsuario');
+  const formRespondidoSim = localStorage.getItem('formRespondido');
+  let boasVindas = document.getElementById('bemVindo');
+  if (formRespondidoSim) {
+    boasVindas.innerHTML = '<p class="mensagemBoasVindas">Olá ' + nomeUsuario + " " + segundoNomeUsuario + '!</p>'
+  } else {
+    boasVindas.innerHTML = '<p class="mensagemBoasVindas">Olá!</p>'
+  };
+};
+
+
+
+
 document.addEventListener('scroll', function () {
   const nav = document.getElementById('details');
-
-  /*O número abaixo é a posição em pixels*/
   if (window.scrollY > 70) {
     nav.classList.add('scrolled');
   } else {
@@ -61,19 +76,33 @@ document.addEventListener('click', function () {
   }
 });
 
+let semCliquesSection2 = document.getElementById('semCliquesSection2');
+let semCliquesSection1 = document.getElementById('semCliquesSection1');
+let semCliquesPrincipal = document.getElementById('semCliquesPrincipal');
 let semCliques = document.getElementById('semCliques');
 let confirmacao = document.getElementById('confirmacao');
 let resposta = localStorage.getItem('formRespondido');
 let semScroll = document.getElementById('body');
 let principal = document.getElementById('principal');
 
-console.log(principal);
-
 function formRespondido() {
   if (resposta) {
     confirmacao.innerHTML = '<div class="confirmacao">Você ja preencheu o formulário.<p> Deseja preencher novamente?</p><button onclick="confirmacaoRespondido()" class="desistir">Voltar</button><button onclick="irProForm()" class="ir">Ir</button></div>';
-    semCliques.classList.add('semCliques');
-    semScroll.classList.add('noScroll');
+    if (semCliques) {
+      semCliques.classList.add('semCliques');
+    };
+    if (semCliquesPrincipal) {
+      semCliquesPrincipal.classList.add('semCliques');
+    };
+    if (semCliquesSection1) {
+      semCliquesSection1.classList.add('semCliques');
+    };
+    if (semCliquesSection2) {
+      semCliquesSection2.classList.add('semCliques');
+    };
+    if (semScroll) {
+      semScroll.classList.add('noScroll');
+    };
   } else {
     if (principal) {
       window.location.href = 'src/components/html/Perguntas.html';
@@ -85,8 +114,21 @@ function formRespondido() {
 
 function confirmacaoRespondido() {
   confirmacao.innerHTML = '';
-  semCliques.classList.remove('semCliques');
-  body.classList.remove('noScroll');
+  if (semCliques) {
+    semCliques.classList.remove('semCliques');
+  };
+  if (semCliquesPrincipal) {
+    semCliquesPrincipal.classList.remove('semCliques');
+  }
+  if (semCliquesSection1) {
+    semCliquesSection1.classList.remove('semCliques');
+  }
+  if (semCliquesSection2) {
+    semCliquesSection2.classList.remove('semCliques');
+  };
+  if (semScroll) {
+    semScroll.classList.remove('noScroll');
+  };
 };
 
 function irProForm() {

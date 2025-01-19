@@ -9,25 +9,26 @@
   <link rel="stylesheet" href="../css/Modoclaro.css">
   <script src="https://kit.fontawesome.com/7c6760d07c.js" crossorigin="anonymous"></script>
   <title>HealthUp - Chat</title>
+  <link rel="icon" href="../../images/Logo1.png" type="image/png">
 </head>
 
-<body>
+<body id="chat">
   <header>
     <nav class="barranav">
       <aside style="background-color: var(--headerChat);" id="details" class="fechado">
         <h2><span id="summary" class="fa-solid fa-bars"></span></h2>
         <ul>
-          <li class="items">
-            <a  style="color: var(--linkHeaderChat);" href="../../../index.html">Início</a>
+          <li name="voltandoPrincipal" class="items">
+            <a style="color: var(--linkHeaderChat);" href="../../../index.html">Início</a>
           </li>
           <li class="items">
-            <a  style="color: var(--linkHeaderChat);" href="Alimentacao.html">Alimentação</a>
+            <a style="color: var(--linkHeaderChat);" href="Alimentacao.html">Alimentação</a>
           </li>
           <li class="items">
-            <a  style="color: var(--linkHeaderChat);" href="Exercicios.html">Exercícios</a>
+            <a style="color: var(--linkHeaderChat);" href="Exercicios.html">Exercícios</a>
           </li>
           <li class="items">
-            <a  style="color: var(--linkHeaderChat);" href="Equipe.html">Equipe</a>
+            <a style="color: var(--linkHeaderChat);" href="Equipe.html">Equipe</a>
           </li>
         </ul>
       </aside>
@@ -37,7 +38,7 @@
     <div class="chat-container">
       <div class="messages" id="messages"></div>
       <div class="input-container">
-        <input type="text" maxlength="500" id="userInput" placeholder="Digite sua mensagem aqui...">
+        <input type="text" maxlength="500" autocomplete="off" id="userInput" placeholder="Digite sua mensagem aqui...">
         <button id="sendButton">Enviar</button>
       </div>
     </div>

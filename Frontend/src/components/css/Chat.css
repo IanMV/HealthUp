@@ -22,12 +22,12 @@ html {
 
 .messages {
     height: 32vw;
-overflow-y: auto;
+    overflow-y: auto;
     margin-bottom: 20px;
     border: 2px solid rgba(0, 0, 0, 0.2);
     padding: 0.9vw;
     border-radius: 10px;
-    background-color: var(--destaques);    color: var(--textoBotaoForm);
+    background-color: var(--backgroundAlerta);
 }
 
 
@@ -48,7 +48,7 @@ overflow-y: auto;
 
 .input-container button {
     padding: 1vw 2vw 1vw 2vw;
-    
+
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -56,15 +56,24 @@ overflow-y: auto;
     border: 2px solid rgba(0, 0, 0, 0.2);
 }
 
-.enviar{
-background-color: var(--destaques);
-color: var(--textoBotaoForm);
-transition: 0.5s;
+.enviar {
+    background-color: var(--spanH1);
+    color: var(--textoBotaoForm);
+    transition: 0.5s;
+}
+
+.semEnviar {
+    pointer-events:none ;
+}
+
+.clicar {
+    pointer-events: all;
 }
 
 .mensagemIa {
     padding: 0.7vw;
-    background-color: var(--destaques);    color: var(--textoBotaoForm);
+    background-color: var(--backgroundAlerta);
+    color: var(--ernestro);
 
 
 }
@@ -75,7 +84,8 @@ transition: 0.5s;
     display: flex;
     justify-content: end;
     margin-left: 4vw;
-    background-color: var(--destaques);    color: var(--);
+    background-color: var(--backgroundAlerta);
+    color: var(--spanH1);
 }
 
 aside {

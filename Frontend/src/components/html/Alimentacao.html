@@ -9,16 +9,17 @@
     <link rel="stylesheet" href="../css/ResetPadrao.css">
     <link rel="stylesheet" href="../css/modoclaro.css">
     <script src="https://kit.fontawesome.com/7c6760d07c.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../../images/Logo1.png" type="image/png">
 </head>
 
 <body id="body">
-    <header>
-        <div id="confirmacao"></div>
+    <div id="confirmacao"></div>
+    <header id="semCliques">
         <nav class="barranav">
             <aside id="details" class="fechado">
                 <h2><span id="summary" class="fa-solid fa-bars"></span></h2>
                 <ul>
-                    <li class="items">
+                    <li name="voltandoPrincipal" class="items">
                         <a href="../../../index.html">Início</a>
                     </li>
                     <li class=" items">
@@ -32,6 +33,8 @@
                     </li>
                 </ul>
             </aside>
+            <div id="bemVindo">
+            </div>
             <div onclick="formRespondido()" class="expPerso">
                 Experiencia Personalizada
             </div>
@@ -41,7 +44,7 @@
         </nav>
     </header>
     <main>
-        <section class="principal">
+        <section id="semCliquesPrincipal" class="principal">
             <div>
                 <h1> <span>ALIMENTAÇÃO!</span></h1>
                 <h2>Para manter a forma, alimentação é essencial!</h2>
@@ -91,23 +94,15 @@
             </ul>
         </section>
     </main>
-    <footer>
+    <footer >
         <div class="DivFooter1">
             <img src="../../images/Logo1.png" alt="">
-            <p>© 2024 HealthUp</p>
+            <p>&copy; 2024 HealthUp</p>
             <ul>
                 <li><a href="#"><span class="fa-brands fa-instagram"></span></a></li>
                 <li><a href="#"><span class="fa-brands fa-facebook-f"></span></a></li>
-                <li><a href="#"><span class="fa-brands fa-twitter"></class=></span></a></li>
+                <li><a href="#"><span class="fa-brands fa-twitter"></span></a></li>
             </ul>
-        </div>
-        <div class="DivFooter2">
-            <h3>
-                Conheça mais sobre nossa equipe:
-            </h3>
-            <button>
-                Nossa Equipe
-            </button>
         </div>
     </footer>
     <script src="../../../../Backend/BarraDeNavegacao.js"></script>

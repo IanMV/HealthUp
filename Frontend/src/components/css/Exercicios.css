@@ -1,11 +1,27 @@
 /* Adaptação da seção principal para ficar mais arrumado seu subtitulo*/
 section.principal {
     div {
+        padding-bottom: 1vw;
+        padding-top: 1vw;
+
         h2 {
-            padding-bottom:1vw ;
-            padding-top:1vw ;
+
             margin-left: 41vw;
         }
+    }
+}
+
+section {
+    li.lihover:hover {
+        transform: scale(107%);
+        transition: 0.7s;
+        -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
+        -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
+        box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
+    }
+
+    li {
+        transition: 0.5s;
     }
 }
 
@@ -14,22 +30,14 @@ section.s1 {
 
     div {
         h2 {
-            color: var();
+            color: var(--ernestro);
             font-size: 3rem;
             padding-bottom: 2vw;
             text-align: left;
         }
 
         p {
-            color: var();
-            font-size: 1.5vw;
-        }
-
-        button {
-            background-color: var();
-            border: none;
-            border-radius: 10px;
-            padding: 1vw 2vw 1vw 2vw;
+            color: var(--textoPadrao);
             font-size: 1.5vw;
         }
     }
@@ -42,7 +50,7 @@ section.s2 {
             padding-left: 7vw;
             padding-top: 2vw;
             font-size: 3rem;
-            color: var();
+            color: var(--textoPadrao);
         }
     }
 
@@ -54,17 +62,17 @@ section.s2 {
 
             li {
                 width: 50%;
-                background-color: var();
+                background-color: var(--textoPadrao);
                 padding: 2.5vw;
                 border-radius: 20px;
 
                 p {
                     padding-bottom: 2vw;
-                    color: var();
+                    color: var(--textoBotaoForm);
                 }
 
                 a {
-                    color: var();
+                    color: var(--ernestro);
                     text-decoration: none;
                 }
             }
@@ -93,7 +101,7 @@ section.s3 {
             padding-top: 4vw;
             padding-bottom: 4vw;
             font-size: 3rem;
-            color: var();
+            color: var(--botaoForm);
         }
     }
 
@@ -117,6 +125,7 @@ section.s3 {
 
                     div {
                         i {
+                            color: var(--textoBotaoForm);
                             font-size: 1.7rem;
                             padding-bottom: 1vw;
                         }
@@ -153,7 +162,7 @@ section.s3 {
 
             ul {
                 li {
-                    background-color: var();
+                    background-color: var(--botaoForm);
                     margin-right: 1vw;
                     margin-left: 1vw;
                     margin-bottom: 2vw;
@@ -163,10 +172,15 @@ section.s3 {
                     padding: 2.5vw 1.5vw 4vw 2vw;
 
                     h4 {
+                        color: var(--textoBotaoForm);
                         font-size: 1.2rem;
                         text-align: center;
                         font-weight: bold;
                         padding-bottom: 1vw;
+                    }
+
+                    P {
+                        color: var(--textoBotaoForm);
                     }
                 }
             }
@@ -175,13 +189,15 @@ section.s3 {
 }
 
 section.s4 {
-    background-color: var(--azul-escuro);
+    padding-bottom: 4vw;
+    background-color: var(--textoPadrao);
 
     .divP {
         h2 {
             text-align: end;
             padding: 5vw 7vw 3vw 0;
             font-size: 3rem;
+            color: var(--ernestro);
         }
     }
 
@@ -196,7 +212,7 @@ section.s4 {
                 width: 100%;
 
                 li {
-                    background-color: var(--branco);
+                    background-color: var(--backgroundAlerta);
                     width: 90%;
                     border-radius: 30px;
                     padding: 1vw 2vw 1vw 2vw;
@@ -204,7 +220,7 @@ section.s4 {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    color: var(--azul-escuro);
+                    color: var(--textoPadrao);
 
                     div {
                         justify-content: center;
@@ -248,4 +264,47 @@ section.s4 {
 
 section.s5 {
     display: none;
+}
+
+section.s6 {
+    padding: 7vw;
+
+    div {
+        h4 {
+            color: var(--ernestro);
+            font-size: 1.3rem;
+            background-color: var(--botaoForm);
+            padding: 2vw;
+            border-radius: 2vw;
+            font-weight: bold;
+        }
+
+        p {
+            color: var(--textoPadrao);
+            padding: 1.5vw;
+
+        }
+
+        ul {
+            li {
+                padding: 2vw;
+                padding-top: 1vw;
+                font-size: 1.7vw;
+            }
+        }
+
+        h2 {
+            color: var(--ernestro);
+            font-size: 3rem;
+            text-align: center;
+            padding: 2vw;
+           
+        }
+    }
+
+    p.lesao {
+        font-weight: bold;
+        padding: 1.5vw;
+        padding-top: 3vw;
+    }
 }

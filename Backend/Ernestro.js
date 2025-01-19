@@ -4,8 +4,7 @@ const sendButton = document.getElementById("sendButton");
 
 function generateUserId() {
     return 'user-' + Date.now();
-}
-
+};
 
 let userId = localStorage.getItem("userId");
 
@@ -20,40 +19,37 @@ function Admensagem(quem, texto) {
     const mensagem = document.createElement('div');
     mensagem.innerText = texto.replace(/\*\*(.*?)\*\*/g, '<b>$1</b>');
     if (!(quem === "ia")) {
-        let final = Array.from(texto)
-        console.log(texto);
+        let final = Array.from(texto);
         let posicao = 0;
         let contadorLetras = 0;
         for (letra of final) {
             posicao += 1;
-            console.log(posicao)
             contadorLetras += 1;
-            if (contadorLetras == 60) {
+            if (contadorLetras == 30) {
                 letra -= 1;
-            final.splice(posicao, 0, '<br>');
+                final.splice(posicao, 0, '<br>');
                 contadorLetras = 0;
             };
         };
         mensagem.innerHTML = final.join("");
     };
 
-
     mensagem.className = quem === "ia" ? "mensagemIa" : "mensagemUser";
 
     messagesDiv.appendChild(mensagem);
+
     messagesDiv.scrollTop = messagesDiv.scrollHeight;
 }
 
-Admensagem("ia", "Oi! Eu sou o Ernestro, seu mascote virtual. Estou aqui para te ajudar com dicas de exercícios personalizados. 😊🐶");
+Admensagem("ia", "Oi! Eu sou o Ernestro, seu mascote virtual. Estou aqui para te ajudar com dicas de exercícios personalizados.🐶");
 Admensagem("ia", "Para começar, qual é o seu exercício favorito ou o tipo de atividade física que você mais gosta?");
 
 async function SendMensagem() {
-    const mensagemUser = userInput.value.trim();
-
-    if (!mensagemUser) {
+    if (!userInput.value) {
         return;
-    }
-    Admensagem('user', mensagemUser);
+    };
+
+    Admensagem('user', userInput.value);
     userInput.value = "";
 
     try {
@@ -62,46 +58,69 @@ async function SendMensagem() {
             headers: {
                 "Content-Type": "application/json",
             },
-            body: JSON.stringify({ message: mensagemUser, userId }),
+            body: JSON.stringify({ message: userInput.value, userId }),
             mode: 'cors',
         });
 
         const data = await response.json();
         Admensagem("ia", data.response);
     } catch (error) {
-        Admensagem("ia", "Desculpe, algo deu errado. Tente novamente mais tarde");
+        Admensagem("ia", "Desculpe, algo deu errado. Tente novamente mais tarde.");
         console.log(error);
     }
 }
 
+
+
 sendButton.addEventListener('click', SendMensagem);
 
 userInput.addEventListener("keydown", (event) => {
-    
-    let mensagemEnviara = userInput.value.trim();
-    if (mensagemEnviara == '' || 1 == mensagemEnviara.length) {
-       if (event.key === "Backspace") {sendButton.classList.remove('enviar');
+    if (event.key === 'Backspace') {
+        setTimeout(removeCorBotao, 2);
+    };
+    if (event.key === 'Enter') {
+        SendMensagem();
+        sendButton.classList.remove('enviar');
+        sendButton.classList.add('semEnviar');
+    };
+});
 
-      return;  
-    }else {
-        sendButton.classList.add('enviar');
-    };
-    }
-    
-    mensagemEnviara = Array.from(mensagemEnviara);
-    let primeiraLetra = mensagemEnviara[0].toUpperCase();
-    mensagemEnviara.splice(0, 1, primeiraLetra);
-    userInput.value = mensagemEnviara.join("");
-    if (event.shiftKey && event.key === "Enter") {
-        let quebraLinha = Array.from(userInput.value);
-        quebraLinha.push("<br>");
-        userInput.value = quebraLinha.join("");
-    };
-    // Se a tecla Shift for pressionada, não fazemos nada e retornamos
-    if (event.shiftKey) {
-        return;
+userInput.addEventListener("keypress", (event) => {
+    let mensagemEnviara = userInput.value.trim()
+    sendButton.classList.add('clicar');
+
+
+    if (mensagemEnviara == '') {
+
+
+
+        mensagemEnviara = (event.key);
+        if (!(event.key === 'Enter')) {
+            sendButton.classList.add('enviar');
+            mensagemEnviara = mensagemEnviara.toUpperCase();
+            mensagemFormatada = Array.from(mensagemEnviara);
+            mensagemFormatada = mensagemFormatada.join("");
+            userInput.value = mensagemFormatada;
+            setTimeout(valor, 1);
+        }
     };
 
-    // Quando Enter for pressionado, envia a mensagem
 
 });
+
+function valor() {
+    console.log(userInput.value);
+    let mensagemFormatada = userInput.value;
+    mensagemFormatada = Array.from(mensagemFormatada);
+    mensagemFormatada.splice(1, 1);
+    mensagemFormatada = mensagemFormatada.join("");
+    userInput.value = mensagemFormatada;
+
+};
+
+function removeCorBotao() {
+    if (userInput.value == '') {
+        sendButton.classList.remove('enviar');
+        sendButton.classList.add('semEnviar');
+    };
+};
