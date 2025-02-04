@@ -1,12 +1,3 @@
-/*document.querySelectorAll('input').forEach((input, index) => {
-    input.addEventListener('keydown', (event) => {
-        if (event.key === 'Enter') {
-            event.preventDefault();
-            const nextInput = document.querySelectorAll('input')[index + 1];
-            if (nextInput) nextInput.focus();
-        }
-    });
-});*/
 document.addEventListener('keydown', (event) => {
     let verificador2 = false;
     if (event.key === "Backspace") {
@@ -16,7 +7,6 @@ document.addEventListener('keydown', (event) => {
         localStorage.clear()
     }
   });
-  
 
 const altura = document.getElementById('altura');
 const peso = document.getElementById('peso');
@@ -45,7 +35,6 @@ button.addEventListener('click', function () {
         };
     };
 
-
     if (esporteSelecionado === '' || lesaoSelecionada === '') {
         alert('Por favor, selecione pelo menos um esporte e uma lesão.');
         return;
@@ -60,7 +49,6 @@ button.addEventListener('click', function () {
     altura.value = "";
     redirecionar();
 });
-
 
 let alerta = document.getElementById('alerta');
 let semCliques = document.getElementById('semCliques');
