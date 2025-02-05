@@ -18,27 +18,25 @@ console.log("User ID: ", userId);
 function Admensagem(quem, texto) {
     const mensagem = document.createElement('div');
     mensagem.innerText = texto.replace(/\*\*(.*?)\*\*/g, '<b>$1</b>');
-    if (!(quem === "ia")) {
-        let final = Array.from(texto);
-        let posicao = 0;
-        let contadorLetras = 0;
-        for (letra of final) {
-            posicao += 1;
-            contadorLetras += 1;
-            if (contadorLetras == 30) {
-                letra -= 1;
-                final.splice(posicao, 0, '<br>');
-                contadorLetras = 0;
-            };
-        };
-        mensagem.textContent = final.join("");
-    };
 
     mensagem.className = quem === "ia" ? "mensagemIa" : "mensagemUser";
 
     messagesDiv.appendChild(mensagem);
 
     messagesDiv.scrollTop = messagesDiv.scrollHeight;
+
+    function contarLinhas(elemento) {
+        const alturaLinha = parseFloat(getComputedStyle(elemento).lineHeight);
+        const alturaElemento = elemento.clientHeight;
+        return Math.round(alturaElemento / alturaLinha);
+    }
+    const elementos = document.getElementsByClassName("mensagemUser");
+    if (elementos.length > 0) {
+        const primeiroElemento = elementos[elementos.length - 1];
+        if (contarLinhas(primeiroElemento) < 2) {
+            primeiroElemento.classList.add('textoDireita');
+        };
+    };
 };
 
 Admensagem("ia", "Oi! Eu sou o Ernestro, seu mascote virtual. Estou aqui para te ajudar com dicas de exercícios personalizados.🐶");
@@ -46,14 +44,14 @@ Admensagem("ia", "Para começar, qual é o seu exercício favorito ou o tipo de 
 
 async function SendMensagem() {
     mensagemEspera = false;
-    sendButton.classList.remove('enviar')
-    sendButton.classList.add('semEnviar')
+    sendButton.classList.remove('enviar');
+    sendButton.classList.add('semEnviar');
     if (!userInput.value) {
         return;
     };
 
     Admensagem('user', userInput.value);
-    let mensagemReal = userInput.value
+    let mensagemReal = userInput.value;
     userInput.value = '';
 
     try {
@@ -65,29 +63,26 @@ async function SendMensagem() {
             body: JSON.stringify({ message: mensagemReal, userId }),
             mode: 'cors',
         });
-    
+
         const data = await response.json();
         Admensagem("ia", data.response);
-        mensagemEspera = true
-        console.log(mensagemEspera)
-        setTimeout(mensagemNaEspera(), 100)
+        mensagemEspera = true;
+        setTimeout(mensagemNaEspera(), 100);
     } catch (error) {
         Admensagem("ia", "Desculpe, algo deu errado. Tente novamente mais tarde.");
         console.log(error);
-        mensagemEspera = true
-        console.log(mensagemEspera)
-        setTimeout(mensagemNaEspera(), 100)
+        mensagemEspera = true;
+        setTimeout(mensagemNaEspera(), 100);
     };
-   
+
 };
 
 function mensagemNaEspera() {
     if (!(userInput.value == '')) {
         sendButton.classList.remove('semEnviar')
         sendButton.classList.add('enviar');
-    }
-
-}
+    };
+};
 
 let mensagemEspera = true;
 
@@ -118,19 +113,17 @@ userInput.addEventListener("keypress", (event) => {
     if (mensagemEnviara == '') {
         mensagemEnviara = (event.key);
         if (!(event.key === 'Enter')) {
-            sendButton.classList.remove('semEnviar')
+            sendButton.classList.remove('semEnviar');
             sendButton.classList.add('enviar');
             mensagemEnviara = mensagemEnviara.toUpperCase();
             mensagemFormatada = Array.from(mensagemEnviara);
             mensagemFormatada = mensagemFormatada.join("");
             userInput.value = mensagemFormatada;
-            console.log(mensagemEspera)
             if (!mensagemEspera) {
                 sendButton.classList.remove('enviar');
                 sendButton.classList.add('semEnviar');
-            }
+            };
             setTimeout(valor, 1);
-
         };
     };
 

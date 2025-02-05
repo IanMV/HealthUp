@@ -21,13 +21,16 @@ html {
 }
 
 .messages {
-    height: 32vw;
+    justify-content: end;
+    max-width: 70vw;
+    height: 30vw;
     overflow-y: auto;
     margin-bottom: 20px;
     border: 2px solid rgba(0, 0, 0, 0.2);
     padding: 0.9vw;
     border-radius: 10px;
     background-color: var(--backgroundAlerta);
+
 }
 
 .input-container {
@@ -64,23 +67,26 @@ html {
     pointer-events: none;
 }
 
-
-
 .mensagemIa {
+    max-width: 100%;
     padding: 0.7vw;
     background-color: var(--backgroundAlerta);
     color: var(--ernestro);
+    word-wrap: break-word;
+    hyphens: auto;
 }
 
-
-.mensagemUser {
+.mensagemUser { 
+    word-wrap: break-word;
     hyphens: auto;
     text-align: left;
-    display: flex;
-    justify-content: end;
     margin-left: 4vw;
     background-color: var(--backgroundAlerta);
     color: var(--spanH1);
+}
+
+.textoDireita{
+    text-align: right;
 }
 
 aside {
