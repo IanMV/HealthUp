@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const genAI = new GoogleGenerativeAI("AIzaSyBmlXyYDYcXSw4b_aQQvIU93oO681E3GbA");
+const genAI = new GoogleGenerativeAI("AIzaSyDMBAmRWGj3wnzaEUCHIsHHdTTIxhHrSdM");
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 const chatHistories = {};
