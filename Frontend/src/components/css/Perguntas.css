@@ -31,31 +31,31 @@ main {
     font-size: 1.3vw;
     filter: none;
     z-index: 2;
+}
 
-    p {
-        color: var(--textoPadrao);
-        font-weight: bold;
-    }
+.alertaOk p {
+    color: var(--textoPadrao);
+    font-weight: bold;
+}
 
-    .botaoOk {
-        background-color: var(--corBotaoVerde);
-        border-radius: 0.5vw;
-        text-decoration: none;
-        transition: 0.3s ease-out;
-        margin-top: 1vw;
-        padding: 1vw 2vw 1vw 2vw;
-        border-radius: 0.5vw;
-        border: 2px solid rgba(0, 0, 0, 1);
-        margin-left: 5vw;
-        color: var(--textoBotaoForm);
-    }
+.alertaOk .botaoOk {
+    background-color: var(--corBotaoVerde);
+    border-radius: 0.5vw;
+    text-decoration: none;
+    transition: 0.3s ease-out;
+    margin-top: 1vw;
+    padding: 1vw 2vw 1vw 2vw;
+    border-radius: 0.5vw;
+    border: 2px solid rgba(0, 0, 0, 1);
+    margin-left: 5vw;
+    color: var(--textoBotaoForm);
+}
 
-    .botaoOk:hover {
-        transform: scale(115%);
-        -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
-        -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
-        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
-    }
+.alertaOk .botaoOk:hover {
+    transform: scale(115%);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
 }
 
 .divAlerta {
@@ -73,58 +73,53 @@ main {
     font-size: 1.3vw;
     filter: none;
     z-index: 2;
+}
 
-    p {
-        color: var(--textoPadrao);
-        font-weight: bold;
-    }
+.divAlerta p {
+    color: var(--textoPadrao);
+    font-weight: bold;
+}
 
-    span {
-        color: var(--corBotaoVermelho);
-    }
+.divAlerta span {
+    color: var(--corBotaoVermelho);
+}
 
-    .voltar {
-        padding: 1vw 3vw 1vw 3vw;
-        text-decoration: none;
-        color: var(--textoBotaoForm);
-        transition: 0.3s;
-        margin-top: 1vw;
-        padding: 1vw 2vw 1vw 2vw;
-        border-radius: 0.5vw;
-        background-color: var(--corBotaoVerde);
-        border: 2px solid rgba(0, 0, 0, 1);
-        margin-left: 9vw;
-    }
+.divAlerta .voltar {
+    padding: 1vw 3vw 1vw 3vw;
+    text-decoration: none;
+    color: var(--textoBotaoForm);
+    transition: 0.3s;
+    margin-top: 1vw;
+    padding: 1vw 2vw 1vw 2vw;
+    border-radius: 0.5vw;
+    background-color: var(--corBotaoVerde);
+    border: 2px solid rgba(0, 0, 0, 1);
+    margin-left: 9vw;
+}
 
-    .voltar:hover {
-        transform: scale(115%);
-        -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
-        -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
-        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
-    }
+.divAlerta .voltar:hover {
+    transform: scale(115%);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
+}
 
-    .sair {
-        transition: 0.3s ease-in-out;
-        margin-left: 2vw;
-        cursor: default;
-        padding: 1vw 2.5vw 1vw 2.5vw;
-        background-color: var(--corBotaoVermelho);
-        border-radius: 0.5vw;
-        transition: 0.3s ease-in-out;
-        border: 2px solid rgba(0, 0, 0, 1);
+.divAlerta .sair {
+    transition: 0.3s ease-in-out;
+    margin-left: 2vw;
+    cursor: default;
+    padding: 1vw 2.5vw 1vw 2.5vw;
+    background-color: var(--corBotaoVermelho);
+    border-radius: 0.5vw;
+    transition: 0.3s ease-in-out;
+    border: 2px solid rgba(0, 0, 0, 1);
+}
 
-        a {
-            color: var(--textoBotaoForm);
-            text-decoration: none;
-        }
-    }
-
-    .sair:hover {
-        transform: scale(115%);
-        -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
-        -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
-        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
-    }
+.divAlerta .sair:hover {
+    transform: scale(115%);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
 }
 
 section {
@@ -139,154 +134,149 @@ section {
     padding: 2vw;
     z-index: 1;
     transition: 0.3s ease-in-out;
+}
 
+section div h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--destaques);
+    font-weight: bold;
+}
 
-    div {
-        h1 {
-            text-align: center;
-            font-size: 2.5rem;
-            color: var(--destaques);
-            font-weight: bold;
-        }
+section div h2 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 2vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    color: var(--textoBotaoForm);
+}
 
-        h2 {
-            font-weight: bold;
-            text-align: center;
-            font-size: 2vw;
-            margin-top: 1vw;
-            margin-bottom: 1vw;
-            color: var(--textoBotaoForm);
-        }
-    }
+section ul {
+    margin-top: 2vw;
+    display: flex;
+    align-items: center;
+}
 
-    ul {
-        margin-top: 2vw;
-        display: flex;
-        align-items: center;
+section ul li {
+    display: flex;
+    align-items: center;
+}
 
-        li {
-            display: flex;
-            align-items: center;
+section ul li input {
+    background-color: var(--textoBotaoForm);
+    width: 30%;
+    border: 2px solid var(--destaques);
+    margin-left: 0.5vw;
+    color: var(--backgroundPrincipal);
+    padding: 0.2vw 0.2vw 0.2vw 0.2vw;
+    border-radius: 0.3vw;
+    cursor: pointer;
+}
 
-            input {
-                background-color: var(--textoBotaoForm);
-                width: 30%;
-                border: 2px solid var(--destaques);
-                margin-left: 0.5vw;
-                color: var(--backgroundPrincipal);
-                padding: 0.2vw 0.2vw 0.2vw 0.2vw;
-                border-radius: 0.3vw;
-                cursor: pointer;
-            }
+section ul li .inputSegundoNome {
+    width: 45%;
+}
 
-            .inputSegundoNome {
-                width: 45%;
-            }
+section ul li .inputNome {
+    width: 55%;
+}
 
-            .inputNome {
-                width: 55%;
-            }
+section ul li label:first-child {
+    margin-left: 0;
+}
 
-            label:first-child {
-                margin-left: 0;
-            }
+section ul li label {
+    margin-left: 1vw;
+    color: var(--destaques);
+    font-weight: bold;
+}
 
-            label {
-                margin-left: 1vw;
-                color: var(--destaques);
-                font-weight: bold;
-            }
+section ul li .inputData {
+    margin-right: 1vw;
+    margin-left: 0;
+    width: 40%;
+}
 
-            .inputData {
-                margin-right: 1vw;
-                margin-left: 0;
-                width: 40%;
-            }
+section ul li .labelData {
+    width: 55%;
+}
 
-            .labelData {
-                width: 55%;
-            }
+section ul li .labelSexo {
+    margin-left: 1vw;
+    width: 100%;
+}
 
-            .labelSexo {
-                margin-left: 1vw;
-                width: 100%;
-            }
-        }
-    }
+section fieldset {
+    display: flex;
+    align-items: center;
+    margin-top: 2vw;
+    padding-left: 0;
+}
 
-    fieldset {
-        display: flex;
-        align-items: center;
-        margin-top: 2vw;
-        padding-left: 0;
+section fieldset input:first-child {
+    margin-left: 0;
+}
 
-        input:first-child {
-            margin-left: 0;
-        }
+section fieldset legend {
+    font-size: 1.5vw;
+    color: var(--destaques);
+    font-weight: bold;
+    margin-bottom: 1vw;
+}
 
-        legend {
-            font-size: 1.5vw;
-            color: var(--destaques);
-            font-weight: bold;
-            margin-bottom: 1vw;
-        }
+section fieldset label {
+    color: var(--textoBotaoForm);
+}
 
-        label {
-            color: var(--textoBotaoForm);
-        }
+section fieldset input {
+    margin-left: 1vw;
+    cursor: pointer;
+}
 
-        input {
-            margin-left: 1vw;
-            cursor: pointer;
-        }
+section fieldset div div:first-child {
+    margin-top: 0;
+}
 
-        div {
-            div:first-child {
-                margin-top: 0;
-            }
+section fieldset div div {
+    margin-top: 1vw;
+}
 
-            div {
-                margin-top: 1vw;
-            }
-        }
-    }
+section .botoes {
+    margin-top: 2vw;
+}
 
-    .botoes {
-        margin-top: 2vw;
+section .botoes .botaoCancelar {
+    margin-left: 7vw;
+    margin-right: 3vw;
+    padding: 1vw 2vw 1vw 2vw;
+    background-color: var(--corBotaoVermelho);
+    border-radius: 0.5vw;
+    transition: 0.3s ease-in-out;
+    border: 2px solid black;
+    color: var(--textoBotaoForm);
+}
 
-        .botaoCancelar {
-            margin-left: 7vw;
-            margin-right: 3vw;
-            padding: 1vw 2vw 1vw 2vw;
-            background-color: var(--corBotaoVermelho);
-            border-radius: 0.5vw;
-            transition: 0.3s ease-in-out;
-            border: 2px solid black;
-            color: var(--textoBotaoForm);
-        }
+section .botoes .botaoEnviar {
+    background-color: var(--corBotaoVerde);
+    padding: 1vw 3vw 1vw 3vw;
+    border-radius: 0.5vw;
+    text-decoration: none;
+    color: var(--textoBotaoForm);
+    border: 2px solid black;
+    transition: 0.3s ease-in-out;
+}
 
-        .botaoEnviar {
-            background-color: var(--corBotaoVerde);
-            padding: 1vw 3vw 1vw 3vw;
-            border-radius: 0.5vw;
-            text-decoration: none;
-            color: var(--textoBotaoForm);
-            border: 2px solid black;
-            transition: 0.3s ease-in-out;
-        }
+section .botoes .botaoEnviar:hover {
+    transform: scale(115%);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
+}
 
-        .botaoEnviar:hover {
-            transform: scale(115%);
-            -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
-            -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
-            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
-        }
-
-        .botaoCancelar:hover {
-            transform: scale(115%);
-            -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
-            -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
-            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
-        }
-    }
+section .botoes .botaoCancelar:hover {
+    transform: scale(115%);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
 }
