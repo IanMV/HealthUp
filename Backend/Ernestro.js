@@ -18,8 +18,12 @@ console.log("User ID: ", userId);
 function Admensagem(quem, texto) {
     const mensagem = document.createElement('div');
     
-
-    mensagem.innerText = texto.replace(/\*\*(.*?)\*\*/g, '<b>$1</b>');
+if (quem === 'user') {
+    mensagem.innerText = texto
+}else{
+    mensagem.innerHTML = texto.replace(/\*\*(.*?)\*\*/g, '<b>$1</b>').replace(/\n/g, "<br>");
+}
+   
   
 
     mensagem.className = quem === "ia" ? "mensagemIa" : "mensagemUser";
