@@ -81,6 +81,8 @@ html {
     hyphens: auto;
     text-align: left;
     margin-left: 4vw;
+    margin-bottom: 1vw;
+    margin-top: 1vw;
     background-color: var(--backgroundAlerta);
     color: var(--spanH1);
 }
