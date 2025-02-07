@@ -168,7 +168,7 @@ section ul li input {
     width: 30%;
     border: 2px solid var(--destaques);
     margin-left: 0.5vw;
-    color: var(--backgroundPrincipal);
+    color: var(--textoPadrao);
     padding: 0.2vw 0.2vw 0.2vw 0.2vw;
     border-radius: 0.3vw;
     cursor: pointer;

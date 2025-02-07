@@ -10,14 +10,16 @@
     --corBotaoVermelho:rgba(238, 20, 20);
     --h1:rgba(255, 255, 255, 1);
     --h2:rgba(255, 255, 255, 1);
-    --spanH1:rgba(140, 0, 255, 1);
-    --footer:rgba(0, 0, 0, 1);
+    --spanH1:#0F2360;
+    --footer:#7E97DB;
     --textoFooter:rgba(255, 255, 255, 1);
-    --botaoForm:rgba(140, 0, 255, 1);
+    --botaoForm: #415AAC;
     --textoBotaoForm:rgba(255, 255, 255, 1);
     --textoPadrao:rgba(0, 0, 0, 1);
     --textoBranco:rgba(255, 255, 255, 1);
-    --backgroundPrincipal:rgba(0, 0, 0, 1);
+    --backgroundPrincipal:#90A5DF;
     --destaques:rgb(219, 39, 243);
     --ernestro:rgb(255, 217, 0);
+    --textoNav: #0F2360;
+    --destaqueNav: #90A5DF;
 }

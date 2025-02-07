@@ -45,8 +45,11 @@ q:after {
 }
 
 /* HTML */
+
+
 html {
-   font-size: 1.5vw;
+   font-size: 1.3vw;
+   font-family: Inter;
 }
 
 body {
@@ -153,11 +156,12 @@ header .barranav {
 
 header .barranav div {
    margin-top: 2vw;
+   
 }
 
 header .barranav div a {
    text-decoration: none;
-   color: var(--linkHeader);
+   color: var(--textoNav);
    cursor: pointer;
 }
 
@@ -166,6 +170,7 @@ header .barranav .expPerso {
    margin-left: 2vw;
    margin-right: 2vw;
    cursor: pointer;
+   color: var(--textoNav);
 }
 
 header .barranav .scrolled {
@@ -278,7 +283,7 @@ aside.fechado .items {
 
 .principal div p {
    color: var(--h1);
-   font-size: 0.8vw;
+   font-size: 1.4vw;
 }
 
 /* Rodapé */

@@ -3,7 +3,7 @@ section.s1 {
 }
 
 section.s1 div h2 {
-    color: var(--textoPadrao);
+    color: #415AAC;
     font-size: 3rem;
 }
 
@@ -11,6 +11,7 @@ section.s1 div p {
     color: var(--textoPadrao);
     font-size: 1.5vw;
     margin: 2vw 0 3vw 0;
+    
 }
 
 section.s1 div button {
