@@ -61,7 +61,7 @@ main {
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
     font-size: 1.3vw;
     filter: none;
-    z-index: 2;
+    z-index: 3;
 }
 
 .divAlerta p {
@@ -326,4 +326,15 @@ section fieldset input[type="radio"]:checked::before {
 }
 .esp div label{
     margin: 1vw 0.1vw 0 0.1vw;
+}
+
+.semCliques{ 
+        backdrop-filter: blur(5px); 
+        z-index: 2; 
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        pointer-events: none; 
 }

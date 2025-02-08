@@ -7,6 +7,7 @@ function nextForm(current) {
     if (current + 1 === 2) {
       if (altura.value === '' || peso.value === '' || nome.value === '') {
         alerta.innerHTML = '<div class="alertaOk"><p>Preencha todos os dados.</p><button class="botaoOk" onclick="voltar()">Ok</button></div>';
+        semCliques.classList.add('semCliques')
         return;
       }
     }
@@ -30,6 +31,7 @@ function nextForm(current) {
       
       if (esporteSelecionado === '' || lesaoSelecionada === '') {
      alerta.innerHTML = '<div class="alertaOk"><p>Preencha todos os dados.</p><button class="botaoOk" onclick="voltar()">Ok</button></div>';
+     semCliques.classList.add('semCliques')
         return;
       }
       
@@ -87,6 +89,8 @@ function nextForm(current) {
   const segundoNome = document.getElementById('segundoNome');
   const alerta = document.getElementById('alerta');
   const semCliques = document.getElementById('semCliques');
+
+  console.log(button)
   
   // Função para validação e armazenamento ao clicar no botão Enviar (form2)
   button.addEventListener('click', function () {
@@ -121,6 +125,7 @@ function nextForm(current) {
     peso.value = "";
     altura.value = "";
     
+    redirecionar()
    
   });
   
