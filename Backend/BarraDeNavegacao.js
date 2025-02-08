@@ -5,10 +5,13 @@ if (!chat) {
   const segundoNomeUsuario = localStorage.getItem('segundoNomeUsuario');
   const formRespondidoSim = localStorage.getItem('formRespondido');
   let boasVindas = document.getElementById('bemVindo');
+  let boasVindasMobile = document.getElementById('bemVindoMobile');
   if (formRespondidoSim) {
     boasVindas.innerHTML = '<p class="mensagemBoasVindas">Olá ' + nomeUsuario + " " + segundoNomeUsuario + '!</p>'
+    boasVindasMobile.innerHTML = '<p class="mensagemBoasVindasMobile">Olá ' + nomeUsuario + " " + segundoNomeUsuario + '!</p>'
   } else {
     boasVindas.innerHTML = '<p class="mensagemBoasVindas">Olá!</p>'
+    boasVindasMobile.innerHTML = '<p class="mensagemBoasVindasMobile">Olá!</p>'
   };
 };
 
