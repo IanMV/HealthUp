@@ -127,7 +127,7 @@ section.s3 p {
     color: var(--azulDois);
 }
 
-@media (max-width:500px) {
+@media (max-width:800px) {
     section {
         text-align: center;
     }

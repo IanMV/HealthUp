@@ -342,7 +342,7 @@ footer .DivFooter1 ul li a span {
    font-size: 1.6rem;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
    h1 {
       font-size: 40px;
    }
