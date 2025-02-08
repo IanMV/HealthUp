@@ -7,7 +7,7 @@ function nextForm(current) {
     if (current + 1 === 2) {
       if (altura.value === '' || peso.value === '' || nome.value === '') {
         alerta.innerHTML = '<div class="alertaOk"><p>Preencha todos os dados.</p><button class="botaoOk" onclick="voltar()">Ok</button></div>';
-        semCliques.classList.add('semCliques')
+        semCliques.classList.add('semCliques');
         return;
       }
     }
@@ -130,20 +130,20 @@ function nextForm(current) {
   });
   
   function confirmarSaida() {
-    alerta.innerHTML = '<div class="divAlerta"><p>Tem certeza que deseja sair?<span> O formulário será resetado.</span></p><button class="voltar" onclick="voltar()">Voltar</button><button onclick="paginaPrincipal()" class="sair"><a href="../../../index.html">Sair</a></button></div>';
+    alerta.innerHTML = '<div class="divAlerta"><p>Tem certeza que deseja sair?<span> O formulário será resetado.</span></p><button class="voltar" onclick="voltar()">Voltar</button><button onclick="paginaPrincipal()" class="sair">Sair</button></div>';
     semCliques.classList.add('semCliques');
-  }
+  };
   
   function voltar() {
     alerta.innerHTML = '';
     semCliques.classList.remove('semCliques');
-  }
+  };
   
   function redirecionar() {
     window.location.href = 'Exercicios.html';
-  }
+  };
   
   function paginaPrincipal() {
     window.location.href = '../../../index.html';
-  }
+  };
   

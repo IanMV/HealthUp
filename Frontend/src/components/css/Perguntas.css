@@ -7,7 +7,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
- 
+
 }
 
 main {
@@ -20,7 +20,7 @@ main {
 .alertaOk {
     user-select: none;
     background-color: white;
-    justify-items: center;    
+    justify-items: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -43,7 +43,6 @@ main {
     color: var(--textoPadrao);
     font-weight: bold;
     margin-bottom: -2vw;
-    
 }
 
 
@@ -68,11 +67,18 @@ main {
     color: var(--textoPadrao);
     font-weight: bold;
 }
-.divAlerta  button{
+
+.divAlerta button {
     margin: 2vw 0 0 8vw;
 }
-.divAlerta button:last-child{
+
+.divAlerta button:last-child {
     margin: 0vw 0vw 0vw 2vw;
+}
+
+.divAlerta a {
+    text-decoration: none;
+    color: var(--textoPadrao);
 }
 
 
@@ -95,7 +101,7 @@ section {
     flex-direction: column;
 }
 
- h1 {
+h1 {
     text-align: center;
     font-size: 2.5rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -132,47 +138,55 @@ section ul li input {
     transition: .3s;
     outline: none;
     margin-bottom: 1vw;
-    
-}section ul li input:hover{
+
+}
+
+section ul li input:hover {
     background-color: rgb(204, 203, 203);
-   
-   
+
+
 }
-section ul li input:focus{
-    background-color: rgb(243, 242, 242);;
-  
-   outline:  1px solid black;
-    
+
+section ul li input:focus {
+    background-color: rgb(243, 242, 242);
+    ;
+
+    outline: 1px solid black;
+
     transition: .15s;
-   
+
 }
 
 
 
-section ul.data{
+section ul.data {
     display: flex;
     align-self: center;
 }
+
 section ul li .inputData {
 
-    width:1.5vw;
+    width: 1.5vw;
     margin: -1vw 0vw 0 1vw;
 
 }
-.inputData:hover{
+
+.inputData:hover {
     width: 10vw;
     transition: .5s;
 }
-.inputData:focus{
-    background-color: rgb(243, 242, 242);;
-  
-   outline:  1px solid black;
-    
+
+.inputData:focus {
+    background-color: rgb(243, 242, 242);
+    ;
+
+    outline: 1px solid black;
+
     transition: .15s;
-   
+
 }
 
-.form-container{
+.form-container {
     display: none;
 }
 
@@ -185,46 +199,56 @@ section ul li .labelSexo {
     margin: 1vw 0 0 0;
     width: 100%;
 }
+
 select {
     margin: 1.5vw 0 0 0.5vw;
 }
+
 button {
     background-color: transparent;
     border: black 1px solid;
     border-radius: 10px;
     padding: 1vw 2vw;
     position: relative;
-    overflow: hidden; 
+    overflow: hidden;
     margin-top: 3vw;
     transition: .3s;
 
 }
-.barra{
+
+.barra {
     background-color: bisque;
     margin-top: 1vw;
     width: 20vw;
     height: 2px;
     background-color: black;
 }
+
 button::after {
     content: "";
     position: absolute;
     background-color: black;
     left: 0;
-    top: 0; 
+    top: 0;
 
     width: 0vw;
     height: 6vw;
-    transition: 0.3s ease-in-out; 
+    transition: 0.3s ease-in-out;
 
 }
-button:hover::after{
+
+button:hover::after {
     width: 14vw;
     transition: .3s ease-in-out;
     z-index: -1;
 
 }
-button:hover{
+
+.sair:hover{
+    color: var(--backgroundAlerta);
+}
+
+button:hover {
     color: white;
     z-index: 1;
     transition: .3s;
@@ -236,23 +260,25 @@ section fieldset {
     margin-top: 2vw;
     padding-left: 0;
 }
-.firstField div{
+
+.firstField div {
     display: flex;
     flex-direction: column;
 }
+
 section fieldset input:first-child {
     margin-left: 0;
 }
 
 section fieldset legend {
     font-size: 1.5vw;
-    color:black ;
+    color: black;
     font-weight: weight;
     margin-bottom: 1vw;
 }
 
 section fieldset input[type="radio"] {
-    appearance: none; 
+    appearance: none;
     width: 1.2vw;
     height: 1.2vw;
     border: 2px solid black;
@@ -284,57 +310,64 @@ section fieldset input[type="radio"]:hover {
 section fieldset input[type="radio"]:checked::before {
     transform: translate(-50%, -50%) scale(1);
 }
+
 @keyframes fadeIn {
     from {
-      opacity: 0;
-      transform: scale(0.8);
+        opacity: 0;
+        transform: scale(0.8);
     }
+
     to {
-      opacity: 1;
-      transform: scale(1);
+        opacity: 1;
+        transform: scale(1);
     }
-  }
-  .active {
+}
+
+.active {
     display: flex;
     animation: fadeIn 0.5s ease;
-  }
-  .hide {
+}
+
+.hide {
     animation: fadeOut 0.5s ease forwards;
-  }
+}
 
-  @keyframes fadeOut {
+@keyframes fadeOut {
     from {
-      opacity: 1;
-      transform: scale(1);
+        opacity: 1;
+        transform: scale(1);
     }
+
     to {
-      opacity: 0;
-      transform: scale(0.8);
+        opacity: 0;
+        transform: scale(0.8);
     }
-  }
+}
 
 
 
-.divFundo{
+.divFundo {
     background-color: rgb(233, 234, 235);
     padding: 1.5vw 5vw 1.5vw 1.5vw;
     border-radius: 15px;
     border: 1px solid black;
 }
-.divFundo label{
+
+.divFundo label {
     margin-top: 0.3vw;
 }
-.esp div label{
+
+.esp div label {
     margin: 1vw 0.1vw 0 0.1vw;
 }
 
-.semCliques{ 
-        backdrop-filter: blur(5px); 
-        z-index: 2; 
-        height: 100vh;
-        width: 100vw;
-        position: fixed;
-        top: 0;
-        left: 0;
-        pointer-events: none; 
+.semCliques {
+    backdrop-filter: blur(5px);
+    z-index: 2;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
 }
