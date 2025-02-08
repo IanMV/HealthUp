@@ -102,7 +102,7 @@ function formRespondido() {
     };
   } else {
     if (principal) {
-      window.location.href = 'src/components/html/Perguntas.html';
+      window.location.href = 'Frontend/src/components/html/Perguntas.html';
     } else {
       window.location.href = 'Perguntas.html';
     };
@@ -130,7 +130,7 @@ function confirmacaoRespondido() {
 
 function irProForm() {
   if (principal) {
-    window.location.href = 'src/components/html/Perguntas.html';
+    window.location.href = 'Frontend/src/components/html/Perguntas.html';
   } else {
     window.location.href = 'Perguntas.html';
   };
