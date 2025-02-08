@@ -26,14 +26,12 @@ section.s1 {
 
 section.s1 div h2 {
     color: var(--azulDois);
-    font-size: 3rem;
     padding-bottom: 2vw;
     text-align: left;
 }
 
 section.s1 div p {
     color: var(--textoPadrao);
-    font-size: 1.5vw;
 }
 
 
@@ -42,7 +40,6 @@ section.s2 .divP h2 {
     text-align: left;
     padding-left: 7vw;
     padding-top: 2vw;
-    font-size: 3rem;
     color: var(--azulQuatro);
 }
 
@@ -85,7 +82,6 @@ section.s3 .divP h2 {
     text-align: center;
     padding-top: 4vw;
     padding-bottom: 4vw;
-    font-size: 3rem;
     color: var(--botaoForm);
 }
 
@@ -107,7 +103,6 @@ section.s3 .divS .ulP ul li {
 
 section.s3 .divS .ulP ul li span {
     color: var(--textoBotaoForm);
-    font-size: 1.7rem;
     padding-bottom: 1vw;
 }
 
@@ -154,7 +149,6 @@ section.s3 .divS .ulP ul li {
 
 section.s3 .divS .ulP ul li h4 {
     color: var(--textoBotaoForm);
-    font-size: 1.2rem;
     text-align: center;
     font-weight: bold;
     padding-bottom: 1vw;
@@ -172,7 +166,6 @@ section.s4 {
 section.s4 .divP h2 {
     text-align: end;
     padding: 5vw 7vw 3vw 0;
-    font-size: 3rem;
     color: var(--azulUm);
 }
 
@@ -202,7 +195,6 @@ section.s4 .divS div ul li {
 section.s4 .divS div ul li span {
     justify-content: center;
     padding-bottom: 1vw;
-    font-size: 1.5rem;
 }
 
 section.s4 .divS div ul li p {
@@ -212,7 +204,6 @@ section.s4 .divS div ul li p {
 }
 
 section.s4 .divS div ul li h4 {
-    font-size: 1.1rem;
     font-weight: bold;
     text-align: center;
 }
@@ -237,7 +228,6 @@ section.s5 {
 
 div.s6 {
     padding: 7vw;
-    font-size: 1.2rem;
     line-height: 2vw;
 }
 
@@ -245,7 +235,6 @@ div.s6 {
 
 div.s6 div h4 {
     color: var(--textoBranco);
-    font-size: 1.3rem;
     background-color: var(--azulTres);
     padding: 2vw;
     border-radius: 2vw;
@@ -260,12 +249,10 @@ div.s6 div p {
 div.s6 div ul li {
     padding: 2vw;
     padding-top: 1vw;
-    font-size: 1.7vw;
 }
 
 div.s6 div h2 {
     color: var(--azulTres);
-    font-size: 3rem;
     text-align: center;
     padding: 2vw;
 }

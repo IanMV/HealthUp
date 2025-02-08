@@ -19,12 +19,10 @@ function Admensagem(quem, texto) {
     const mensagem = document.createElement('div');
     
 if (quem === 'user') {
-    mensagem.innerText = texto
+    mensagem.innerText = texto;
 }else{
     mensagem.innerHTML = texto.replace(/\*\*(.*?)\*\*/g, '<b>$1</b>').replace(/\n/g, "<br>");
 }
-   
-  
 
     mensagem.className = quem === "ia" ? "mensagemIa" : "mensagemUser";
 
@@ -86,7 +84,7 @@ async function SendMensagem() {
 
 function mensagemNaEspera() {
     if (!(userInput.value == '')) {
-        sendButton.classList.remove('semEnviar')
+        sendButton.classList.remove('semEnviar');
         sendButton.classList.add('enviar');
     };
 };

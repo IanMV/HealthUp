@@ -9,8 +9,8 @@ function nextForm(current) {
         alerta.innerHTML = '<div class="alertaOk"><p>Preencha todos os dados.</p><button class="botaoOk" onclick="voltar()">Ok</button></div>';
         semCliques.classList.add('semCliques');
         return;
-      }
-    }
+      };
+    };
     
     // Se o próximo formulário for o form3, valida os dados do form2 (exercício e lesão)
     if (current + 1 === 3) {
@@ -31,9 +31,9 @@ function nextForm(current) {
       
       if (esporteSelecionado === '' || lesaoSelecionada === '') {
      alerta.innerHTML = '<div class="alertaOk"><p>Preencha todos os dados.</p><button class="botaoOk" onclick="voltar()">Ok</button></div>';
-     semCliques.classList.add('semCliques')
+     semCliques.classList.add('semCliques');
         return;
-      }
+      };
       
       // Armazena os dados no localStorage
       localStorage.setItem('formRespondido', true);
@@ -48,7 +48,7 @@ function nextForm(current) {
       altura.value = "";
       
       redirecionar();
-    }
+    };
     
     if (nextFormEl) {
       currentForm.classList.add("hide");
@@ -56,8 +56,8 @@ function nextForm(current) {
         currentForm.classList.remove("active", "hide");
         nextFormEl.classList.add("active");
       }, 500); // Aguarda a animação de fadeOut
-    }
-  }
+    };
+  };
   
   function backForm(current) {
     let currentForm = document.getElementById(`form${current}`);
@@ -68,8 +68,8 @@ function nextForm(current) {
         currentForm.classList.remove("active", "hide");
         previousForm.classList.add("active");
       }, 500);
-    }
-  }
+    };
+  };
   
   // Evento para resetar o formulário via Backspace
   document.addEventListener('keydown', (event) => {
@@ -89,8 +89,6 @@ function nextForm(current) {
   const segundoNome = document.getElementById('segundoNome');
   const alerta = document.getElementById('alerta');
   const semCliques = document.getElementById('semCliques');
-
-  console.log(button)
   
   // Função para validação e armazenamento ao clicar no botão Enviar (form2)
   button.addEventListener('click', function () {
