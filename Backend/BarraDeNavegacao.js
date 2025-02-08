@@ -12,9 +12,6 @@ if (!chat) {
   };
 };
 
-
-
-
 document.addEventListener('scroll', function () {
   const nav = document.getElementById('details');
   if (window.scrollY > 70) {
@@ -87,7 +84,7 @@ let principal = document.getElementById('principal');
 
 function formRespondido() {
   if (resposta) {
-    confirmacao.innerHTML = '<div class="confirmacao">Você ja preencheu o formulário.<p> Deseja preencher novamente?</p><button onclick="confirmacaoRespondido()" class="desistir">Voltar</button><button onclick="irProForm()" class="ir">Ir</button></div>';
+    confirmacao.innerHTML = '<div class="confirmacao"><p>Você ja preencheu o formulário.</p><p> Deseja preencher novamente?</p><button onclick="confirmacaoRespondido()" class="desistir">Voltar</button><button onclick="irProForm()" class="ir">Ir</button></div>';
     if (semCliques) {
       semCliques.classList.add('semCliques');
     };
