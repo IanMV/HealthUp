@@ -1,3 +1,7 @@
+
+
+
+
 section.s1 {
     padding: 5vw 8vw 5vw 8vw;
 }
@@ -124,4 +128,20 @@ section.s3 p {
     padding: 0 1vw 2vw 1vw;
     text-align: right;
     color: var(--azulDois);
+}
+
+@media (max-width:500px) {
+    section{
+        text-align: center;
+    }
+    section.s1 div button {
+        font-size: 10px;
+        padding: 2vw 3vw;
+    }
+    section.s2 div{
+        width: auto;
+        height: auto;
+        padding: auto;
+        margin: 3vw;
+    }
 }
