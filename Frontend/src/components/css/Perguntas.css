@@ -19,7 +19,13 @@ main {
 
 .alertaOk {
     user-select: none;
-    background-color: var(--backgroundAlerta);
+    background-color: white;
+    justify-items: center;    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: 5;
     position: fixed;
     top: 40%;
     left: 40%;
@@ -31,33 +37,15 @@ main {
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
     font-size: 1.3vw;
     filter: none;
-    z-index: 2;
 }
 
 .alertaOk p {
     color: var(--textoPadrao);
     font-weight: bold;
+    margin-bottom: -2vw;
+    
 }
 
-.alertaOk .botaoOk {
-    background-color: var(--corBotaoVerde);
-    border-radius: 0.5vw;
-    text-decoration: none;
-    transition: 0.3s ease-out;
-    margin-top: 1vw;
-    padding: 1vw 2vw 1vw 2vw;
-    border-radius: 0.5vw;
-    border: 2px solid rgba(0, 0, 0, 1);
-    margin-left: 5vw;
-    color: var(--textoBotaoForm);
-}
-
-.alertaOk .botaoOk:hover {
-    transform: scale(115%);
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
-}
 
 .divAlerta {
     user-select: none;
@@ -80,48 +68,13 @@ main {
     color: var(--textoPadrao);
     font-weight: bold;
 }
-
-.divAlerta span {
-    color: var(--corBotaoVermelho);
+.divAlerta  button{
+    margin: 2vw 0 0 8vw;
+}
+.divAlerta button:last-child{
+    margin: 0vw 0vw 0vw 2vw;
 }
 
-.divAlerta .voltar {
-    padding: 1vw 3vw 1vw 3vw;
-    text-decoration: none;
-    color: var(--textoBotaoForm);
-    transition: 0.3s;
-    margin-top: 1vw;
-    padding: 1vw 2vw 1vw 2vw;
-    border-radius: 0.5vw;
-    background-color: var(--corBotaoVerde);
-    border: 2px solid rgba(0, 0, 0, 1);
-    margin-left: 9vw;
-}
-
-.divAlerta .voltar:hover {
-    transform: scale(115%);
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
-}
-
-.divAlerta .sair {
-    transition: 0.3s ease-in-out;
-    margin-left: 2vw;
-    cursor: default;
-    padding: 1vw 2.5vw 1vw 2.5vw;
-    background-color: var(--corBotaoVermelho);
-    border-radius: 0.5vw;
-    transition: 0.3s ease-in-out;
-    border: 2px solid rgba(0, 0, 0, 1);
-}
-
-.divAlerta .sair:hover {
-    transform: scale(115%);
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
-}
 
 section {
     user-select: none;

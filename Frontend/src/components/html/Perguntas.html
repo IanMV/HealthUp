@@ -1,46 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HealthUp - Plano Personalizado</title>
+
+  <script src="../../../../Backend/Perguntas.js" defer></script>
+
   <script src="https://kit.fontawesome.com/7c6760d07c.js" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="../css/Cores.css">
   <link rel="stylesheet" href="../css/Perguntas.css">
   <link rel="stylesheet" href="../css/ResetPadrao.css">
-
 </head>
-
 <body id="pagina">
   <main>
-    <div id="alerta"></div>    
+    <div id="alerta"></div>
+    <div id="semCliques"></div>
     <h1>Formulário:</h1>
+    
+
     <section id="form1" class="form-container active">
       <div>
         <h2>Complete o formulário para ajudarmos.</h2>
       </div>
       <ul>
         <li>
-          <label for="nome">  <input class="inputNome" type="text" id="nome" name="nome" placeholder="Nome"></label>
-        
+          <label for="nome">
+            <input class="inputNome" type="text" id="nome" name="nome" placeholder="Nome">
+          </label>
         </li>
         <li>
-          <label for="segundoNome" ><input class="inputSegundoNome" type="text" id="segundoNome" name="segundoNome" placeholder="Sobrenome"></label>
+          <label for="segundoNome">
+            <input class="inputSegundoNome" type="text" id="segundoNome" name="segundoNome" placeholder="Sobrenome">
+          </label>
         </li>
-        <li class="barra">
-
-        </li>
-
+        <li class="barra"></li>
       </ul>
       <ul>
         <li>
-          <label for="peso"><input type="number" id="peso" name="peso" placeholder="Peso(Kg)"></label>
-       
+          <label for="peso">
+            <input type="number" id="peso" name="peso" placeholder="Peso(Kg)">
+          </label>
         </li>
         <li>
-          <label for="altura"><input type="number" id="altura" name="altura" placeholder="Altura(Cm)"></label>
-         
+          <label for="altura">
+            <input type="number" id="altura" name="altura" placeholder="Altura(Cm)">
+          </label>
         </li>
       </ul>
       <ul class="Data">
@@ -57,32 +62,32 @@
         </li>
         <li>
           <div>
-            <button onclick="confirmarSaida()">
-              Sair
-            </button>
-            <button onclick="nextForm(1)">
-            Confirmar
-            </button> 
+            <button onclick="confirmarSaida()">Sair</button>
+            <button onclick="nextForm(1)">Confirmar</button>
           </div>
         </li>
       </ul>
-         
     </section>
-    <section id="form2" class="form-container" >
+    
+    <section id="form2" class="form-container">
       <div>
-              <h2>Escolha suas Preferências de Exercício </h2>
+        <h2>Escolha suas Preferências de Exercício</h2>
       </div>
-
       <fieldset class="firstField">
         <legend>Possui lesão em parte do corpo?</legend>
         <div class="divFundo">
-        
-        
-          <label for="inferiores">Membros inferiores  <input type="radio" id="inferiores" name="lesao" value="perna"></label>
-      
-          <label for="superiores">Membros superiores    <input type="radio" id="superiores" name="lesao" value="bracos"> </label>
-
-          <label for="nao">Nenhuma          <input type="radio" id="nao" name="lesao" value="nao"></label>
+          <label for="inferiores">
+            Membros inferiores  
+            <input type="radio" id="inferiores" name="lesao" value="perna">
+          </label>
+          <label for="superiores">
+            Membros superiores  
+            <input type="radio" id="superiores" name="lesao" value="bracos">
+          </label>
+          <label for="nao">
+            Nenhuma  
+            <input type="radio" id="nao" name="lesao" value="nao">
+          </label>
         </div>
       </fieldset>
       <fieldset>
@@ -108,43 +113,13 @@
       </fieldset>
       <div class="botoes">
         <button onclick="backForm(2)">Retornar</button>
-        <button>Enviar</button>
+        <button id="button">Enviar</button>
       </div>
-      
+    </section>
+    <section id="form3" class="form-container">
+      <h2>Cadastrado com Sucesso</h2>
+      <button>Sair</button>
     </section>
   </main>
-
-
-  <script src="../../../../Backend/Perguntas.js"></script>
 </body>
-
 </html>
-<script>
-     function nextForm(current) {
-      let currentForm = document.getElementById(`form${current}`);
-      let nextForm = document.getElementById(`form${current + 1}`);
-
-      if (nextForm) {
-        currentForm.classList.add("hide");
-
-        setTimeout(() => {
-          currentForm.classList.remove("active", "hide");
-          nextForm.classList.add("active");
-        }, 500); // Aguarda animação antes da troca
-      }
-    }
-
-    function backForm(current) {
-      let currentForm = document.getElementById(`form${current}`);
-      let previousForm = document.getElementById(`form${current - 1}`);
-
-      if (previousForm) {
-        currentForm.classList.add("hide");
-
-        setTimeout(() => {
-          currentForm.classList.remove("active", "hide");
-          previousForm.classList.add("active");
-        }, 500);
-      }
-    }
-</script>
