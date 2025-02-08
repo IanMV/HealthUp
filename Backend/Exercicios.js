@@ -49,14 +49,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 '<div><h4>Como começar:</h4>' +
                 '<p>Comece caminhando 15 a 30 minutos por dia em um ritmo confortável. Use calçados apropriados e aumente gradualmente a distância e a velocidade conforme seu condicionamento melhora.</p></div>';
         } else if (esporteSelecionado === 'volei') {
-            textoEsporte = '<div><h2>' + texto + '</h2></div></div><p>O vôlei é um esporte dinâmico que desenvolve habilidades motoras, agilidade e força, enquanto promove o trabalho em equipe.</p></div>' +
+            textoEsporte = '<div><h2>' + texto + '</h2></div><div><p>O vôlei é um esporte dinâmico que desenvolve habilidades motoras, agilidade e força, enquanto promove o trabalho em equipe.</p></div>' +
                 '<div><h4>Benefícios:</h4>' +
                 '<ul><li>- Melhora a coordenação motora e a agilidade.</li>' +
                 '<li>- Fortalece braços, pernas e core.</li>' +
                 '<li>- Desenvolve a capacidade de concentração e reflexos rápidos.</li>' +
                 '<li>- Ajuda a melhorar o trabalho em equipe e a interação social.</li></ul></div>' +
                 '<div><h4>Músculos trabalhados:</h4>' +
-                '<li>- Braços e ombros.</li>' +
+                '<ul><li>- Braços e ombros.</li>' +
                 '<li>- Pernas (quadríceps, isquiotibiais).</li>' +
                 '<li>- Abdômen (core).</li></ul></div>' +
                 '<div><h4>Como começar:</h4>' +

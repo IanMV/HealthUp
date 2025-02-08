@@ -7,7 +7,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--spanH1);
+    background-color: var(--azulUm);
 }
 
 main {
@@ -113,6 +113,7 @@ main {
     border-radius: 0.5vw;
     transition: 0.3s ease-in-out;
     border: 2px solid rgba(0, 0, 0, 1);
+    text-decoration: none;
 }
 
 .divAlerta .sair:hover {
@@ -127,7 +128,7 @@ section {
     -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
     -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
-    background-color: var(--backgroundPrincipal);
+    background-color: var(--azulQuatro);
     text-align: baseline;
     border-radius: 1vw;
     width: 75%;
@@ -139,7 +140,7 @@ section {
 section div h1 {
     text-align: center;
     font-size: 2.5rem;
-    color: var(--destaques);
+    color: var(--azulUm);
     font-weight: bold;
 }
 
@@ -147,7 +148,7 @@ section div h2 {
     font-weight: bold;
     text-align: center;
     font-size: 2vw;
-    margin-top: 1vw;
+    margin-top: 2vw;
     margin-bottom: 1vw;
     color: var(--textoBotaoForm);
 }
@@ -166,7 +167,7 @@ section ul li {
 section ul li input {
     background-color: var(--textoBotaoForm);
     width: 30%;
-    border: 2px solid var(--destaques);
+    border: 2px solid var(--azulDois);
     margin-left: 0.5vw;
     color: var(--textoPadrao);
     padding: 0.2vw 0.2vw 0.2vw 0.2vw;
@@ -188,7 +189,7 @@ section ul li label:first-child {
 
 section ul li label {
     margin-left: 1vw;
-    color: var(--destaques);
+    color: var(--azulUm);
     font-weight: bold;
 }
 
@@ -220,7 +221,7 @@ section fieldset input:first-child {
 
 section fieldset legend {
     font-size: 1.5vw;
-    color: var(--destaques);
+    color: var(--azulUm);
     font-weight: bold;
     margin-bottom: 1vw;
 }

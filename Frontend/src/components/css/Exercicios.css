@@ -25,7 +25,7 @@ section.s1 {
 }
 
 section.s1 div h2 {
-    color: var(--ernestro);
+    color: var(--azulDois);
     font-size: 3rem;
     padding-bottom: 2vw;
     text-align: left;
@@ -36,12 +36,14 @@ section.s1 div p {
     font-size: 1.5vw;
 }
 
+
+
 section.s2 .divP h2 {
     text-align: left;
     padding-left: 7vw;
     padding-top: 2vw;
     font-size: 3rem;
-    color: var(--textoPadrao);
+    color: var(--azulQuatro);
 }
 
 section.s2 .divS ul {
@@ -52,7 +54,7 @@ section.s2 .divS ul {
 
 section.s2 .divS ul li {
     width: 50%;
-    background-color: var(--textoPadrao);
+    background-color: var(--azulQuatro);
     padding: 2.5vw;
     border-radius: 20px;
 }
@@ -63,7 +65,7 @@ section.s2 .divS ul li p {
 }
 
 section.s2 .divS ul li a {
-    color: var(--ernestro);
+    color: var(--azulUm);
     text-decoration: none;
 }
 
@@ -164,14 +166,14 @@ section.s3 .divS .ulP ul li p {
 
 section.s4 {
     padding-bottom: 4vw;
-    background-color: var(--textoPadrao);
+    background-color: var(--azulQuatro);
 }
 
 section.s4 .divP h2 {
     text-align: end;
     padding: 5vw 7vw 3vw 0;
     font-size: 3rem;
-    color: var(--ernestro);
+    color: var(--azulUm);
 }
 
 section.s4 .divS {
@@ -235,12 +237,16 @@ section.s5 {
 
 div.s6 {
     padding: 7vw;
+    font-size: 1.2rem;
+    line-height: 2vw;
 }
 
+
+
 div.s6 div h4 {
-    color: var(--ernestro);
+    color: var(--textoBranco);
     font-size: 1.3rem;
-    background-color: var(--botaoForm);
+    background-color: var(--azulTres);
     padding: 2vw;
     border-radius: 2vw;
     font-weight: bold;
@@ -258,7 +264,7 @@ div.s6 div ul li {
 }
 
 div.s6 div h2 {
-    color: var(--ernestro);
+    color: var(--azulTres);
     font-size: 3rem;
     text-align: center;
     padding: 2vw;

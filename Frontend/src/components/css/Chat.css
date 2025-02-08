@@ -17,7 +17,8 @@ html {
     margin: 2vw auto;
     padding: 2vw;
     border-radius: 10px;
-    box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0.5vw 1vw var(--azulQuatro);
+   
 }
 
 .messages {
@@ -75,7 +76,7 @@ b{
     max-width: 100%;
     padding: 0.7vw;
     background-color: var(--backgroundAlerta);
-    color: var(--ernestro);
+    color: var(--azulQuatro);
     word-wrap: break-word;
     hyphens: auto;
 }
@@ -88,7 +89,7 @@ b{
     margin-bottom: 1vw;
     margin-top: 1vw;
     background-color: var(--backgroundAlerta);
-    color: var(--spanH1);
+    color: var(--azulDois);
 }
 
 .textoDireita{

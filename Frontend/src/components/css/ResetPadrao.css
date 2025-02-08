@@ -63,7 +63,7 @@ hr {
 /* Barra de Navegação */
 .mensagemBoasVindas {
    margin-left: 50vw;
-   color: var(--spanH1);
+   color: var(--azulUm);
    pointer-events: none;
    cursor: default;
 }
