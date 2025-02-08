@@ -7,18 +7,27 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+
     background-color: var(--azulUm);
+
 }
 
 main {
     justify-content: center;
     display: flex;
     place-items: center;
+    flex-direction: column;
 }
 
 .alertaOk {
     user-select: none;
-    background-color: var(--backgroundAlerta);
+    background-color: white;
+    justify-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: 5;
     position: fixed;
     top: 40%;
     left: 40%;
@@ -30,33 +39,14 @@ main {
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
     font-size: 1.3vw;
     filter: none;
-    z-index: 2;
 }
 
 .alertaOk p {
     color: var(--textoPadrao);
     font-weight: bold;
+    margin-bottom: -2vw;
 }
 
-.alertaOk .botaoOk {
-    background-color: var(--corBotaoVerde);
-    border-radius: 0.5vw;
-    text-decoration: none;
-    transition: 0.3s ease-out;
-    margin-top: 1vw;
-    padding: 1vw 2vw 1vw 2vw;
-    border-radius: 0.5vw;
-    border: 2px solid rgba(0, 0, 0, 1);
-    margin-left: 5vw;
-    color: var(--textoBotaoForm);
-}
-
-.alertaOk .botaoOk:hover {
-    transform: scale(115%);
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
-}
 
 .divAlerta {
     user-select: none;
@@ -72,7 +62,7 @@ main {
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
     font-size: 1.3vw;
     filter: none;
-    z-index: 2;
+    z-index: 3;
 }
 
 .divAlerta p {
@@ -80,83 +70,69 @@ main {
     font-weight: bold;
 }
 
-.divAlerta span {
-    color: var(--corBotaoVermelho);
+.divAlerta button {
+    margin: 2vw 0 0 8vw;
 }
 
-.divAlerta .voltar {
-    padding: 1vw 3vw 1vw 3vw;
+.divAlerta button:last-child {
+    margin: 0vw 0vw 0vw 2vw;
+}
+
+.divAlerta a {
     text-decoration: none;
-    color: var(--textoBotaoForm);
-    transition: 0.3s;
-    margin-top: 1vw;
-    padding: 1vw 2vw 1vw 2vw;
-    border-radius: 0.5vw;
-    background-color: var(--corBotaoVerde);
-    border: 2px solid rgba(0, 0, 0, 1);
-    margin-left: 9vw;
+    color: var(--textoPadrao);
 }
 
-.divAlerta .voltar:hover {
-    transform: scale(115%);
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
-}
 
-.divAlerta .sair {
-    transition: 0.3s ease-in-out;
-    margin-left: 2vw;
-    cursor: default;
-    padding: 1vw 2.5vw 1vw 2.5vw;
-    background-color: var(--corBotaoVermelho);
-    border-radius: 0.5vw;
-    transition: 0.3s ease-in-out;
-    border: 2px solid rgba(0, 0, 0, 1);
-    text-decoration: none;
-}
 
-.divAlerta .sair:hover {
-    transform: scale(115%);
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
-}
 
 section {
     user-select: none;
     -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
+
     -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
     background-color: var(--azulQuatro);
+
     text-align: baseline;
     border-radius: 1vw;
-    width: 75%;
+    width: 25vw;
+    height: 35vw;
     padding: 2vw;
     z-index: 1;
     transition: 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-section div h1 {
+h1 {
     text-align: center;
     font-size: 2.5rem;
+
     color: var(--azulUm);
     font-weight: bold;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 2vw;
+
 }
 
 section div h2 {
     font-weight: bold;
     text-align: center;
-    font-size: 2vw;
-    margin-top: 2vw;
+    font-size: 1.3vw;
+    margin-top: 1vw;
+>>>>>>> Erick
     margin-bottom: 1vw;
-    color: var(--textoBotaoForm);
 }
 
 section ul {
     margin-top: 2vw;
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 section ul li {
@@ -165,47 +141,132 @@ section ul li {
 }
 
 section ul li input {
-    background-color: var(--textoBotaoForm);
-    width: 30%;
-    border: 2px solid var(--azulDois);
+
+    background-color: rgb(224, 224, 224);
     margin-left: 0.5vw;
     color: var(--textoPadrao);
     padding: 0.2vw 0.2vw 0.2vw 0.2vw;
     border-radius: 0.3vw;
     cursor: pointer;
+    transition: .3s;
+    outline: none;
+    margin-bottom: 1vw;
+
 }
 
-section ul li .inputSegundoNome {
-    width: 45%;
+section ul li input:hover {
+    background-color: rgb(204, 203, 203);
+
+
 }
 
-section ul li .inputNome {
-    width: 55%;
+section ul li input:focus {
+    background-color: rgb(243, 242, 242);
+    ;
+
+    outline: 1px solid black;
+
+    transition: .15s;
+
 }
 
-section ul li label:first-child {
-    margin-left: 0;
-}
 
-section ul li label {
-    margin-left: 1vw;
-    color: var(--azulUm);
-    font-weight: bold;
+
+
+section ul.data {
+    display: flex;
+    align-self: center;
+
 }
 
 section ul li .inputData {
-    margin-right: 1vw;
-    margin-left: 0;
-    width: 40%;
+
+    width: 1.5vw;
+    margin: -1vw 0vw 0 1vw;
+
+}
+
+.inputData:hover {
+    width: 10vw;
+    transition: .5s;
+}
+
+.inputData:focus {
+    background-color: rgb(243, 242, 242);
+    ;
+
+    outline: 1px solid black;
+
+    transition: .15s;
+
+}
+
+.form-container {
+    display: none;
 }
 
 section ul li .labelData {
-    width: 55%;
+    margin: -1vw 0vw 0vw 0;
+    display: flex;
 }
 
 section ul li .labelSexo {
-    margin-left: 1vw;
+    margin: 1vw 0 0 0;
     width: 100%;
+}
+
+select {
+    margin: 1.5vw 0 0 0.5vw;
+}
+
+button {
+    background-color: transparent;
+    border: black 1px solid;
+    border-radius: 10px;
+    padding: 1vw 2vw;
+    position: relative;
+    overflow: hidden;
+    margin-top: 3vw;
+    transition: .3s;
+
+}
+
+.barra {
+    background-color: bisque;
+    margin-top: 1vw;
+    width: 20vw;
+    height: 2px;
+    background-color: black;
+}
+
+button::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    left: 0;
+    top: 0;
+
+    width: 0vw;
+    height: 6vw;
+    transition: 0.3s ease-in-out;
+
+}
+
+button:hover::after {
+    width: 14vw;
+    transition: .3s ease-in-out;
+    z-index: -1;
+
+}
+
+.sair:hover{
+    color: var(--backgroundAlerta);
+}
+
+button:hover {
+    color: white;
+    z-index: 1;
+    transition: .3s;
 }
 
 section fieldset {
@@ -215,69 +276,115 @@ section fieldset {
     padding-left: 0;
 }
 
+.firstField div {
+    display: flex;
+    flex-direction: column;
+}
+
 section fieldset input:first-child {
     margin-left: 0;
 }
 
 section fieldset legend {
     font-size: 1.5vw;
+
     color: var(--azulUm);
     font-weight: bold;
+
     margin-bottom: 1vw;
 }
 
-section fieldset label {
-    color: var(--textoBotaoForm);
-}
-
-section fieldset input {
-    margin-left: 1vw;
-    cursor: pointer;
-}
-
-section fieldset div div:first-child {
-    margin-top: 0;
-}
-
-section fieldset div div {
-    margin-top: 1vw;
-}
-
-section .botoes {
-    margin-top: 2vw;
-}
-
-section .botoes .botaoCancelar {
-    margin-left: 7vw;
-    margin-right: 3vw;
-    padding: 1vw 2vw 1vw 2vw;
-    background-color: var(--corBotaoVermelho);
-    border-radius: 0.5vw;
-    transition: 0.3s ease-in-out;
+section fieldset input[type="radio"] {
+    appearance: none;
+    width: 1.2vw;
+    height: 1.2vw;
     border: 2px solid black;
-    color: var(--textoBotaoForm);
-}
-
-section .botoes .botaoEnviar {
-    background-color: var(--corBotaoVerde);
-    padding: 1vw 3vw 1vw 3vw;
-    border-radius: 0.5vw;
-    text-decoration: none;
-    color: var(--textoBotaoForm);
-    border: 2px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
     transition: 0.3s ease-in-out;
 }
 
-section .botoes .botaoEnviar:hover {
-    transform: scale(115%);
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
+section fieldset input[type="radio"]::before {
+    content: "";
+    width: 0.6vw;
+    height: 0.6vw;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.3s ease-in-out;
 }
 
-section .botoes .botaoCancelar:hover {
-    transform: scale(115%);
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
+section fieldset input[type="radio"]:hover {
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    transition: .3 ease-in-out;
+}
+
+section fieldset input[type="radio"]:checked::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.active {
+    display: flex;
+    animation: fadeIn 0.5s ease;
+}
+
+.hide {
+    animation: fadeOut 0.5s ease forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+}
+
+
+
+.divFundo {
+    background-color: rgb(233, 234, 235);
+    padding: 1.5vw 5vw 1.5vw 1.5vw;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.divFundo label {
+    margin-top: 0.3vw;
+}
+
+.esp div label {
+    margin: 1vw 0.1vw 0 0.1vw;
+}
+
+.semCliques {
+    backdrop-filter: blur(5px);
+    z-index: 2;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
 }
