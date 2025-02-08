@@ -99,3 +99,37 @@ section.s2 div:hover {
     -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.75);
 }
+
+section.s3 div {
+    background-color: var(--azulUm);
+    display: flex;
+    padding: 5vw 0 2vw 0;
+}
+
+section.s3 div img {
+    margin: 5vw 0 5vw 8vw;
+}
+
+section.s3 div.bloco {
+    display: block;
+    background-color: var(--header);
+    margin: 5vw 8vw 5vw 0;
+    padding: 2vw;
+    border-radius: 2vw;
+}
+
+section.s3 h2 {
+    font-size: 1.9rem;
+    line-height: 3vw;
+    padding: 2vw 1vw 2vw 1vw;
+    text-align: right;
+    color: var(--azulTres);
+}
+
+section.s3 p {
+    font-size: 1.3rem;
+    line-height: 2vw;
+    padding: 0 1vw 2vw 1vw;
+    text-align: right;
+    color: var(--azulDois);
+}
