@@ -98,19 +98,19 @@ function nextForm(current) {
     for (let i = 0; i < esporte.length; i++) {
       if (esporte[i].checked) {
         esporteSelecionado = esporte[i].value;
-      }
-    }
+      };
+    };
     
     for (let i = 0; i < lesao.length; i++) {
       if (lesao[i].checked) {
         lesaoSelecionada = lesao[i].value;
-      }
-    }
+      };
+    };
     
     if (esporteSelecionado === '' || lesaoSelecionada === '') {
       alert('Por favor, selecione pelo menos um esporte e uma lesão.');
       return;
-    }
+    };
     
     localStorage.setItem('formRespondido', true);
     localStorage.setItem('esporteSelecionado', esporteSelecionado);
@@ -123,12 +123,12 @@ function nextForm(current) {
     peso.value = "";
     altura.value = "";
     
-    redirecionar()
+    redirecionar();
    
   });
   
   function confirmarSaida() {
-    alerta.innerHTML = '<div class="divAlerta"><p>Tem certeza que deseja sair?<span> O formulário será resetado.</span></p><button class="voltar" onclick="voltar()">Voltar</button><button onclick="paginaPrincipal()" class="sair">Sair</button></div>';
+    alerta.innerHTML = '<div class="divAlerta"><div><p>Tem certeza que deseja sair?<br><span> O formulário será resetado.</span></p><div><button class="voltar" onclick="voltar()">Voltar</button><button onclick="paginaPrincipal()" class="sair">Sair</button></div></div></div>';
     semCliques.classList.add('semCliques');
   };
   

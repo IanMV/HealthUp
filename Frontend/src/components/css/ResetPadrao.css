@@ -95,8 +95,8 @@ h4 {
    cursor: default;
 }
 
-header {
-   user-select: none;
+.bemVindoOculto {
+   display: none;
 }
 
 .semCliques {
@@ -112,11 +112,11 @@ header {
 .confirmacao {
    background-color: var(--backgroundAlerta);
    position: fixed;
-   top: 40vh;
-   left: 40vw;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
    pointer-events: all;
-   padding: 1.5vw;
-   color: var();
+   padding: 2vw;
    border-radius: 1vw;
    -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
    -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
@@ -125,21 +125,14 @@ header {
 }
 
 .confirmacao .desistir {
-   color: rgba(255, 255, 255, 1);
    padding: 1vw 1vw 1vw 1vw;
-   margin-left: 2.9vw;
+   margin-left: 4.5vw;
    margin-right: 1vw;
    margin-top: 1vw;
-   background-color: var(--corBotaoVerde);
    border-radius: 0.4vw;
    text-decoration: none;
    border: 2px solid black;
    transition: 0.3s;
-}
-
-.confirmacao p {
-   color: rgba(255, 0, 0, 1);
-   font-weight: bold;
 }
 
 .confirmacao .desistir:hover {
@@ -149,10 +142,12 @@ header {
    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
 }
 
+.confirmacao p {
+   font-weight: bold;
+}
+
 .confirmacao .ir {
-   color: rgba(255, 255, 255, 1);
-   padding: 1vw 2.2vw 1vw 2.2vw;
-   background-color: var(--corBotaoVermelho);
+   padding: 1vw 2.3vw 1vw 2.3vw;
    border-radius: 0.4vw;
    text-decoration: none;
    border: 2px solid rgba(0, 0, 0, 1);
@@ -204,7 +199,7 @@ header .barranav aside {
    padding: 2vw;
    top: 0;
    left: 0;
-   border-radius: 0 0 2vw 0;
+   border-radius: 0 0 15px 0;
 }
 
 header .barranav aside #summary {
@@ -225,16 +220,6 @@ header .barranav aside ul li a {
    cursor: pointer;
    text-decoration: none;
    color: var(--linkHeader);
-}
-
-header .barranav aside ul li a {
-   cursor: pointer;
-   text-decoration: none;
-   color: var(--linkHeader);
-}
-
-.bemVindoOculto{
-   display: none;
 }
 
 .fechado {
@@ -420,16 +405,17 @@ footer .DivFooter1 ul li a span {
    }
 
    header .barranav div {
-  
       text-align: center;
       display: flex;
       justify-content: center;
    }
-   header .barranav div p{
+
+   header .barranav div p {
       display: flex;
       align-items: center;
       justify-content: center;
    }
+
    header .barranav div p a {
       padding-top: 0.5vw;
    }
@@ -445,39 +431,45 @@ footer .DivFooter1 ul li a span {
       align-items: center;
       justify-content: center;
       display: none;
+   }
 
-   }
-   header .barranav{
+   header .barranav {
       height: 5vh;
-     
    }
-   summary{
+
+   summary {
       font-size: 15px;
 
    }
-  header .barranav aside{
+
+   header .barranav aside {
       padding-right: 8vw;
       padding-bottom: 8vw;
       padding-top: 4vw;
       padding-left: 4vw;
- border-radius: 1vw;
+      border-bottom-right-radius: 15px;
    }
-   header .barranav aside.aberto{
+
+   header .barranav aside.aberto {
       width: 20vw;
-      
+
    }
-   header .barranav aside ul li a{
-          font-size: 10px; 
+
+   header .barranav aside ul li a {
+      font-size: 10px;
    }
-   .bemVindoOculto{
+
+   .bemVindoOculto {
       display: flex;
       justify-content: center;
       align-items: center;
-      
+
    }
-   .mensagemBoasVindasMobile{
+
+   .mensagemBoasVindasMobile {
       font-size: 10px;
       color: var(--azulUm);
       padding-bottom: 2vw;
    }
+   
 }

@@ -1,13 +1,9 @@
 body,
 html {
     overflow: hidden;
-    place-items: center;
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-
     background-color: var(--azulUm);
 
 }
@@ -29,15 +25,15 @@ main {
     display: flex;
     z-index: 5;
     position: fixed;
-    top: 40%;
-    left: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     pointer-events: all;
     padding: 1.3vw;
     border-radius: 1vw;
     -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
     -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
-    font-size: 1.3vw;
     filter: none;
 }
 
@@ -47,41 +43,62 @@ main {
     margin-bottom: -2vw;
 }
 
+.botaoOk{
+    margin-top: 3vw;
+}
 
 .divAlerta {
     user-select: none;
     background-color: var(--backgroundAlerta);
     position: fixed;
-    top: 40%;
-    left: 30.5%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     pointer-events: all;
     padding: 1.3vw;
     border-radius: 1vw;
     -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
     -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
-    font-size: 1.3vw;
     filter: none;
     z-index: 3;
+     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.divAlerta p {
+.divAlerta div p {
     color: var(--textoPadrao);
     font-weight: bold;
+    margin-bottom: 1vw;
 }
 
-.divAlerta button {
-    margin: 2vw 0 0 8vw;
+.divAlerta div p span{
+    color: var(--azulUm);
 }
 
-.divAlerta button:last-child {
-    margin: 0vw 0vw 0vw 2vw;
-}
+
+
 
 .divAlerta a {
     text-decoration: none;
     color: var(--textoPadrao);
 }
+.divAlerta div{
+    width: 100%;
+    height: 80%;
+}
+.divAlerta div div{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+
+   
+
 
 
 
@@ -89,15 +106,11 @@ main {
 section {
     user-select: none;
     -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
-
     -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
     background-color: var(--azulQuatro);
-
     text-align: baseline;
     border-radius: 1vw;
-    width: 25vw;
-    height: 35vw;
     padding: 2vw;
     z-index: 1;
     transition: 0.3s ease-in-out;
@@ -105,24 +118,24 @@ section {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 80%;
 }
 
 h1 {
     text-align: center;
-    font-size: 2.5rem;
-
-    color: var(--azulUm);
+    color: var(--textoPadrao);
     font-weight: bold;
-
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-bottom: 2vw;
-
 }
 
 section div h2 {
     font-weight: bold;
     text-align: center;
-    font-size: 1.3vw;
     margin-top: 1vw;
     margin-bottom: 1vw;
 }
@@ -140,7 +153,6 @@ section ul li {
 }
 
 section ul li input {
-
     background-color: rgb(224, 224, 224);
     margin-left: 0.5vw;
     color: var(--textoPadrao);
@@ -155,34 +167,22 @@ section ul li input {
 
 section ul li input:hover {
     background-color: rgb(204, 203, 203);
-
-
 }
 
 section ul li input:focus {
     background-color: rgb(243, 242, 242);
-    ;
-
     outline: 1px solid black;
-
     transition: .15s;
-
 }
-
-
-
 
 section ul.data {
     display: flex;
     align-self: center;
-
 }
 
 section ul li .inputData {
-
     width: 1.5vw;
     margin: -1vw 0vw 0 1vw;
-
 }
 
 .inputData:hover {
@@ -192,12 +192,8 @@ section ul li .inputData {
 
 .inputData:focus {
     background-color: rgb(243, 242, 242);
-    ;
-
     outline: 1px solid black;
-
     transition: .15s;
-
 }
 
 .form-container {
@@ -211,7 +207,6 @@ section ul li .labelData {
 
 section ul li .labelSexo {
     margin: 1vw 0 0 0;
-    width: 100%;
 }
 
 select {
@@ -225,9 +220,7 @@ button {
     padding: 1vw 2vw;
     position: relative;
     overflow: hidden;
-    margin-top: 3vw;
     transition: .3s;
-
 }
 
 .barra {
@@ -244,29 +237,25 @@ button::after {
     background-color: black;
     left: 0;
     top: 0;
-
     width: 0vw;
     height: 6vw;
     transition: 0.3s ease-in-out;
-
 }
 
 button:hover::after {
     width: 14vw;
     transition: .3s ease-in-out;
     z-index: -1;
-
 }
 
-.sair:hover{
-    color: var(--backgroundAlerta);
-}
+
 
 button:hover {
     color: white;
     z-index: 1;
     transition: .3s;
 }
+
 
 section fieldset {
     display: flex;
@@ -285,11 +274,8 @@ section fieldset input:first-child {
 }
 
 section fieldset legend {
-    font-size: 1.5vw;
-
     color: var(--azulUm);
     font-weight: bold;
-
     margin-bottom: 1vw;
 }
 
@@ -360,8 +346,6 @@ section fieldset input[type="radio"]:checked::before {
     }
 }
 
-
-
 .divFundo {
     background-color: rgb(233, 234, 235);
     padding: 1.5vw 5vw 1.5vw 1.5vw;
@@ -386,4 +370,57 @@ section fieldset input[type="radio"]:checked::before {
     top: 0;
     left: 0;
     pointer-events: none;
+}
+
+.sair:hover {
+    color: var(--backgroundAlerta);
+}
+
+@media (max-width:500px) {
+    section {
+        width: 85%;
+        height: 55%;
+    }
+
+    .alertaOk {
+        width: 70%;
+        height: 25%;
+
+    }
+
+    .alertaOk P {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 5vw;
+        line-height: 1.5rem;
+
+    }
+
+    .alertaOk button {
+        width: 45%;
+        height: 30%;
+        font-size: 1.5rem;
+    }
+    .divAlerta{
+        height: 30%;
+        width: 70%;
+        text-align: center;
+     
+    }
+    .divAlerta div div {
+        gap: 5vw;
+    }
+    .divAlerta div div button{
+        font-size: 1.5rem;
+        width: 40%;
+        height: 60%;
+    }
+    .divAlerta p{
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        margin-bottom: 0;
+    }
+    .botaoOk{
+        margin-top: 0;
+    }
 }

@@ -11,18 +11,18 @@ let userId = localStorage.getItem("userId");
 if (!userId) {
     userId = generateUserId();
     localStorage.setItem("userId", userId);
-}
+};
 
 console.log("User ID: ", userId);
 
 function Admensagem(quem, texto) {
     const mensagem = document.createElement('div');
-    
-if (quem === 'user') {
-    mensagem.innerText = texto;
-}else{
-    mensagem.innerHTML = texto.replace(/\*\*(.*?)\*\*/g, '<b>$1</b>').replace(/\n/g, "<br>");
-}
+
+    if (quem === 'user') {
+        mensagem.innerText = texto;
+    } else {
+        mensagem.innerHTML = texto.replace(/\*\*(.*?)\*\*/g, '<b>$1</b>').replace(/\n/g, "<br>");
+    };
 
     mensagem.className = quem === "ia" ? "mensagemIa" : "mensagemUser";
 
@@ -34,7 +34,7 @@ if (quem === 'user') {
         const alturaLinha = parseFloat(getComputedStyle(elemento).lineHeight);
         const alturaElemento = elemento.clientHeight;
         return Math.round(alturaElemento / alturaLinha);
-    }
+    };
     const elementos = document.getElementsByClassName("mensagemUser");
     if (elementos.length > 0) {
         const primeiroElemento = elementos[elementos.length - 1];
@@ -106,7 +106,7 @@ userInput.addEventListener("keydown", (event) => {
                 SendMensagem();
                 sendButton.classList.remove('enviar');
                 sendButton.classList.add('semEnviar');
-            }
+            };
         }, 100);
     };
 });

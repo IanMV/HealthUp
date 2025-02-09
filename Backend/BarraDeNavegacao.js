@@ -7,11 +7,11 @@ if (!chat) {
   let boasVindas = document.getElementById('bemVindo');
   let boasVindasMobile = document.getElementById('bemVindoMobile');
   if (formRespondidoSim) {
-    boasVindas.innerHTML = '<p class="mensagemBoasVindas">Olá ' + nomeUsuario + " " + segundoNomeUsuario + '!</p>'
-    boasVindasMobile.innerHTML = '<p class="mensagemBoasVindasMobile">Olá ' + nomeUsuario + " " + segundoNomeUsuario + '!</p>'
+    boasVindas.innerHTML = '<p class="mensagemBoasVindas">Olá ' + nomeUsuario + " " + segundoNomeUsuario + '!</p>';
+    boasVindasMobile.innerHTML = '<p class="mensagemBoasVindasMobile">Olá ' + nomeUsuario + " " + segundoNomeUsuario + '!</p>';
   } else {
-    boasVindas.innerHTML = '<p class="mensagemBoasVindas">Olá!</p>'
-    boasVindasMobile.innerHTML = '<p class="mensagemBoasVindasMobile">Olá!</p>'
+    boasVindas.innerHTML = '<p class="mensagemBoasVindas">Olá!</p>';
+    boasVindasMobile.innerHTML = '<p class="mensagemBoasVindasMobile">Olá!</p>';
   };
 };
 
@@ -36,17 +36,17 @@ let verificador = false;
 summary.addEventListener("click", function () {
   verificador = !verificador;
   if (verificador == false) {
-    details.classList.remove("aberto")
-    details.classList.add("fechado")
+    details.classList.remove("aberto");
+    details.classList.add("fechado");
     items.forEach((item) => {
-      item.classList.remove("show")
+      item.classList.remove("show");
     });
   } else {
-    details.classList.remove("fechado")
-    details.classList.add("aberto")
+    details.classList.remove("fechado");
+    details.classList.add("aberto");
     items.forEach((item) => {
-      item.classList.add("show")
-    })
+      item.classList.add("show");
+    });
   };
 });
 
@@ -57,15 +57,15 @@ toggleButton.addEventListener('click', function () {
     details.classList.remove('aberto');
     details.classList.add('fechado');
     items.forEach((item) => {
-      item.classList.remove("show")
-    })
+      item.classList.remove("show");
+    });
   } else {
     details.classList.remove('fechado');
     details.classList.add('aberto');
     items.forEach((item) => {
-      item.classList.add("show")
-    })
-  }
+      item.classList.add("show");
+    });
+  };
 });
 
 document.addEventListener('click', function () {
@@ -73,7 +73,7 @@ document.addEventListener('click', function () {
   if (!isClickInside) {
     details.classList.remove('aberto');
     details.classList.add('fechado');
-  }
+  };
 });
 
 let semCliquesSection2 = document.getElementById('semCliquesSection2');
@@ -119,10 +119,10 @@ function confirmacaoRespondido() {
   };
   if (semCliquesPrincipal) {
     semCliquesPrincipal.classList.remove('semCliques');
-  }
+  };
   if (semCliquesSection1) {
     semCliquesSection1.classList.remove('semCliques');
-  }
+  };
   if (semCliquesSection2) {
     semCliquesSection2.classList.remove('semCliques');
   };
