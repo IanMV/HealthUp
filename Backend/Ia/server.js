@@ -1,19 +1,29 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import express from "express";
 import cors from "cors";
+import dotenv from "dotenv";
+
+
+dotenv.config();
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
-const genAI = new GoogleGenerativeAI("AIzaSyDMBAmRWGj3wnzaEUCHIsHHdTTIxhHrSdM");
+
+const API_KEY = process.env.API_KEY;
+if (!API_KEY) {
+  console.error("Erro: API_KEY não encontrada no ambiente.");
+
+}
+
+const genAI = new GoogleGenerativeAI(API_KEY);
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 const chatHistories = {};
 
 app.post("/chat", async (req, res) => {
-  const userId = req.body.userId; 
-  const userMessage = req.body.message; 
+  const { userId, message: userMessage } = req.body;
 
   if (!userId || !userMessage) {
     return res.status(400).json({ response: "userId e message são obrigatórios" });
@@ -56,10 +66,11 @@ app.post("/chat", async (req, res) => {
     const result = await chat.sendMessage(userMessage);
     res.json({ response: result.response.text() });
   } catch (error) {
-    console.error(error);
+    console.error("Erro ao processar mensagem:", error);
     res.status(500).json({ response: "Erro ao processar a mensagem." });
   }
 });
 
 
-app.listen(5050, () => console.log("Servidor rodando na porta 5050"));
+const PORT = process.env.PORT || 5050;
+app.listen(PORT, () => console.log(`Servidor rodando na porta ${PORT}`));
