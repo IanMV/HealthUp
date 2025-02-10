@@ -1,0 +1,92 @@
+
+
+section.principal div h2 {
+    margin-left: 50vw;
+}
+
+section.equipe{
+   
+  
+    background-color: var(--azulUm);
+  
+    display: flex;
+    justify-content: center
+ }
+ section.equipe div{
+    display: flex;
+    flex-direction: column;
+  
+    background-color: var(--azulDois);
+    border-radius: 2vw;
+ 
+
+ }
+ section.equipe div ul{
+    display: flex;
+    align-items: center;
+ }
+ .equipe div{
+   padding: 3vw 0 6vw 0;
+ }
+ .equipe img{
+   margin: 1vw 0 1vw 0;
+ }
+.equipe ul{
+   margin: 1.3vw 0 0 0 ;
+ }
+ .equipe ul li ul li p{
+  color: var(--textoBranco);
+   margin: 0vw 4vw 0vw 3vw;
+   font-size: 1.5rem;
+}
+.equipe ul li ul li p:first-child {
+  font-size: 1.8rem;
+  padding-bottom: 1vw;
+  color: var(--textoPreto);
+ 
+}
+.equipe ul li{
+    margin: -2vw 0 0 0;
+ }
+
+ul.li1{
+    margin-top: 3vw;
+}
+
+.equipe ul li a {
+  padding-left: 2.3vw;
+}
+
+section.referencias {
+    background-color: var(--azulUm);
+    text-align: center;
+    padding: 5vw 0 5vw 0;
+}
+
+.referencias a {
+    color: var(--textoBranco);
+    font-size: 1.5rem;
+
+}
+
+.referencias li {
+    padding-bottom: 0.5vw;
+}
+
+.referencias h1 {
+    color: var(--azulTres);
+    padding-bottom: 3vw;
+}
+
+.referencias h2 {
+    font-size: 2.5rem;
+    color: var(--azulDois);
+    padding-bottom: 3vw;
+}
+
+.referencias h3 {
+    color: var(--azulTres);
+    font-size: 2.5rem;
+    padding-bottom: 1vw;
+}
+
