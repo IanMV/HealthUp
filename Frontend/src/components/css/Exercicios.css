@@ -1,4 +1,14 @@
 /* Adaptação da seção principal para ficar mais arrumado seu subtitulo */
+html,
+body {
+
+    overflow-y: auto;
+}
+
+li {
+    font-size: 1.3rem;
+}
+
 section.principal div {
     padding-bottom: 1vw;
     padding-top: 1vw;
@@ -6,14 +16,6 @@ section.principal div {
 
 section.principal div h2 {
     margin-left: 41vw;
-}
-
-section li.lihover:hover {
-    transform: scale(107%);
-    transition: 0.7s;
-    -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
-    -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
-    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
 }
 
 section li {
@@ -25,13 +27,12 @@ section.s1 {
 }
 
 section.s1 div h2 {
-    color: var(--azulDois);
+    color: var(--azulUm);
     padding-bottom: 2vw;
-    text-align: left;
 }
 
 section.s1 div p {
-    color: var(--textoPadrao);
+    color: var(--azulTres);
 }
 
 section.s2 .divP h2 {
@@ -80,7 +81,7 @@ section.s3 .divP h2 {
     text-align: center;
     padding-top: 4vw;
     padding-bottom: 4vw;
-    color: var(--botaoForm);
+    color: var(--azulUm);
 }
 
 section.s3 .divS {
@@ -102,10 +103,6 @@ section.s3 .divS .ulP ul li {
 section.s3 .divS .ulP ul li span {
     color: var(--textoBotaoForm);
     padding-bottom: 1vw;
-}
-
-section.s3 .divS .ulP ul li ul {
-    display: none;
 }
 
 section.s3 .divS .ulP ul:last-child li {
@@ -142,7 +139,7 @@ section.s3 .divS .ulP ul li {
     margin-bottom: 2vw;
     width: 90%;
     border-radius: 25px;
-    padding: 2.5vw 1.5vw 4vw 2vw;
+    padding: 2.5vw 2vw 4vw 2vw;
 }
 
 section.s3 .divS .ulP ul li h4 {
@@ -164,7 +161,7 @@ section.s4 {
 section.s4 .divP h2 {
     text-align: end;
     padding: 5vw 7vw 3vw 0;
-    color: var(--azulUm);
+    color: var(--textoBotaoForm);
 }
 
 section.s4 .divS {
@@ -187,7 +184,7 @@ section.s4 .divS div ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: var(--textoPadrao);
+    color: var(--azulUm);
 }
 
 section.s4 .divS div ul li span {
@@ -226,10 +223,7 @@ section.s5 {
 
 div.s6 {
     padding: 7vw;
-    line-height: 2vw;
 }
-
-
 
 div.s6 div h4 {
     color: var(--textoBranco);
@@ -259,4 +253,125 @@ div.s6 p.lesao {
     font-weight: bold;
     padding: 1.5vw;
     padding-top: 3vw;
+}
+
+@media (max-width:500px) {
+    section.principal div h2 {
+        margin: 0;
+    }
+
+    section.s1 div {
+        text-align: center;
+    }
+
+    section.s2 div.divP h2 {
+        margin-top: 10vw;
+        margin-bottom: 4vw;
+        padding: 0;
+        margin-left: 5vw;
+    }
+
+    section.s2 div.divS ul {
+        flex-direction: column;
+        gap: 5vw;
+        padding: 0;
+        width: 100%;
+        margin: 0;
+    }
+
+    section.s2 div.divS ul li.lihover {
+        margin: 0;
+        padding: 7vw;
+        width: 73%;
+    }
+
+    section.s3 {
+        margin-bottom: 15vw;
+    }
+
+    section.s3 div.divP h2 {
+        margin-bottom: 4vw;
+        margin-top: 10vw;
+        padding: 0;
+    }
+
+    section.s3 div.divS {
+        padding: 0;
+    }
+
+
+    section.s3 div.divS div.ulP ul {
+        flex-direction: column;
+        gap: 5vw;
+    }
+
+    section.s3 div.divS div.ulP ul:last-child {
+        margin-top: 5vw;
+    }
+
+    section.s3 div.divS div.ulP ul:last-child li.lihover:nth-child(n+1) {
+        margin: 0;
+        padding: 3vw;
+        width: 80%;
+
+        padding: 3vw;
+        padding-top: 10vw;
+        padding-bottom: 10vw;
+        align-self: center;
+    }
+
+    section.s3 div.divS div.ulP ul li.lihover:nth-child(n+1) {
+        margin: 0;
+        padding: 3vw;
+        width: 80%;
+        padding: 3vw;
+        padding-top: 10vw;
+        padding-bottom: 10vw;
+        align-self: center;
+    }
+
+
+    section.s3 div.divS div.ulP ul li.lihover p {
+        padding: 0;
+        width: 90%;
+    }
+
+    section.s3 div.divS div.ulP ul:last-child li.lihover p {
+        padding: 0;
+        width: 90%;
+    }
+
+    section.s3 div.divS div.ulP ul li.lihover h4 {
+        margin-bottom: 3vw;
+        margin-left: 4vw;
+        margin-right: 4vw;
+    }
+
+    section.s4 div.divP h2 {
+        margin-bottom: 2vw;
+        padding-top: 8vw;
+    }
+
+    section.s4 .divS {
+        padding: 0;
+    }
+
+    section.s4 .divS div ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 5vw;
+    }
+
+    section.s4 .divS div ul li {
+        width: 70%;
+        padding: 7vw;
+    }
+
+    section.s6 div {
+        margin-top: 5vw;
+    }
+
+    section.s6 div h4 {
+        font-size: 20px;
+    }
 }

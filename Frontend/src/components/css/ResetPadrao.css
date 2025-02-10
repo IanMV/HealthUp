@@ -51,28 +51,34 @@ html {
 
 h1 {
    font-size: 4rem;
+   line-height: 4.2rem;
 }
 
 h2 {
-   font-size: 2.7rem;
-   line-height: 2.7rem;
+   font-size: 3.5rem;
+   line-height: 3.4rem;
 }
 
 p {
    font-size: 1.2rem;
-   line-height: 1.4rem;
+   line-height: 1.5rem;
+   hyphens: auto;
 }
 
 .expPerso {
    font-size: 1.2rem;
+   line-height: 1.5rem;
 }
 
 a {
    font-size: 1.2rem;
+   line-height: 1.5rem;
 }
 
 summary {
    font-size: 1.2rem;
+   line-height: 1.5rem;
+   color: var(--azulUm);
 }
 
 button {
@@ -80,10 +86,13 @@ button {
 }
 
 h4 {
-   font-size: 2rem;
-   line-height: 2rem;
+   font-size: 1.8rem;
+   line-height: 2.2rem;
 }
 
+li span {
+   font-size: 2rem;
+}
 
 
 
@@ -219,7 +228,7 @@ header .barranav aside ul li {
 header .barranav aside ul li a {
    cursor: pointer;
    text-decoration: none;
-   color: var(--linkHeader);
+   color: var(--azulUm);
 }
 
 .fechado {
@@ -227,6 +236,7 @@ header .barranav aside ul li a {
    width: 2vw;
    transition: height 0.3s ease-in-out, width 0.2s ease-in-out;
    transition-delay: 0s, 0.3s;
+   z-index: 1000;
 }
 
 .aberto {
@@ -240,6 +250,7 @@ header .barranav aside ul li a {
 .items {
    opacity: 0;
    transform: translateY(-3vw);
+
 }
 
 .items.show {
@@ -315,6 +326,7 @@ footer .DivFooter1 img {
 
 footer .DivFooter1 p {
    color: var(--textoFooter);
+
 }
 
 footer .DivFooter1 ul {
@@ -327,29 +339,34 @@ footer .DivFooter1 ul li a span {
    font-size: 1.6rem;
 }
 
+.brOculto {
+   display: none;
+}
+
 @media (max-width: 800px) {
    h1 {
-      font-size: 40px;
+      font-size: 45px;
    }
 
    h2 {
-      font-size: 27px;
-      line-height: 1rem;
+      font-size: 35px;
+      line-height: 33px;
       margin-bottom: 5vw;
    }
 
    p,
    a,
    button,
-   .expPerso.label,
+   .expPerso,
+   label,
    .s6 li.bloco {
-      font-size: 15px;
-      line-height: 0.9rem;
+      font-size: 20px;
+      line-height: 22px;
    }
 
    h4 {
-      font-size: 0.5rem;
-      line-height: 0.5rem;
+      font-size: 23px;
+      line-height: 28px;
    }
 
    .principal div h1 {
@@ -364,20 +381,21 @@ footer .DivFooter1 ul li a span {
 
    .principal div .aviso {
       text-align: center;
-      font-size: 9px;
+      font-size: 15px;
       margin-top: 4vw;
    }
 
    header .barranav div a {
-      font-size: 10px;
+      font-size: 15px;
+
    }
 
    header .barranav div {
-      font-size: 10px;
+      font-size: 15px;
    }
 
    header .barranav div p {
-      font-size: 10px;
+      font-size: 17px;
    }
 
    .principal div {
@@ -392,16 +410,20 @@ footer .DivFooter1 ul li a span {
    }
 
    footer .DivFooter1 p {
-      font-size: 0.6rem;
+      font-size: 17px;
    }
 
    footer .DivFooter1 ul li a span {
       color: var(--textoFooter);
-      font-size: 0.7rem;
+      font-size: 15px;
    }
 
    footer .DivFooter1 ul {
       gap: 3vw;
+   }
+
+   footer .DivFooter1 img {
+      width: 15vw;
    }
 
    header .barranav div {
@@ -414,16 +436,16 @@ footer .DivFooter1 ul li a span {
       display: flex;
       align-items: center;
       justify-content: center;
+
    }
 
-   header .barranav div p a {
-      padding-top: 0.5vw;
-   }
 
    header .barranav .expPerso {
       justify-content: center;
       display: flex;
       align-items: center;
+
+
    }
 
    header .barranav div p.mensagemBoasVindas {
@@ -435,41 +457,51 @@ footer .DivFooter1 ul li a span {
 
    header .barranav {
       height: 5vh;
+      padding-right: 5vw;
+      padding-top: 4vw;
+      gap: 10vw;
    }
 
    summary {
-      font-size: 15px;
-
+      font-size: 30px;
+      transform: translate(-2vw, -2vw);
    }
 
    header .barranav aside {
-      padding-right: 8vw;
-      padding-bottom: 8vw;
-      padding-top: 4vw;
-      padding-left: 4vw;
-      border-bottom-right-radius: 15px;
+      padding-right: 10vw;
+      padding-bottom: 10vw;
+      padding-top: 6vw;
+      padding-left: 6vw;
+      border-bottom-right-radius: 17px;
    }
 
    header .barranav aside.aberto {
-      width: 20vw;
+      width: 28vw;
 
    }
 
+   header .barranav aside ul li.items.show {
+      margin-top: 5vw;
+   }
+
    header .barranav aside ul li a {
-      font-size: 10px;
+      font-size: 20px;
    }
 
    .bemVindoOculto {
       display: flex;
       justify-content: center;
       align-items: center;
-
    }
 
    .mensagemBoasVindasMobile {
-      font-size: 10px;
+      font-size: 20px;
       color: var(--azulUm);
       padding-bottom: 2vw;
+      margin-top: 3vw;
    }
-   
+
+   .brOculto {
+      display: block;
+   }
 }

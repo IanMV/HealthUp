@@ -5,7 +5,6 @@ html {
     justify-content: center;
     align-items: center;
     background-color: var(--azulUm);
-
 }
 
 main {
@@ -43,7 +42,7 @@ main {
     margin-bottom: -2vw;
 }
 
-.botaoOk{
+.botaoOk {
     margin-top: 3vw;
 }
 
@@ -62,7 +61,7 @@ main {
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
     filter: none;
     z-index: 3;
-     display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -73,22 +72,21 @@ main {
     margin-bottom: 1vw;
 }
 
-.divAlerta div p span{
+.divAlerta div p span {
     color: var(--azulUm);
 }
-
-
-
 
 .divAlerta a {
     text-decoration: none;
     color: var(--textoPadrao);
 }
-.divAlerta div{
+
+.divAlerta div {
     width: 100%;
     height: 80%;
 }
-.divAlerta div div{
+
+.divAlerta div div {
     width: 100%;
     height: 50%;
     display: flex;
@@ -97,21 +95,15 @@ main {
     gap: 2vw;
 }
 
-   
-
-
-
-
-
 section {
     user-select: none;
     -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
     -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
-    background-color: var(--azulQuatro);
+    background-color: white;
     text-align: baseline;
     border-radius: 1vw;
-    padding: 2vw;
+    padding: 10vw;
     z-index: 1;
     transition: 0.3s ease-in-out;
     display: flex;
@@ -122,15 +114,19 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 60%;
-    height: 80%;
+    width: 30%;
+    height: 50%;
 }
 
-h1 {
+section#form1 h1 {
     text-align: center;
     color: var(--textoPadrao);
     font-weight: bold;
-    margin-bottom: 2vw;
+    font-size: 3rem;
+}
+
+section#form1 ul {
+    margin-top: 1vw;
 }
 
 section div h2 {
@@ -138,7 +134,14 @@ section div h2 {
     text-align: center;
     margin-top: 1vw;
     margin-bottom: 1vw;
+    font-size: 1.7rem;
+    line-height: 2rem;
 }
+
+div.botoes {
+    margin-top: 3vw;
+}
+
 
 section ul {
     margin-top: 2vw;
@@ -178,6 +181,7 @@ section ul li input:focus {
 section ul.data {
     display: flex;
     align-self: center;
+
 }
 
 section ul li .inputData {
@@ -248,14 +252,11 @@ button:hover::after {
     z-index: -1;
 }
 
-
-
 button:hover {
     color: white;
     z-index: 1;
     transition: .3s;
 }
-
 
 section fieldset {
     display: flex;
@@ -303,11 +304,6 @@ section fieldset input[type="radio"]::before {
     transition: transform 0.3s ease-in-out;
 }
 
-section fieldset input[type="radio"]:hover {
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
-    transform: scale(1.1);
-    transition: .3 ease-in-out;
-}
 
 section fieldset input[type="radio"]:checked::before {
     transform: translate(-50%, -50%) scale(1);
@@ -378,8 +374,10 @@ section fieldset input[type="radio"]:checked::before {
 
 @media (max-width:500px) {
     section {
-        width: 85%;
-        height: 55%;
+        width: 80%;
+        height: 80%;
+        border-radius: 12px;
+        padding: 5vw;
     }
 
     .alertaOk {
@@ -401,26 +399,127 @@ section fieldset input[type="radio"]:checked::before {
         height: 30%;
         font-size: 1.5rem;
     }
-    .divAlerta{
+
+    .divAlerta {
         height: 30%;
         width: 70%;
         text-align: center;
-     
+
     }
+
     .divAlerta div div {
         gap: 5vw;
     }
-    .divAlerta div div button{
+
+    .divAlerta div div button {
         font-size: 1.5rem;
         width: 40%;
         height: 60%;
     }
-    .divAlerta p{
+
+    .divAlerta p {
         font-size: 1.5rem;
         line-height: 1.5rem;
         margin-bottom: 0;
     }
-    .botaoOk{
+
+    .botaoOk {
         margin-top: 0;
     }
+
+    h2 {
+        margin-top: 0vw;
+    }
+
+    .barra {
+        width: 80%;
+        margin-top: 4vw;
+        margin-bottom: 4vw;
+    }
+
+    section ul {
+        gap: 5vw;
+    }
+
+    section#form1 ul.Data li:last-child div button {
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+
+    section#form1 ul.Data li:last-child div button:first-child {
+        margin-right: 5vw;
+        margin-bottom: 5vw;
+        padding-left: 11vw;
+        padding-right: 11vw;
+    }
+
+    section#form1 h2 {
+        font-size: 25px;
+    }
+
+    section#form2 {
+        gap: 5vw;
+    }
+
+    section#form2 h2 {
+        margin-bottom: 5vw;
+    }
+
+    fieldset.firstField {
+        margin-top: 0;
+    }
+
+    fieldset.firstField .divFundo {
+        margin-left: 10vw;
+
+    }
+
+    fieldset.firstField legend {
+        font-size: 17px;
+        margin-bottom: 4vw;
+        margin-top: 0;
+    }
+
+    section fieldset input[type="radio"] {
+        width: 5vw;
+        height: 5vw;
+    }
+
+    section fieldset input[type="radio"]::before {
+        width: 3vw;
+        height: 3vw;
+    }
+
+    section#form2 label {
+        font-size: 15.8px;
+    }
+
+    section#form2 .firstField {
+        gap: 4vw;
+    }
+
+    section fieldset legend {
+        margin-bottom: 4vw;
+    }
+
+    div.botoes button {
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+
+    div.botoes button:last-child {
+        margin-left: 5vw;
+        margin-top: 9vw;
+        padding-left: 7vw;
+        padding-right: 7vw;
+    }
+
+    section fieldset input[type="radio"]:checked::before {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
 }

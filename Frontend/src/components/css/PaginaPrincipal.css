@@ -9,11 +9,10 @@ section.s1 div h2 {
 section.s1 div p {
     color: var(--textoPadrao);
     margin: 2vw 0 3vw 0;
-
 }
 
 section.s1 div button {
-    background-color: var(--botaoForm);
+    background-color: var(--azulTres);
     border: none;
     border-radius: 1vw;
     color: var(--textoBotaoForm);
@@ -52,7 +51,6 @@ section.s2 div {
     color: var(--textoBotaoForm);
 }
 
-
 section.s2 div h2 {
     text-align: center;
 }
@@ -65,17 +63,8 @@ section.s2 div img {
     height: 12vw;
     width: 18vw;
     filter: saturate(1.5);
-    transition: transform 0.5s ease-in-out;
     border-radius: 2vw;
-}
-
-section.s2 div img:hover {
-    transform: scale(110%);
-    transition: 0.5s ease-in-out;
-    filter: saturate(1);
-    -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.75);
+    z-index: 1;
 }
 
 section.s2 div ul {
@@ -84,14 +73,6 @@ section.s2 div ul {
 
 section.s2 div ul li {
     margin: 0 1vw 0 1vw;
-}
-
-section.s2 div:hover {
-    transform: scale(103%);
-    transition: 0.2s ease-in-out;
-    -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.75);
 }
 
 section.s3 div {
@@ -114,14 +95,12 @@ section.s3 div.bloco {
 }
 
 section.s3 h2 {
-    line-height: 3vw;
     padding: 2vw 1vw 2vw 1vw;
     text-align: right;
     color: var(--azulTres);
 }
 
 section.s3 p {
-    line-height: 2vw;
     padding: 0 1vw 2vw 1vw;
     text-align: right;
     color: var(--azulDois);
@@ -132,10 +111,15 @@ section.s3 p {
         text-align: center;
     }
 
+    section.s2{
+        margin-bottom: 10vw;
+    }
+
     section.s1 div button {
-        font-size: 10px;
-        padding: 2vw 3vw;
+        font-size: 18px;
+        padding: 3.5vw 4.5vw;
         margin-top: 2vw;
+        border-radius: 12px;
     }
 
     section.s2 div {
@@ -143,10 +127,6 @@ section.s3 p {
         height: auto;
         padding: auto;
         margin: 3vw;
-    }
-
-    h2 {
-        line-height: 1.5rem;
     }
 
     section.s2 div {
@@ -178,13 +158,13 @@ section.s3 p {
 
     section.s3 p {
         text-align: center;
-        line-height: 0.9rem;
     }
 
     section.s3 h2 {
         text-align: center;
-        line-height: 1.3rem;
-        font-size: 20px;
+        font-size: 30px;
     }
-   
+    section.s3 div div.bloco{
+        padding: 2.5vw;
+    }
 }
