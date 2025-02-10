@@ -96,26 +96,35 @@ sendButton.addEventListener('click', () => {
     removeCorBotao();
 });
 
+userInput.addEventListener('input', (event)=>{
+console.log(event.data)
+
+})
+
 userInput.addEventListener("keydown", (event) => {
     if (event.key === 'Backspace') {
         setTimeout(removeCorBotao, 2);
     };
     if (event.key === 'Enter') {
-        setTimeout(() => {
-            if (mensagemEspera) {
-                SendMensagem();
-                sendButton.classList.remove('enviar');
-                sendButton.classList.add('semEnviar');
-            };
-        }, 100);
+        if (!(userInput.value === '')) {
+            setTimeout(() => {
+                if (mensagemEspera) {
+                    SendMensagem();
+                    sendButton.classList.remove('enviar');
+                    sendButton.classList.add('semEnviar');
+                };
+            }, 100);
+        }
     };
 });
 
-userInput.addEventListener("keypress", (event) => {
-
+userInput.addEventListener("keydown", (event) => {
     let mensagemEnviara = userInput.value.trim();
 
     if (mensagemEnviara == '') {
+        if (event.key === 'Backspace') {
+            return;
+        };
         mensagemEnviara = (event.key);
         if (!(event.key === 'Enter')) {
             sendButton.classList.remove('semEnviar');
@@ -131,7 +140,6 @@ userInput.addEventListener("keypress", (event) => {
             setTimeout(valor, 1);
         };
     };
-
 });
 
 function valor() {

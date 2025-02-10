@@ -37,16 +37,18 @@ html {
 .input-container {
     display: flex;
     gap: 2vw;
+    justify-content: center;
 }
 
 .input-container input {
     padding: 0.9vw;
     border: 2px solid rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    padding-right: 13vw;
+    padding-right: 10%;
 }
 
 .input-container button {
+    font-size: 1.2rem;
     padding: 1vw 2vw 1vw 2vw;
     border: none;
     border-radius: 10px;
