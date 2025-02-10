@@ -60,7 +60,7 @@ async function SendMensagem() {
     userInput.value = '';
 
     try {
-        const response = await fetch("https://teste-bgju.onrender.com", {
+        const response = await fetch("https://teste-bgju.onrender.com/chat", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
