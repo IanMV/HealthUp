@@ -96,10 +96,6 @@ sendButton.addEventListener('click', () => {
     removeCorBotao();
 });
 
-userInput.addEventListener('input', (event)=>{
-console.log(event.data)
-
-})
 
 userInput.addEventListener("keydown", (event) => {
     if (event.key === 'Backspace') {
@@ -118,37 +114,19 @@ userInput.addEventListener("keydown", (event) => {
     };
 });
 
-userInput.addEventListener("keydown", (event) => {
-    let mensagemEnviara = userInput.value.trim();
-
-    if (mensagemEnviara == '') {
-        if (event.key === 'Backspace') {
-            return;
-        };
-        mensagemEnviara = (event.key);
-        if (!(event.key === 'Enter')) {
-            sendButton.classList.remove('semEnviar');
-            sendButton.classList.add('enviar');
-            mensagemEnviara = mensagemEnviara.toUpperCase();
-            mensagemFormatada = Array.from(mensagemEnviara);
-            mensagemFormatada = mensagemFormatada.join("");
-            userInput.value = mensagemFormatada;
-            if (!mensagemEspera) {
-                sendButton.classList.remove('enviar');
-                sendButton.classList.add('semEnviar');
-            };
-            setTimeout(valor, 1);
-        };
+userInput.addEventListener('input', (event) => {
+    sendButton.classList.remove('semEnviar');
+                    sendButton.classList.add('enviar');
+    if (userInput.value.length > 1) {
+        userInput.value = userInput.value
+    } else {
+        userInput.value = userInput.value.charAt(0).toUpperCase() + userInput.value.slice(1);
+    };
+    if (!mensagemEspera) {
+        sendButton.classList.remove('enviar');
+        sendButton.classList.add('semEnviar');
     };
 });
-
-function valor() {
-    let mensagemFormatada = userInput.value;
-    mensagemFormatada = Array.from(mensagemFormatada);
-    mensagemFormatada.splice(1, 1);
-    mensagemFormatada = mensagemFormatada.join("");
-    userInput.value = mensagemFormatada;
-};
 
 function removeCorBotao() {
     if (userInput.value == '') {
