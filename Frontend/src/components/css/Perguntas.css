@@ -178,10 +178,21 @@ section ul li input:focus {
     transition: .15s;
 }
 
-section ul.data {
+section ul.Data {
     display: flex;
     align-self: center;
+    width: 100%;
+}
 
+section ul.Data li div{
+    margin-top: 3vw;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    
+}
+section ul.Data li div button{
+    width: 45%;font-size: 1rem;
 }
 
 section ul li .inputData {
@@ -372,7 +383,11 @@ section fieldset input[type="radio"]:checked::before {
     color: var(--backgroundAlerta);
 }
 
-@media (max-width:500px) {
+.cadastrado{
+    display: none;
+}
+
+@media (max-width:700px) {
     section {
         width: 80%;
         height: 80%;

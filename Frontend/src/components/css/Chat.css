@@ -94,17 +94,27 @@ b {
     text-align: right;
 }
 
-aside {
-    color: var(--linkHeaderChat);
+.barranav aside#details{
     top: 0;
     left: 0;
+    background-color: var(--linkHeader);
 }
 
-@media (max-width:500px) {
+.barranav aside#details summary{
+    color: var(--linkHeaderChat);
+}
+.barranav aside#details ul li a{
+    color: var(--linkHeaderChat);
+}
+
+@media (max-width:700px) {
     .chat-container {
         width: 90%;
-        height: 70%;
+        height: 78%;
         padding-top: 5vw;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -45%);
     }
 
     .messages {
@@ -113,18 +123,30 @@ aside {
         height: 85%;
         padding-left: 6vw;
         padding-right: 6vw;
+        margin-bottom: 4vw;
     }
 
     .input-container {
         justify-self: center;
+        justify-content: center;
+        padding-bottom: 3vw;
     }
 
     .input-container input {
+        padding-top: 2vw;
         padding-right: 0;
+        padding-bottom: 2vw;
+        width: 64%;
+    }
+
+    .input-container input::placeholder{
+        font-size: 14px;
     }
 
     .input-container button {
-        font-size: 1rem;
+        font-size: 1.2rem;
+        padding: 3vw;
+        
     }
 
     .messages .mensagemUser {
@@ -133,7 +155,7 @@ aside {
     }
 
     #summary {
-        font-size: 30px;
-        transform: translate(-2vw, -2vw);
+        font-size: 24px;
+      transform: translate(-1vw, -1vw);
     }
 }
