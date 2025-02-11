@@ -91,7 +91,7 @@ function mensagemNaEspera() {
 
 let mensagemEspera = true;
 
-sendButton.addEventListener('click', () => {
+sendButton.addEventListener('pointerdown', () => {
     SendMensagem();
     removeCorBotao();
 });
@@ -126,6 +126,7 @@ userInput.addEventListener('input', (event) => {
         sendButton.classList.remove('enviar');
         sendButton.classList.add('semEnviar');
     };
+    removeCorBotao();
 });
 
 function removeCorBotao() {

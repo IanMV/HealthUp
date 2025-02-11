@@ -77,7 +77,7 @@ a {
 
 summary {
    font-size: 1.5rem;
-   transform: translate(-0.1vw,-0.1vw);
+   transform: translate(-0.1vw, -0.1vw);
    line-height: 1.5rem;
    color: var(--azulUm);
 }
@@ -117,6 +117,18 @@ li span {
    margin-right: 0.3vw;
 }
 
+.confirmacao div.botoesConfirmacao {
+   justify-content: center;
+   display: flex;
+   gap: 3vw;
+   margin-top: 1vw;
+}
+
+.confirmacao div button {
+   width: 40%;
+   height: 80%;
+}
+
 .confirmacao {
    background-color: var(--backgroundAlerta);
    position: fixed;
@@ -134,9 +146,6 @@ li span {
 
 .confirmacao .desistir {
    padding: 1vw 1vw 1vw 1vw;
-   margin-left: 4.5vw;
-   margin-right: 1vw;
-   margin-top: 1vw;
    border-radius: 0.4vw;
    text-decoration: none;
    border: 2px solid black;
@@ -152,6 +161,7 @@ li span {
 
 .confirmacao p {
    font-weight: bold;
+
 }
 
 .confirmacao .ir {
@@ -368,14 +378,14 @@ footer .DivFooter1 ul li a span {
       line-height: 25px;
    }
 
-   .principal{
+   .principal {
       justify-content: center;
    }
 
    .principal div h1 {
       text-align: center;
       margin-bottom: 2vw;
-   
+
    }
 
    .principal div h2 {
@@ -511,5 +521,21 @@ footer .DivFooter1 ul li a span {
 
    .brOculto {
       display: block;
+   }
+
+   div div.confirmacao {
+      width: 70%;
+      height: 25%;
+      place-content: center;
+      border-radius: 20px;
+
+   }
+
+   div div.confirmacao div {
+      font-size: 20px;
+      margin: 4%;
+   }
+   div div.confirmacao div.botoesConfirmacao button{
+      border-radius: 10px;
    }
 }

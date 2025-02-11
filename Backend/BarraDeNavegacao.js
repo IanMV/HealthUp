@@ -33,7 +33,7 @@ const show = document.querySelector(".show");
 
 let verificador = false;
 
-summary.addEventListener("click", function () {
+summary.addEventListener("pointerdown", function () {
   verificador = !verificador;
   if (verificador == false) {
     details.classList.remove("aberto");
@@ -52,7 +52,7 @@ summary.addEventListener("click", function () {
 
 const toggleButton = document.getElementById('summary');
 
-toggleButton.addEventListener('click', function () {
+toggleButton.addEventListener('pointerdown', function () {
   if (details.classList.contains('aberto')) {
     details.classList.remove('aberto');
     details.classList.add('fechado');
@@ -68,7 +68,7 @@ toggleButton.addEventListener('click', function () {
   };
 });
 
-document.addEventListener('click', function () {
+document.addEventListener('pointerdown', function () {
   const isClickInside = details.contains(event.target) || toggleButton.contains(event.target);
   if (!isClickInside) {
     details.classList.remove('aberto');
@@ -87,7 +87,7 @@ let principal = document.getElementById('principal');
 
 function formRespondido() {
   if (resposta) {
-    confirmacao.innerHTML = '<div class="confirmacao"><p>Você ja preencheu o formulário.</p><p> Deseja preencher novamente?</p><button onclick="confirmacaoRespondido()" class="desistir">Voltar</button><button onclick="irProForm()" class="ir">Ir</button></div>';
+    confirmacao.innerHTML = '<div class="confirmacao"><div ><p>Você ja preencheu o formulário.</p><p> Deseja preencher novamente?</p></div><div class="botoesConfirmacao"><button onclick="confirmacaoRespondido()" class="desistir">Voltar</button><button onclick="irProForm()" class="ir">Ir</button></div></div>';
     if (semCliques) {
       semCliques.classList.add('semCliques');
     };
