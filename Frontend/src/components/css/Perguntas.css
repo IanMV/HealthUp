@@ -340,11 +340,10 @@ section fieldset input[type="radio"]:checked::before {
 
 .active {
     display: flex;
-    animation: fadeIn 0.5s ease;
 }
 
 .hide {
-    animation: fadeOut 0.5s ease forwards;
+    animation: fadeOut 0.0s ease forwards;
 }
 
 @keyframes fadeOut {

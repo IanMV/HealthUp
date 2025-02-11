@@ -55,7 +55,7 @@ function nextForm(current) {
       setTimeout(() => {
         currentForm.classList.remove("active", "hide");
         nextFormEl.classList.add("active");
-      }, 500); // Aguarda a animação de fadeOut
+      }, 0); // Aguarda a animação de fadeOut
     };
   };
   
@@ -67,7 +67,7 @@ function nextForm(current) {
       setTimeout(() => {
         currentForm.classList.remove("active", "hide");
         previousForm.classList.add("active");
-      }, 500);
+      }, 0);
     };
   };
   
