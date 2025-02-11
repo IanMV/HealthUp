@@ -229,7 +229,7 @@ header .barranav aside ul {
 }
 
 header .barranav aside ul li {
-   padding-top: 1.5vw;
+   padding-top: 1vw;
    padding-right: 1vw;
    opacity: 0;
 }
@@ -242,7 +242,7 @@ header .barranav aside ul li a {
 
 .fechado {
    height: 1.5vw;
-   width: 2vw;
+   width: 1.5vw;
    transition: height 0.3s ease-in-out, width 0.2s ease-in-out;
    transition-delay: 0s, 0.3s;
    z-index: 1000;
@@ -351,7 +351,108 @@ footer .DivFooter1 ul li a span {
    display: none;
 }
 
-@media (max-width: 700px) {
+
+@media (min-width: 1600px){
+
+   header .barranav aside {
+      padding-right: 2vw;
+      padding-bottom: 2vw;
+      padding-top: 2vw;
+      padding-left: 2vw;
+      border-bottom-right-radius: 20px;
+   }
+}
+
+@media (max-width: 1200px){
+
+   header .barranav aside {
+      padding-right: 2.5vw;
+      padding-bottom: 2.5vw;
+      padding-top: 2vw;
+      padding-left: 2vw;
+      border-bottom-right-radius: 20px;
+   }
+}
+
+
+@media (max-width: 1000px){
+
+   header .barranav aside {
+      padding-right: 4vw;
+      padding-bottom: 4vw;
+      padding-top: 3vw;
+      padding-left: 3vw;
+      border-bottom-right-radius: 20px;
+   }
+header nav.barranav{
+   padding-top: 3vw;
+}
+   header{
+      height: 8vh;
+   }
+
+}
+
+@media (max-width: 800px) {
+   header .barranav aside {
+      padding-right: 6vw;
+      padding-bottom: 6vw;
+      padding-top: 4vw;
+      padding-left: 4vw;
+      border-bottom-right-radius: 28px;
+   }
+   header{
+      height: 4vh;
+   }
+   summary {
+      font-size: 28px;
+      line-height: 26px;
+   }
+   .bemVindoOculto {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+   }
+
+   .mensagemBoasVindasMobile {
+      font-size: 20px;
+      line-height: 22px;
+      color: var(--azulUm);
+      padding-bottom: 2vw;
+      margin-top: 3vw;
+   }
+
+   .brOculto {
+      display: none;
+   }
+   header .barranav div p.mensagemBoasVindas {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      display: none;
+   }
+
+}
+@media (max-width: 700px){
+
+   header .barranav aside {
+      padding-right: 6vw;
+      padding-bottom: 6vw;
+      padding-top: 3vw;
+      padding-left: 3vw;
+      border-bottom-right-radius: 17px;
+   }
+   summary {
+      font-size: 24px;
+      line-height: 26px;
+   
+   }
+
+}
+
+
+@media (max-width: 600px) {
    h1 {
       font-size: 45px;
       line-height: 47px;
@@ -403,6 +504,10 @@ footer .DivFooter1 ul li a span {
    header .barranav div a {
       font-size: 15px;
       line-height: 17px;
+   }
+
+   header{
+      height: 7vh;
    }
 
    header .barranav div {
@@ -478,9 +583,8 @@ footer .DivFooter1 ul li a span {
    }
 
    summary {
-      font-size: 24px;
-      line-height: 26px;
-      transform: translate(-1vw, -1vw);
+      font-size: 30px;
+      line-height: 30px;
    }
 
    header .barranav aside {
@@ -495,6 +599,7 @@ footer .DivFooter1 ul li a span {
       width: 28vw;
 
    }
+
 
    header .barranav aside ul li.items.show {
       margin-top: 5vw;
@@ -525,7 +630,7 @@ footer .DivFooter1 ul li a span {
 
    div div.confirmacao {
       width: 70%;
-      height: 25%;
+      height: 15%;
       place-content: center;
       border-radius: 20px;
 
@@ -535,7 +640,8 @@ footer .DivFooter1 ul li a span {
       font-size: 20px;
       margin: 4%;
    }
-   div div.confirmacao div.botoesConfirmacao button{
+
+   div div.confirmacao div.botoesConfirmacao button {
       border-radius: 10px;
    }
 }
