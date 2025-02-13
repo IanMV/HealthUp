@@ -256,7 +256,132 @@ div.s6 p.lesao {
     padding-top: 3vw;
 }
 
-@media (max-width:700px) {
+@media (max-width:1024px) {
+    section.principal div h2 {
+        margin: 0;
+    }
+
+    section.s1 div {
+        text-align: center;
+    }
+
+    section.s2 div.divP h2 {
+        margin-top: 10vw;
+        margin-bottom: 4vw;
+        padding: 0;
+        margin-left: 5vw;
+    }
+
+    section.s2 div.divS ul {
+        flex-direction: column;
+        gap: 5vw;
+        padding: 0;
+        width: 100%;
+        margin: 0;
+    }
+
+    section.s2 div.divS ul li.lihover {
+        margin: 0;
+        padding: 7vw;
+        width: 73%;
+    }
+
+    section.s3 {
+        margin-bottom: 15vw;
+    }
+
+    section.s3 div.divP h2 {
+        margin-bottom: 4vw;
+        margin-top: 10vw;
+        padding: 0;
+    }
+
+    section.s3 div.divS {
+        padding: 0;
+    }
+
+
+    section.s3 div.divS div.ulP ul {
+        flex-direction: column;
+        gap: 5vw;
+    }
+
+    section.s3 div.divS div.ulP ul:last-child {
+        margin-top: 5vw;
+    }
+
+    section.s3 div.divS div.ulP ul:last-child li.lihover:nth-child(n+1) {
+        margin: 0;
+        padding: 3vw;
+        width: 80%;
+
+        padding: 3vw;
+        padding-top: 10vw;
+        padding-bottom: 10vw;
+        align-self: center;
+    }
+
+    section.s3 div.divS div.ulP ul li.lihover:nth-child(n+1) {
+        margin: 0;
+        padding: 3vw;
+        width: 80%;
+        padding: 3vw;
+        padding-top: 10vw;
+        padding-bottom: 10vw;
+        align-self: center;
+    }
+
+
+    section.s3 div.divS div.ulP ul li.lihover p {
+        padding: 0;
+        width: 90%;
+    }
+
+    section.s3 div.divS div.ulP ul:last-child li.lihover p {
+        padding: 0;
+        width: 90%;
+    }
+
+    section.s3 div.divS div.ulP ul li.lihover h4 {
+        margin-bottom: 3vw;
+        margin-left: 4vw;
+        margin-right: 4vw;
+    }
+
+    section.s4 div.divP h2 {
+        margin-bottom: 2vw;
+        padding-top: 8vw;
+    }
+
+    section.s4 .divS {
+        padding: 0;
+    }
+
+    section.s4 .divS div ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 5vw;
+    }
+
+    section.s4 .divS div ul li {
+        width: 70%;
+        padding: 7vw;
+    }
+
+    section.s6 div {
+        margin-top: 5vw;
+    }
+
+    section.s6 div h4 {
+        font-size: 20px;
+    }
+
+    section.s6 div ul li{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:600px) {
     section.principal div h2 {
         margin: 0;
     }
