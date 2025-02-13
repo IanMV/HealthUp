@@ -31,17 +31,34 @@ function Admensagem(quem, texto) {
     messagesDiv.scrollTop = messagesDiv.scrollHeight;
 
     function contarLinhas(elemento) {
-        const alturaLinha = parseFloat(getComputedStyle(elemento).lineHeight);
-        const alturaElemento = elemento.clientHeight;
+        let alturaLinha = getComputedStyle(elemento).lineHeight;
+
+        if (alturaLinha === "normal") {
+            const fontSize = parseFloat(getComputedStyle(elemento).fontSize);
+            alturaLinha = fontSize * 1.2; 
+        } else {
+            alturaLinha = parseFloat(alturaLinha);
+        };
+    
+        const alturaElemento = elemento.offsetHeight;
         return Math.round(alturaElemento / alturaLinha);
     };
+    
     const elementos = document.getElementsByClassName("mensagemUser");
+    
     if (elementos.length > 0) {
         const primeiroElemento = elementos[elementos.length - 1];
-        if (contarLinhas(primeiroElemento) < 2) {
-            primeiroElemento.classList.add('textoDireita');
+        console.log("Elemento analisado:", primeiroElemento);
+    
+        const numLinhas = contarLinhas(primeiroElemento);
+        console.log("Número de linhas:", numLinhas);
+    
+        if (numLinhas < 2) {
+            primeiroElemento.classList.add("textoDireita");
+            console.log("Classe 'textoDireita' adicionada!");
         };
     };
+    
 };
 
 Admensagem("ia", "Oi! Eu sou o Ernestro, seu mascote virtual. Estou aqui para te ajudar com dicas de exercícios personalizados.🐶");

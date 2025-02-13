@@ -23,10 +23,6 @@ section {
    display: block;
 }
 
-body {
-   line-height: 1;
-}
-
 ol,
 ul {
    list-style: none;
@@ -51,34 +47,28 @@ html {
 
 h1 {
    font-size: 4rem;
-   line-height: 4.2rem;
 }
 
 h2 {
    font-size: 3rem;
-   line-height: 3.4rem;
 }
 
 p {
    font-size: 1.2rem;
-   line-height: 1.5rem;
    hyphens: auto;
 }
 
 .expPerso {
    font-size: 1.2rem;
-   line-height: 1.5rem;
 }
 
 a {
    font-size: 1.2rem;
-   line-height: 1.5rem;
 }
 
 summary {
    font-size: 1.5rem;
    transform: translate(-0.1vw, -0.1vw);
-   line-height: 1.5rem;
    color: var(--azulUm);
 }
 
@@ -89,7 +79,6 @@ button {
 
 h4 {
    font-size: 1.8rem;
-   line-height: 2.2rem;
 }
 
 li span {
@@ -161,7 +150,6 @@ li span {
 
 .confirmacao p {
    font-weight: bold;
-
 }
 
 .confirmacao .ir {
@@ -217,7 +205,7 @@ header .barranav aside {
    padding: 2vw;
    top: 0;
    left: 0;
-   border-radius: 0 0 15px 0;
+   border-radius: 0 0 50px 0;
 }
 
 header .barranav aside #summary {
@@ -259,7 +247,6 @@ header .barranav aside ul li a {
 .items {
    opacity: 0;
    transform: translateY(-3vw);
-
 }
 
 .items.show {
@@ -334,7 +321,6 @@ footer .DivFooter1 img {
 
 footer .DivFooter1 p {
    color: var(--textoFooter);
-
 }
 
 footer .DivFooter1 ul {
@@ -351,30 +337,27 @@ footer .DivFooter1 ul li a span {
    display: none;
 }
 
-@media (max-width: 1920px){
- header .barranav aside {
+@media (max-width: 1920px) {
+   header .barranav aside {
       padding-right: 1.5vw;
       padding-bottom: 1.5vw;
       padding-top: 2vw;
       padding-left: 2vw;
-      border-bottom-right-radius: 10px;
+      border-bottom-right-radius: 25px;
    }
 }
 
-
-@media (max-width: 1440px){
+@media (max-width: 1440px) {
    header .barranav aside {
       padding-right: 2vw;
       padding-bottom: 2vw;
       padding-top: 2vw;
       padding-left: 2vw;
-      border-bottom-right-radius: 10px;
+      border-bottom-right-radius: 20px;
    }
-  
 }
 
-@media (max-width: 1280px){
-
+@media (max-width: 1280px) {
    header .barranav aside {
       padding-right: 2.5vw;
       padding-bottom: 2.5vw;
@@ -385,16 +368,13 @@ footer .DivFooter1 ul li a span {
 }
 
 
-@media (max-width: 1024px){
-
+@media (max-width: 1024px)  {
    h1 {
       font-size: 78px;
-      line-height: 80px;
    }
 
    h2 {
       font-size: 45px;
-      line-height: 47px;
       margin-bottom: 5vw;
    }
 
@@ -405,12 +385,10 @@ footer .DivFooter1 ul li a span {
    label,
    .s6 li.bloco {
       font-size: 30px;
-      line-height: 32px;
    }
 
    h4 {
       font-size: 34px;
-      line-height: 26px;
    }
 
    .principal {
@@ -420,7 +398,6 @@ footer .DivFooter1 ul li a span {
    .principal div h1 {
       text-align: center;
       margin-bottom: 2vw;
-
    }
 
    .principal div h2 {
@@ -435,16 +412,14 @@ footer .DivFooter1 ul li a span {
 
    header .barranav div a {
       font-size: 30px;
-      line-height: 32px;
    }
 
-   header{
+   header {
       height: 10vw;
    }
 
    header .barranav div {
       font-size: 30px;
-      line-height: 32px;
    }
 
 
@@ -453,402 +428,19 @@ footer .DivFooter1 ul li a span {
    }
 
    footer {
-      height: 10vw;
+      height: 20vw;
       display: flex;
       align-items: center;
       justify-content: space-around;
    }
 
    footer .DivFooter1 p {
-      font-size: 17px;
-      line-height: 19px;
-   }
-
-   footer .DivFooter1 ul li a span {
-      color: var(--textoFooter);
-      font-size: 19px;
-   }
-
-   footer .DivFooter1 ul {
-      gap: 5vw;
-   }
-
-   footer .DivFooter1 img {
-      width: 12vw;
-   }
-
-   header .barranav div {
-      text-align: center;
-      display: flex;
-      justify-content: center;
-   }
-
-   header .barranav div p {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-   }
-
-
-   header .barranav .expPerso {
-      justify-content: center;
-      display: flex;
-      align-items: center;
-   }
-
-   header .barranav div p.mensagemBoasVindas {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      display: none;
-   }
-
-   header .barranav {
-      height: 10vw;
-      padding-right: 5vw;
-      padding-top: 2vw;
-      gap: 10vw;
-   }
-
-   summary {
-      font-size: 40px;
-      line-height: 42px;
-      transform: translate(-0.5vw, -0.5vw);
-   }
-
-   header .barranav aside {
-      padding-right: 6vw;
-      padding-bottom: 6vw;
-      padding-top: 4vw;
-      padding-left: 4vw;
-      border-bottom-right-radius: 17px;
-   }
-
-   header .barranav aside.aberto {
-      width: 28vw;
-
-   }
-
-
-   header .barranav aside ul li.items.show {
-      margin-top: 5vw;
-   }
-
-   header .barranav aside ul li a {
-      font-size: 30px;
-      line-height: 32px;
-   }
-
-   .bemVindoOculto {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-   }
-
-   .mensagemBoasVindasMobile {
-      font-size: 30px;
-      line-height: 32px;
-      color: var(--azulUm);
-      padding-bottom: 5vw;
-      margin-top: 7vw;
-   }
-
-   .brOculto {
-      display: block;
-   }
-
-   div div.confirmacao {
-      width: 70%;
-      height: 15%;
-      place-content: center;
-      border-radius: 20px;
-
-   }
-
-   div div.confirmacao div {
-      font-size: 20px;
-      margin: 4%;
-   }
-
-   div div.confirmacao div.botoesConfirmacao button {
-      border-radius: 10px;
-   }
-
-}
-
-@media (max-width: 768px) {
-   h1 {
-      font-size: 50px;
-      line-height: 52px;
-   }
-
-   h2 {
-      font-size: 38px;
-      line-height: 40px;
-      margin-bottom: 5vw;
-   }
-
-   p,
-   a,
-   button,
-   .expPerso,
-   label,
-   .s6 li.bloco {
-      font-size: 23px;
-      line-height: 25px;
-   }
-
-   h4 {
-      font-size: 28px;
-      line-height: 30px;
-   }
-
-   .principal {
-      justify-content: center;
-   }
-
-   .principal div h1 {
-      text-align: center;
-      margin-bottom: 2vw;
-
-   }
-
-   .principal div h2 {
-      text-align: center;
-   }
-
-   .principal div .aviso {
-      text-align: center;
-      font-size: 15px;
-      margin-top: 4vw;
-   }
-
-   header .barranav div a {
-      font-size: 28px;
-      line-height: 30px;
-   }
-
-   header{
-      height: 13vw;
-   }
-
-   header .barranav div {
-      font-size: 28px;
-      line-height: 30px;
-   }
-
-
-   .principal div {
-      margin: 0;
-   }
-
-   footer {
-      height: 10vw;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-   }
-
-   footer .DivFooter1 p {
-      font-size: 17px;
-      line-height: 19px;
-   }
-
-   footer .DivFooter1 ul li a span {
-      color: var(--textoFooter);
-      font-size: 19px;
-   }
-
-   footer .DivFooter1 ul {
-      gap: 5vw;
-   }
-
-   footer .DivFooter1 img {
-      width: 15vw;
-   }
-
-   header .barranav div {
-      text-align: center;
-      display: flex;
-      justify-content: center;
-   }
-
-   header .barranav div p {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-   }
-
-
-   header .barranav .expPerso {
-      justify-content: center;
-      display: flex;
-      align-items: center;
-   }
-
-   header .barranav div p.mensagemBoasVindas {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      display: none;
-   }
-
-   header .barranav {
-      height: 10vw;
-      padding-right: 5vw;
-      padding-top: 4vw;
-      gap: 10vw;
-   }
-
-   summary {
-      font-size: 39px;
-      line-height: 30px;
-      transform: translate(0.5vw, 0.5vw);
-   }
-
-   header .barranav aside {
-      padding-right: 10vw;
-      padding-bottom: 10vw;
-      padding-top: 5vw;
-      padding-left: 5vw;
-      border-bottom-right-radius: 30px;
-   }
-
-   header .barranav aside.aberto {
-      width: 28vw;
-
-   }
-
-
-   header .barranav aside ul li.items.show {
-      margin-top: 5vw;
-   }
-
-   header .barranav aside ul li a {
-      font-size: 32px;
-      line-height: 22px;
-   }
-
-   .bemVindoOculto {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-   }
-
-   .mensagemBoasVindasMobile {
-      font-size: 32px;
-      line-height: 22px;
-      color: var(--azulUm);
-      padding-bottom: 5vw;
-      margin-top: 5vw;
-   }
-
-   .brOculto {
-      display: block;
-   }
-
-   div div.confirmacao {
-      width: 70%;
-      height: 15%;
-      place-content: center;
-      border-radius: 20px;
-
-   }
-
-   div div.confirmacao div {
-      font-size: 20px;
-      margin: 4%;
-   }
-
-   div div.confirmacao div.botoesConfirmacao button {
-      border-radius: 10px;
-   }
-}
-
-
-@media (max-width: 600px) {
-   h1 {
-      font-size: 55px;
-      line-height: 47px;
-   }
-
-   h2 {
-      font-size: 38px;
-      line-height: 40px;
-      margin-bottom: 5vw;
-   }
-
-   p,
-   a,
-   button,
-   .expPerso,
-   label,
-   .s6 li.bloco {
-      font-size: 20px;
-      line-height: 22px;
-   }
-
-   h4 {
-      font-size: 28px;
-      line-height: 30px;
-   }
-
-   .principal {
-      justify-content: center;
-   }
-
-   .principal div h1 {
-      text-align: center;
-      margin-bottom: 2vw;
-
-   }
-
-   .principal div h2 {
-      font-size: 20px;
-      line-height: 22px;
-      text-align: center;
-   }
-
-   .principal div .aviso {
-      text-align: center;
-      font-size: 15px;
-      margin-top: 4vw;
-   }
-
-   header .barranav div a {
-      font-size: 20px;
-      line-height: 22px;
-   }
-
-   header{
-      height: 4vw;
-   }
-
-   header .barranav div {
-      font-size: 20px;
-      line-height: 22px;
-   }
-
-
-   .principal div {
-      margin: 0;
-   }
-
-   footer {
-      height: 30vw;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-   }
-
-   footer .DivFooter1 p {
-      font-size: 20px;
-      line-height: 22px;
-   }
-
-   footer .DivFooter1 ul li a span {
-      color: var(--textoFooter);
       font-size: 25px;
+   }
+
+   footer .DivFooter1 ul li a span {
+      color: var(--textoFooter);
+      font-size: 30px;
    }
 
    footer .DivFooter1 ul {
@@ -886,39 +478,35 @@ footer .DivFooter1 ul li a span {
    }
 
    header .barranav {
-      height: 16vw;
+      height: 10vw;
       padding-right: 5vw;
       padding-top: 2vw;
       gap: 10vw;
    }
 
    summary {
-      font-size: 32px;
-      line-height: 34px;
-
+      font-size: 40px;
+      transform: translate(-0.5vw, -0.5vw);
    }
 
    header .barranav aside {
-      padding-right: 11vw;
-      padding-bottom: 11vw;
-      padding-top: 6vw;
-      padding-left: 6vw;
-      border-bottom-right-radius: 28px;
+      padding-right: 6vw;
+      padding-bottom: 6vw;
+      padding-top: 4vw;
+      padding-left: 4vw;
+      border-bottom-right-radius: 25px;
    }
 
    header .barranav aside.aberto {
-      width: 25vw;
-
+      width: 28vw;
    }
-
 
    header .barranav aside ul li.items.show {
       margin-top: 5vw;
    }
 
    header .barranav aside ul li a {
-      font-size: 28px;
-      line-height: 30px;
+      font-size: 30px;
    }
 
    .bemVindoOculto {
@@ -928,11 +516,10 @@ footer .DivFooter1 ul li a span {
    }
 
    .mensagemBoasVindasMobile {
-      font-size: 28px;
-      line-height: 30px;
+      font-size: 30px;
       color: var(--azulUm);
-      padding-bottom: 7vw;
-      margin-top: 17vw;
+      padding-bottom: 5vw;
+      margin-top: 7vw;
    }
 
    .brOculto {
@@ -941,10 +528,9 @@ footer .DivFooter1 ul li a span {
 
    div div.confirmacao {
       width: 70%;
-      height: 15%;
+      height: 20%;
       place-content: center;
       border-radius: 20px;
-
    }
 
    div div.confirmacao div {
@@ -957,15 +543,176 @@ footer .DivFooter1 ul li a span {
    }
 }
 
+@media (max-width: 768px) {
+   h1 {
+      font-size: 50px;
+   }
+
+   h2 {
+      font-size: 38px;
+      margin-bottom: 5vw;
+   }
+
+   p,
+   a,
+   button,
+   .expPerso,
+   label,
+   .s6 li.bloco {
+      font-size: 23px;
+   }
+
+   h4 {
+      font-size: 28px;
+   }
+
+   header .barranav div a {
+      font-size: 28px;
+   }
+
+   header {
+      height: 13vw;
+   }
+
+   header .barranav div {
+      font-size: 28px;
+   }
+
+   footer {
+      height: 20vw;
+   }
+
+   footer .DivFooter1 p {
+      font-size: 24px;
+   }
+
+   footer .DivFooter1 ul li a span {
+      font-size: 24px;
+   }
+
+   footer .DivFooter1 img {
+      width: 15vw;
+   }
+
+   summary {
+      font-size: 39px;
+      transform: translate(0.5vw, 0.5vw);
+   }
+
+   header .barranav aside {
+      padding-right: 10vw;
+      padding-bottom: 10vw;
+      padding-top: 5vw;
+      padding-left: 5vw;
+      border-bottom-right-radius: 30px;
+   }
+
+   header .barranav aside.aberto {
+      width: 28vw;
+   }
+
+   header .barranav aside ul li a {
+      font-size: 32px;
+   }
+   div div.confirmacao {
+      height: 20%;
+   }
+}
+
+@media (max-width: 600px) {
+   h1 {
+      font-size: 55px;
+   }
+
+   h2 {
+      font-size: 38px;
+   }
+
+   p,
+   a,
+   button,
+   .expPerso,
+   label,
+   .s6 li.bloco {
+      font-size: 20px;
+   }
+
+   h4 {
+      font-size: 28px;
+   }
+
+   .principal div h2 {
+      font-size: 20px;
+   }
+
+   header .barranav div a {
+      font-size: 20px;
+   }
+
+   header {
+      height: 4vw;
+   }
+
+   header .barranav div {
+      font-size: 20px;
+   }
+
+   footer {
+      height: 30vw;
+   }
+
+   footer .DivFooter1 p {
+      font-size: 20px;
+   }
+
+   footer .DivFooter1 ul li a span {
+      font-size: 20px;
+   }
+
+   footer .DivFooter1 img {
+      width: 20vw;
+   }
+
+   header .barranav {
+      height: 16vw;
+   }
+
+   summary {
+      font-size: 32px;
+   }
+
+   header .barranav aside {
+      padding-right: 11vw;
+      padding-bottom: 11vw;
+      padding-top: 6vw;
+      padding-left: 6vw;
+      border-bottom-right-radius: 28px;
+   }
+
+   header .barranav aside.aberto {
+      width: 25vw;
+   }
+
+   header .barranav aside ul li a {
+      font-size: 28px;
+   }
+
+   .mensagemBoasVindasMobile {
+      font-size: 20px;
+      padding-bottom: 5vw;
+      margin-top: 15vw;
+   }
+
+   
+}
+
 @media (max-width: 480px) {
    h1 {
       font-size: 40px;
-      line-height: 42px;
    }
 
    h2 {
       font-size: 30px;
-      line-height: 32px;
       margin-bottom: 5vw;
    }
 
@@ -976,100 +723,39 @@ footer .DivFooter1 ul li a span {
    label,
    .s6 li.bloco {
       font-size: 15px;
-      line-height: 17px;
    }
 
    h4 {
       font-size: 20px;
-      line-height: 22px;
-   }
-
-   .principal {
-      justify-content: center;
-   }
-
-   .principal div h1 {
-      text-align: center;
-      margin-bottom: 2vw;
-
-   }
-
-   .principal div h2 {
-      text-align: center;
    }
 
    .principal div .aviso {
-      text-align: center;
       font-size: 15px;
-      margin-top: 4vw;
    }
 
    header .barranav div a {
       font-size: 15px;
-      line-height: 17px;
    }
 
-   header{
+   header {
       height: 8vw;
-   }
-
-
-
-   .principal div {
-      margin: 0;
    }
 
    footer {
       height: 30vw;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      padding-right: 2vw;
-      padding-left: 2vw;
    }
 
    footer .DivFooter1 p {
       font-size: 13px;
-      line-height: 15px;
+
    }
 
    footer .DivFooter1 ul li a span {
-      color: var(--textoFooter);
       font-size: 20px;
-   }
-
-   footer .DivFooter1 ul {
-      gap: 5vw;
    }
 
    footer .DivFooter1 img {
       width: 19vw;
-   }
-
-   header .barranav div {
-      text-align: center;
-      display: flex;
-      justify-content: center;
-   }
-
-   header .barranav div p {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-   }
-
-
-   header .barranav .expPerso {
-      justify-content: center;
-      display: flex;
-      align-items: center;
-   }
-
-   header .barranav div p.mensagemBoasVindas {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      display: none;
    }
 
    header .barranav {
@@ -1081,14 +767,11 @@ footer .DivFooter1 ul li a span {
 
    header .barranav div {
       font-size: 15px;
-      line-height: 17px;
    }
 
    summary {
       font-size: 25px;
-      line-height: 26px;
       transform: translate(0.5vw, 0.5vw);
-
    }
 
    header .barranav aside {
@@ -1101,51 +784,13 @@ footer .DivFooter1 ul li a span {
 
    header .barranav aside.aberto {
       width: 26vw;
-
-   }
-
-
-   header .barranav aside ul li.items.show {
-      margin-top: 5vw;
    }
 
    header .barranav aside ul li a {
       font-size: 20px;
-      line-height: 22px;
-   }
-
-   .bemVindoOculto {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-   }
-
-   .mensagemBoasVindasMobile {
-      font-size: 20px;
-      line-height: 22px;
-      color: var(--azulUm);
-      padding-bottom: 5vw;
-      margin-top: 15vw;
-   }
-
-   .brOculto {
-      display: block;
    }
 
    div div.confirmacao {
-      width: 70%;
-      height: 15%;
-      place-content: center;
-      border-radius: 20px;
-
-   }
-
-   div div.confirmacao div {
-      font-size: 20px;
-      margin: 4%;
-   }
-
-   div div.confirmacao div.botoesConfirmacao button {
-      border-radius: 10px;
+      height: 17%;
    }
 }

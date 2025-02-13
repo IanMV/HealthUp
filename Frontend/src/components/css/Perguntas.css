@@ -139,7 +139,6 @@ section div h2 {
     margin-top: 1vw;
     margin-bottom: 1vw;
     font-size: 1.7rem;
-    line-height: 2rem;
 }
 
 div.botoes {
@@ -414,7 +413,7 @@ section fieldset input[type="radio"]:checked::before {
         font-size: 1.5rem;
         text-align: center;
         margin-bottom: 5vw;
-        line-height: 1.5rem;
+    
 
     }
 
@@ -446,7 +445,7 @@ section fieldset input[type="radio"]:checked::before {
 
     .divAlerta p {
         font-size: 1.5rem;
-        line-height: 1.5rem;
+
         margin-bottom: 0;
     }
 
@@ -575,7 +574,7 @@ section fieldset input[type="radio"]:checked::before {
         font-size: 1.5rem;
         text-align: center;
         margin-bottom: 5vw;
-        line-height: 1.5rem;
+
 
     }
 
@@ -607,7 +606,167 @@ section fieldset input[type="radio"]:checked::before {
 
     .divAlerta p {
         font-size: 1.5rem;
-        line-height: 1.5rem;
+
+        margin-bottom: 0;
+    }
+
+    .botaoOk {
+        margin-top: 0;
+    }
+
+    h2 {
+        margin-top: 0vw;
+    }
+
+    .barra {
+        width: 80%;
+        margin-top: 4vw;
+        margin-bottom: 4vw;
+    }
+
+    section ul {
+        gap: 5vw;
+    }
+
+    section#form1 ul.Data li.libotoes div button {
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        width: 40%;
+    }
+    section#form1 ul.Data li.libotoes div {
+        width: 100%;
+    }
+    
+
+    li.libotoes{
+        width: 100%;
+        justify-content: center;
+    }
+
+    section#form1 h2 {
+        font-size: 25px;
+    }
+
+    section#form2 {
+        gap: 5vw;
+    }
+
+    section#form2 h2 {
+        margin-bottom: 5vw;
+    }
+
+    fieldset.firstField {
+        margin-top: 0;
+    }
+
+    fieldset.firstField .divFundo {
+        margin-left: 10vw;
+
+    }
+
+    fieldset.firstField legend {
+        font-size: 17px;
+        margin-bottom: 4vw;
+        margin-top: 0;
+    }
+
+    section fieldset input[type="radio"] {
+        width: 5vw;
+        height: 5vw;
+    }
+
+    section fieldset input[type="radio"]::before {
+        width: 3vw;
+        height: 3vw;
+    }
+
+    section#form2 label {
+        font-size: 15.8px;
+    }
+
+    section#form2 .firstField {
+        gap: 4vw;
+    }
+
+    section fieldset legend {
+        margin-bottom: 4vw;
+    }
+    div.botoes {
+        place-content: center;
+    }
+
+    div.botoes button {
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+
+    div.botoes button:last-child {
+        margin-left: 5vw;
+        margin-top: 2vw;
+        padding-left: 7vw;
+        padding-right: 7vw;
+    }
+
+    section fieldset input[type="radio"]:checked::before {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+}
+
+@media (max-width:480px) {
+    section {
+        width: 80%;
+        height: 65%;
+        border-radius: 12px;
+        padding: 5vw;
+    }
+
+    .alertaOk {
+        width: 70%;
+        height: 25%;
+
+    }
+
+    .alertaOk P {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 5vw;
+
+    }
+
+    .alertaOk button {
+        width: 45%;
+        height: 30%;
+        font-size: 1.5rem;
+    }
+
+    .divAlerta {
+        height: 20%;
+        width: 70%;
+        text-align: center;
+
+   }
+  .divAlerta div.divTexoBotao {
+    width: 100%;
+ }
+    .divAlerta div div {
+        gap: 5vw;
+        height: 100%;
+    }
+
+    .divAlerta div div button {
+        font-size: 1.5rem;
+        width: 40%;
+        height: 80%;
+    }
+
+    .divAlerta p {
+        font-size: 1.5rem;
+   
         margin-bottom: 0;
     }
 

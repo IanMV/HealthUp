@@ -90,7 +90,7 @@ section.referencias {
   padding-bottom: 1vw;
 }
 
-@media (max-width:600px) {
+@media (max-width:1024px) {
   section.principal h2 {
     padding-left: 5vw;
     padding-right: 5vw;
@@ -99,10 +99,6 @@ section.referencias {
   section.principal {
     padding-top: 17vw;
     padding-bottom: 17vw;
-  }
-
-  section.principal h1 {
-    line-height: 41px;
   }
 
   section.equipe div{

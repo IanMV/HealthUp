@@ -1,27 +1,10 @@
 /* Adaptação da seção principal para ficar mais arrumado seu subtitulo */
-html,
 
-body {
-
-    overflow-y: auto;
-}
-
-li {
-    font-size: 1.3rem;
-}
-
-section.principal div {
-    padding-bottom: 1vw;
-    padding-top: 1vw;
-}
 
 section.principal div h2 {
     margin-left: 41vw;
 }
 
-section li {
-    transition: 0.5s;
-}
 
 section.s1 {
     padding: 7vw 7vw 3vw 7vw;
@@ -29,35 +12,42 @@ section.s1 {
 
 section.s1 div h2 {
     color: var(--azulUm);
-    padding-bottom: 2vw;
 }
 
 section.s1 div p {
     color: var(--azulTres);
 }
 
+section.s2 {
+    padding-bottom: 5vw;
+    padding-top: 5vw;
+}
+
 section.s2 .divP h2 {
     text-align: left;
     padding-left: 7vw;
-    padding-top: 2vw;
+    padding-bottom: 3vw;
     color: var(--azulQuatro);
 }
 
 section.s2 .divS ul {
-    padding: 3vw 7vw 5vw 7vw;
+    padding-left: 7vw;
+    padding-right: 7vw;
     align-items: center;
     display: flex;
+    justify-content: space-between;
+    gap: 5vw;
 }
 
 section.s2 .divS ul li {
     width: 50%;
     background-color: var(--azulQuatro);
-    padding: 2.5vw;
+    padding: 2vw;
     border-radius: 20px;
 }
 
 section.s2 .divS ul li p {
-    padding-bottom: 2vw;
+    margin-bottom: 2vw;
     color: var(--textoBotaoForm);
 }
 
@@ -66,22 +56,15 @@ section.s2 .divS ul li a {
     text-decoration: none;
 }
 
-section.s2 .divS ul li:last-child {
-    margin-left: 1.5vw;
-}
-
-section.s2 .divS ul li:first-child {
-    margin-right: 1.5vw;
-}
 
 section.s3 {
-    margin-bottom: 7vw;
+    padding-bottom: 5vw;
+    padding-top: 5vw;
 }
 
 section.s3 .divP h2 {
     text-align: center;
-    padding-top: 4vw;
-    padding-bottom: 4vw;
+    padding-bottom: 3vw;
     color: var(--azulUm);
 }
 
@@ -90,26 +73,20 @@ section.s3 .divS {
     padding-right: 7vw;
 }
 
+
 section.s3 .divS .ulP ul {
     display: flex;
     justify-content: center;
-}
 
-section.s3 .divS .ulP ul li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 section.s3 .divS .ulP ul li span {
     color: var(--textoBotaoForm);
-    padding-bottom: 1vw;
+    margin-bottom: 1vw;
 }
 
 section.s3 .divS .ulP ul:last-child li {
-    width: 28%;
-    padding-top: 5vw;
-    padding-bottom: 4vw;
+    width: 26%;
 }
 
 section.s3 .divS .ulP ul li:first-child {
@@ -120,34 +97,26 @@ section.s3 .divS .ulP ul li:last-child {
     margin-right: 0;
 }
 
-section.s3 .divS .ulP ul:last-child li:last-child {
-    padding-top: 6vw;
-}
-
-section.s3 .divS .ulP ul:last-child li:last-child h4 {
-    padding-top: 0.5vw;
-    padding-bottom: 1.5vw;
-}
-
-section.s3 .divS .ulP ul:first-child li {
-    padding-top: 4vw;
-}
-
 section.s3 .divS .ulP ul li {
     background-color: var(--botaoForm);
     margin-right: 1vw;
     margin-left: 1vw;
     margin-bottom: 2vw;
     width: 90%;
+    ;
     border-radius: 25px;
-    padding: 2.5vw 2vw 4vw 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3vw;
 }
 
 section.s3 .divS .ulP ul li h4 {
     color: var(--textoBotaoForm);
     text-align: center;
     font-weight: bold;
-    padding-bottom: 1vw;
+    margin-bottom: 1vw;
 }
 
 section.s3 .divS .ulP ul li p {
@@ -155,32 +124,29 @@ section.s3 .divS .ulP ul li p {
 }
 
 section.s4 {
+    padding-left: 7vw;
+    padding-right: 7vw;
+    padding-top: 4vw;
     padding-bottom: 4vw;
     background-color: var(--azulQuatro);
 }
 
 section.s4 .divP h2 {
     text-align: end;
-    padding: 5vw 7vw 3vw 0;
+    padding-bottom: 3vw;
     color: var(--textoBotaoForm);
-}
-
-section.s4 .divS {
-    padding-left: 7vw;
-    padding-right: 7vw;
 }
 
 section.s4 .divS div ul {
     display: flex;
     justify-content: space-between;
-    width: 100%;
 }
 
 section.s4 .divS div ul li {
     background-color: var(--backgroundAlerta);
     width: 90%;
     border-radius: 30px;
-    padding: 1vw 2vw 1vw 2vw;
+    padding: 3vw;
     margin: 1vw;
     display: flex;
     flex-direction: column;
@@ -190,13 +156,12 @@ section.s4 .divS div ul li {
 
 section.s4 .divS div ul li span {
     justify-content: center;
-    padding-bottom: 1vw;
+
 }
 
 section.s4 .divS div ul li p {
     text-align: left;
-    padding-top: 1vw;
-    padding-bottom: 2vw;
+    margin-top: 1vw;
 }
 
 section.s4 .divS div ul li h4 {
@@ -211,15 +176,11 @@ section.s4 .divS div ul li:last-child {
 }
 
 section.s4 .divS div ul li.li1 {
-    padding-top: 6vw;
+    padding-top: 4vw;
 }
 
 section.s4 .divS div ul li.li2 {
-    padding-top: 5vw;
-}
-
-section.s5 {
-    display: none;
+    padding-top: 4vw;
 }
 
 div.s6 {
@@ -229,32 +190,33 @@ div.s6 {
 div.s6 div h4 {
     color: var(--textoBranco);
     background-color: var(--azulTres);
-    padding: 2vw;
-    border-radius: 2vw;
+    padding: 1vw;
+    border-radius: 20px;
     font-weight: bold;
 }
 
 div.s6 div p {
     color: var(--textoPadrao);
-    padding: 1.5vw;
+    padding-top: 2vw;
+    padding-bottom: 1vw;
 }
 
 div.s6 div ul li {
-    padding: 2vw;
+    padding-bottom: 1vw;
     padding-top: 1vw;
+    font-size: 1.2rem;
 }
 
 div.s6 div h2 {
     color: var(--azulTres);
     text-align: center;
-    padding: 2vw;
 }
 
 div.s6 p.lesao {
     font-weight: bold;
-    padding: 1.5vw;
-    padding-top: 3vw;
+    padding-top: 2vw;
 }
+
 
 @media (max-width:1024px) {
     section.principal div h2 {
@@ -280,8 +242,7 @@ div.s6 p.lesao {
         margin: 0;
     }
 
-    section.s2 div.divS ul li.lihover {
-        margin: 0;
+    section.s2 div.divS ul li {
         padding: 7vw;
         width: 73%;
     }
@@ -310,7 +271,7 @@ div.s6 p.lesao {
         margin-top: 5vw;
     }
 
-    section.s3 div.divS div.ulP ul:last-child li.lihover:nth-child(n+1) {
+    section.s3 div.divS div.ulP ul:last-child li:nth-child(n+1) {
         margin: 0;
         padding: 3vw;
         width: 80%;
@@ -321,7 +282,7 @@ div.s6 p.lesao {
         align-self: center;
     }
 
-    section.s3 div.divS div.ulP ul li.lihover:nth-child(n+1) {
+    section.s3 div.divS div.ulP ul li:nth-child(n+1) {
         margin: 0;
         padding: 3vw;
         width: 80%;
@@ -332,20 +293,24 @@ div.s6 p.lesao {
     }
 
 
-    section.s3 div.divS div.ulP ul li.lihover p {
+    section.s3 div.divS div.ulP ul li p {
         padding: 0;
         width: 90%;
     }
 
-    section.s3 div.divS div.ulP ul:last-child li.lihover p {
+    section.s3 div.divS div.ulP ul:last-child li p {
         padding: 0;
         width: 90%;
     }
 
-    section.s3 div.divS div.ulP ul li.lihover h4 {
+    section.s3 div.divS div.ulP ul li h4 {
         margin-bottom: 3vw;
         margin-left: 4vw;
         margin-right: 4vw;
+    }
+
+    section.s3 div.divS div.ulP ul li span{
+        font-size: 2.5rem;
     }
 
     section.s4 div.divP h2 {
@@ -355,6 +320,8 @@ div.s6 p.lesao {
 
     section.s4 .divS {
         padding: 0;
+        margin: 0;
+        width: 100%;
     }
 
     section.s4 .divS div ul {
@@ -364,21 +331,32 @@ div.s6 p.lesao {
     }
 
     section.s4 .divS div ul li {
-        width: 70%;
+        width: 85%;
         padding: 7vw;
     }
 
-    section.s6 div {
+    section.s4 .divS div ul li:last-child {
+        padding-bottom: 5vw;
+    }
+
+    section.s4 .divS div ul li span {
+        font-size: 2.5rem;
+        margin-bottom: 2vw;
+        margin-top: 2vw;
+    }
+
+    div.s6 div {
         margin-top: 5vw;
     }
-
-    section.s6 div h4 {
-        font-size: 20px;
+    div.s6 div ul li {
+        font-size: 30px;
+    }
+    div.s6 div h4{
+        border-radius: 15px;
+        padding-top: 3vw;
+        padding-bottom: 3vw;
     }
 
-    section.s6 div ul li{
-        font-size: 20px;
-    }
 }
 
 @media (max-width:600px) {
@@ -405,11 +383,6 @@ div.s6 p.lesao {
         margin: 0;
     }
 
-    section.s2 div.divS ul li.lihover {
-        margin: 0;
-        padding: 7vw;
-        width: 73%;
-    }
 
     section.s3 {
         margin-bottom: 15vw;
@@ -435,7 +408,7 @@ div.s6 p.lesao {
         margin-top: 5vw;
     }
 
-    section.s3 div.divS div.ulP ul:last-child li.lihover:nth-child(n+1) {
+    section.s3 div.divS div.ulP ul:last-child li:nth-child(n+1) {
         margin: 0;
         padding: 3vw;
         width: 80%;
@@ -446,7 +419,7 @@ div.s6 p.lesao {
         align-self: center;
     }
 
-    section.s3 div.divS div.ulP ul li.lihover:nth-child(n+1) {
+    section.s3 div.divS div.ulP ul li:nth-child(n+1) {
         margin: 0;
         padding: 3vw;
         width: 80%;
@@ -457,20 +430,24 @@ div.s6 p.lesao {
     }
 
 
-    section.s3 div.divS div.ulP ul li.lihover p {
+    section.s3 div.divS div.ulP ul li p {
         padding: 0;
         width: 90%;
     }
 
-    section.s3 div.divS div.ulP ul:last-child li.lihover p {
+    section.s3 div.divS div.ulP ul:last-child li p {
         padding: 0;
         width: 90%;
     }
 
-    section.s3 div.divS div.ulP ul li.lihover h4 {
+    section.s3 div.divS div.ulP ul li h4 {
         margin-bottom: 3vw;
         margin-left: 4vw;
         margin-right: 4vw;
+    }
+
+    section.s3 div.divS div.ulP ul li span{
+        font-size: 2rem;
     }
 
     section.s4 div.divP h2 {
@@ -488,16 +465,20 @@ div.s6 p.lesao {
         gap: 5vw;
     }
 
-    section.s4 .divS div ul li {
-        width: 70%;
-        padding: 7vw;
+    section.s4 .divS div ul li span{
+      font-size: 2rem;
     }
 
-    section.s6 div {
+    div.s6 div {
         margin-top: 5vw;
     }
-
-    section.s6 div h4 {
-        font-size: 20px;
+    div.s6 div ul li {
+        font-size: 15px;
     }
+    div.s6 div h4{
+        border-radius: 10px;
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+    }
+
 }

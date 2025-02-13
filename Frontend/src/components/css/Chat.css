@@ -1,55 +1,58 @@
 body,
 html {
-    padding: 0;
     display: flex;
     overflow: hidden;
     place-items: center;
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .chat-container {
-    width: 40%;
-    padding: 2vw;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    height: 80%;
+    width: 38%;
     border-radius: 10px;
-    box-shadow: 0 0.5vw 1vw var(--azulQuatro);
+    box-shadow: 20px 20px 40px 5px var(--azulQuatro);
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    gap: 1vw;
 }
 
 .messages {
+    padding: 2vw;
+    width: 75%;
+    height: 65%;
     justify-content: end;
-    max-width: 70vw;
-    height: 30vw;
     overflow-y: auto;
-    margin-bottom: 20px;
     border: 2px solid rgba(0, 0, 0, 0.2);
-    padding: 0.9vw;
     border-radius: 10px;
     background-color: var(--backgroundAlerta);
 }
 
 .input-container {
+    height: 8%;
+    width: 86%;
     display: flex;
-    gap: 2vw;
+    gap: 4vw;
     justify-content: center;
+    margin-top: 1vw;
 }
 
 .input-container input {
-    padding: 0.9vw;
     border: 2px solid rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    padding-right: 10%;
+    width: 60%;
+    padding-left: 1vw;
 }
 
 .input-container button {
-    font-size: 1.2rem;
-    padding: 1vw 2vw 1vw 2vw;
+    width: 25%;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -73,21 +76,23 @@ b {
 }
 
 .mensagemIa {
-    max-width: 100%;
-    padding: 0.7vw;
     background-color: var(--backgroundAlerta);
     color: var(--azulQuatro);
     word-wrap: break-word;
     hyphens: auto;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
 }
 
 .mensagemUser {
+
+    justify-self: end;
+    width: 50%;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
     word-wrap: break-word;
     hyphens: auto;
     text-align: left;
-    margin-left: 4vw;
-    margin-bottom: 1vw;
-    margin-top: 1vw;
     background-color: var(--backgroundAlerta);
     color: var(--azulDois);
 }
@@ -96,68 +101,90 @@ b {
     text-align: right;
 }
 
-.barranav aside#details{
+.barranav aside#details {
     top: 0;
     left: 0;
     background-color: var(--linkHeader);
 }
 
-.barranav aside#details summary{
+.barranav aside#details summary {
     color: var(--linkHeaderChat);
 }
-.barranav aside#details ul li a{
+
+.barranav aside#details ul li a {
     color: var(--linkHeaderChat);
+}
+
+@media (max-width:1280px){
+    .chat-container {
+        width: 70%;
+        height: 65%;
+    }
+    .input-container{
+    
+        margin-top: 3vw;
+    }
+}
+
+@media (max-width:1024px) {
+    .chat-container {
+        width: 70%;
+        height: 65%;
+    }
+    .messages{
+        width: 79%;
+        height: 70%;
+        padding: 3vw;
+    }
+    .input-container{
+        width: 94%;
+        margin-top: 3vw;
+    }
+}
+
+@media (max-width:768px) {
+    .chat-container {
+        width: 80%;
+        height: 60%;
+    }
+    .messages{
+        width: 79%;
+        padding: 3vw;
+    }
+    .input-container{
+        width: 94%;
+        margin-top: 3vw;
+    }
 }
 
 @media (max-width:600px) {
     .chat-container {
         width: 90%;
-        height: 78%;
-        padding-top: 5vw;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -45%);
-    }
-
-    .messages {
-        justify-self: center;
-        width: 100%;
-        height: 85%;
-        padding-left: 6vw;
-        padding-right: 6vw;
-        margin-bottom: 4vw;
-    }
-
-    .input-container {
-        justify-self: center;
-        justify-content: center;
-        padding-bottom: 3vw;
-    }
-
-    .input-container input {
-        padding-top: 2vw;
-        padding-right: 0;
-        padding-bottom: 2vw;
-        width: 64%;
-    }
-
-    .input-container input::placeholder{
-        font-size: 14px;
-    }
-
-    .input-container button {
-        font-size: 1.2rem;
-        padding: 3vw;
-        
-    }
-
-    .messages .mensagemUser {
-        margin-top: 3vw;
-        margin-bottom: 3vw;
-    }
-
-    #summary {
-        font-size: 24px;
-      transform: translate(-1vw, -1vw);
     }
 }
+
+@media (max-width:480px) {
+    .chat-container {
+        width: 90%;
+        height: 70%;
+    }
+
+    .mensagemUser {
+margin-top: 5vw;
+margin-bottom: 5vw;
+    }
+
+    .messages{
+        width: 74%;
+        padding: 5vw;
+        height: 75%;
+    }
+    .input-container input::placeholder{
+        font-size: 13px;
+    }
+    .input-container{
+    
+        margin-top: 4vw;
+    }
+}
+
