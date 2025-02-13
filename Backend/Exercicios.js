@@ -37,13 +37,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 '<p>Procure uma piscina com supervisão profissional, especialmente se você é iniciante. Comece com nados simples, como crawl ou peito, e aumente a intensidade e a duração conforme ganha confiança.</p></div>';
         } else if (esporteSelecionado === 'caminhada') {
             textoEsporte = '<div><h2>' + texto + '</h2></div><div><p>A caminhada é uma das atividades físicas mais acessíveis e benéficas, com impactos positivos tanto no corpo quanto na mente.</p></div>' +
-                '<div><h4>Benefícios:<h4>' +
+                '<div><h4>Benefícios:</h4>' +
                 '<ul><li>- Melhora a saúde cardiovascular.</li>' +
                 '<li>- Auxilia na perda de peso e controle de peso.</li>' +
                 '<li>- Ajuda a melhorar o humor e reduzir o estresse.</li>' +
                 '<li>- Pode ser praticada em praticamente qualquer lugar. </li>' +
                 '<li>- Ajuda a prevenir doenças crônicas, como hipertensão e diabetes.</li></ul></div>' +
-                '<div><h4>Músculos trabalhados:<h4>' +
+                '<div><h4>Músculos trabalhados:</h4>' +
                 '<ul><li>- Pernas (quadríceps, isquiotibiais, panturrilhas).</li> ' +
                 '<li>- Glúteos. </li></ul></div>' +
                 '<div><h4>Como começar:</h4>' +

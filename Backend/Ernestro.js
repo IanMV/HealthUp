@@ -96,7 +96,6 @@ async function SendMensagem() {
         mensagemEspera = true;
         setTimeout(mensagemNaEspera(), 100);
     };
-
 };
 
 function mensagemNaEspera() {
