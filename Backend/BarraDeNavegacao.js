@@ -87,7 +87,7 @@ let principal = document.getElementById('principal');
 
 function formRespondido() {
   if (resposta) {
-    confirmacao.innerHTML = '<div class="confirmacao"><div ><p>Você ja preencheu o formulário.</p><p> Deseja preencher novamente?</p></div><div class="botoesConfirmacao"><button onclick="confirmacaoRespondido()" class="desistir">Voltar</button><button onclick="irProForm()" class="ir">Ir</button></div></div>';
+    confirmacao.innerHTML = '<div class="confirmacao"><div class="divTextoBotao"><p>Você ja preencheu o formulário.</p><p> Deseja preencher novamente?</p></div><div class="botoesConfirmacao"><button onclick="confirmacaoRespondido()" class="desistir">Voltar</button><button onclick="irProForm()" class="ir">Ir</button></div></div>';
     if (semCliques) {
       semCliques.classList.add('semCliques');
     };

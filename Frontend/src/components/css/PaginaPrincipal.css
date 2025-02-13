@@ -83,7 +83,8 @@ section.s3 div {
 
 section.s3 div img {
     margin: 5vw 0 5vw 8vw;
-    width: 400px;
+    width: 70%;
+    height: 70%;
 }
 
 section.s3 div.bloco {
@@ -106,12 +107,20 @@ section.s3 p {
     color: var(--azulDois);
 }
 
+@media (max-width:1200px) {
+    section.s2 div {
+        width: 70%;
+        height: 70%;
+    }
+
+}
+
 @media (max-width:700px) {
     section {
         text-align: center;
     }
 
-    section.s2{
+    section.s2 {
         margin-bottom: 10vw;
     }
 
@@ -164,7 +173,8 @@ section.s3 p {
         text-align: center;
         font-size: 30px;
     }
-    section.s3 div div.bloco{
+
+    section.s3 div div.bloco {
         padding: 2.5vw;
     }
 }
