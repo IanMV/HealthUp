@@ -57,8 +57,11 @@ section.equipe div ul {
 }
 
 
-.equipe ul li a {
-  padding-left: 2.3vw;
+.equipe ul li ul li a span{
+font-size: 3rem;
+padding-top: 1vw;
+
+color: black;
 }
 
 section.referencias {
@@ -122,6 +125,7 @@ section.referencias {
     text-align: center;
   }
 
+
   section.equipe div ul li ul li img {
     width: 100%;
   }
@@ -141,5 +145,17 @@ section.referencias {
   
   .referencias h4 {
     padding-bottom: 4vw;
+  }
+  .equipe ul li ul li a span{
+
+    padding-bottom: 10vw;
+    padding-top: 2vw;
+    font-size: 5rem;
+  }
+}
+
+@media (max-width:600px){
+  .equipe ul li ul li a span{
+    font-size: 3.5rem;
   }
 }

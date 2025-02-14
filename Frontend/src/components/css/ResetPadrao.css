@@ -337,7 +337,7 @@ footer .DivFooter1 ul li a span {
    display: none;
 }
 
-@media (max-width: 1920px) {
+@media (min-width: 1920px) {
    header .barranav aside {
       padding-right: 1.5vw;
       padding-bottom: 1.5vw;
