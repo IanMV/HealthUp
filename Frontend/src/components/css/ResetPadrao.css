@@ -541,6 +541,7 @@ footer .DivFooter1 ul li a span {
    div div.confirmacao div.botoesConfirmacao button {
       border-radius: 10px;
    }
+     
 }
 
 @media (max-width: 768px) {
@@ -617,6 +618,18 @@ footer .DivFooter1 ul li a span {
    div div.confirmacao {
       height: 20%;
    }
+   ul.nomes {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: center;
+      h4 {
+         color: rgb(255, 255, 255);
+         font-size: 0.4rem; 
+   
+       }
+       }
 }
 
 @media (max-width: 600px) {
@@ -703,8 +716,9 @@ footer .DivFooter1 ul li a span {
       margin-top: 15vw;
    }
 
-   
+  
 }
+
 
 @media (max-width: 480px) {
    h1 {
@@ -793,4 +807,22 @@ footer .DivFooter1 ul li a span {
    div div.confirmacao {
       height: 17%;
    }
+  
+   
+   
 }
+   
+.nomes {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   align-items: center;
+   justify-content: center;
+   h4 {
+      color: white;
+      font-size: 1.3rem; 
+      margin: -1vw;
+    }
+    }
+ 
+
