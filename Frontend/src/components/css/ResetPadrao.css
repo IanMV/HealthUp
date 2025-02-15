@@ -326,6 +326,7 @@ footer .DivFooter1 p {
 footer .DivFooter1 ul {
    display: flex;
    gap: 2vw;
+
 }
 
 footer .DivFooter1 ul li a span {
@@ -368,7 +369,7 @@ footer .DivFooter1 ul li a span {
 }
 
 
-@media (max-width: 1024px)  {
+@media (max-width: 1024px) {
    h1 {
       font-size: 78px;
    }
@@ -541,7 +542,23 @@ footer .DivFooter1 ul li a span {
    div div.confirmacao div.botoesConfirmacao button {
       border-radius: 10px;
    }
-     
+
+   ul.nomes {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: center;
+      gap: 0vw;
+
+      li {
+         a {
+            color: rgb(255, 255, 255);
+            font-size: 17px;
+         }
+      }
+   }
+
 }
 
 @media (max-width: 768px) {
@@ -615,21 +632,27 @@ footer .DivFooter1 ul li a span {
    header .barranav aside ul li a {
       font-size: 32px;
    }
+
    div div.confirmacao {
       height: 20%;
    }
+
    ul.nomes {
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
       align-items: center;
       justify-content: center;
-      h4 {
-         color: rgb(255, 255, 255);
-         font-size: 0.4rem; 
-   
-       }
-       }
+      gap: 0vw;
+
+      li {
+         a {
+            color: rgb(255, 255, 255);
+            font-size: 12px;
+
+         }
+      }
+   }
 }
 
 @media (max-width: 600px) {
@@ -716,7 +739,21 @@ footer .DivFooter1 ul li a span {
       margin-top: 15vw;
    }
 
-  
+   ul.nomes {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      gap: 0;
+      justify-content: center;
+
+      li {
+         a {
+            color: rgb(255, 255, 255);
+font-size: 10px;
+         }
+      }
+   }
 }
 
 
@@ -807,22 +844,41 @@ footer .DivFooter1 ul li a span {
    div div.confirmacao {
       height: 17%;
    }
-  
-   
-   
+
+   ul.nomes {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: center;
+
+      li {
+         a {
+            color: rgb(255, 255, 255);
+            font-size: 8px;
+
+         }
+      }
+   }
+
 }
-   
+
 .nomes {
    display: flex;
    flex-direction: column;
-   flex-wrap: nowrap;
    align-items: center;
    justify-content: center;
-   h4 {
-      color: white;
-      font-size: 1.3rem; 
-      margin: -1vw;
-    }
-    }
- 
+   gap: 1vw;
 
+   li {
+      width: 100%;
+      justify-content: center;
+      display: flex;
+
+      a {
+         color: white;
+         font-size: 1.2rem;
+         margin: -1vw;
+      }
+   }
+}
